@@ -78,7 +78,7 @@ In this section, the team will discuss and clearly define their collective expec
 
 Assigning specific roles can help streamline team operations. Below, define any unique roles, their responsibilities, the powers granted, and any changes to expectations.
 
-**a. Team Leader/Coordinator: (Required)** [Name of student who will fill this role]
+**a. Team Leader/Coordinator: (Required)** Matthew Henderson
 
 - **Responsibilities:**
   - Schedule and coordinate team meetings.
@@ -86,29 +86,27 @@ Assigning specific roles can help streamline team operations. Below, define any 
   - Monitor project timelines and milestones.
 - **Powers Granted:**
   - Authority to make minor decisions to keep the project on track after team consultation.
+  - Ability to coordinate dates with customer and advisor and provide notice to team in advance about required meetings.
 - **Expectation Changes:**
   - In addition to regular duties, the Team Leader will handle organizational tasks but remains equally responsible for project work.
+  - Take attendance and monitor participation in meetings.
 
-**b. Recorder/Secretary: (Optional)** [Name of student who will fill this role]
+**b. Recorder/Secretary: (Optional)** Brady Goodman
 
 - **Responsibilities:**
   - Take detailed notes during meetings.
   - Distribute meeting minutes to all team members within 24 hours.
+  - Be main contact point for project related updates (including from advisor and customer).
 - **Powers Granted:**
   - May request clarifications during meetings to ensure accurate record-keeping.
+  - Ability to document in preferred form for meeting minutes.
 - **Expectation Changes:**
   - Ensures documentation is maintained without reducing their responsibility in other project areas.
-
-*(Add or modify roles based on your team's needs.)*
-
-
-## **Additional Agreements**
-
-Include any other important agreements the team decides upon.
+  - Keeps records orderly and tidy so they can be referenced at any point during project timeline.
 
 
 ## **Team Member Signatures**
 
 By typing our names below, we acknowledge that we have read, understand, and agree to abide by the terms of this Teamwork Contract.
 
-[List all student names here]
+Brady Goodman
