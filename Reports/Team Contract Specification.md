@@ -5,16 +5,13 @@
 *Electrical and Computer Engineering Department*  
 *Tennessee Technological University*
 
-The following are suggestions for items to include in your team contract. You get to customize this document as you see fit. Note that your final contract, must be approved by your instructor.
 
 ## **Introduction**
 
-*This teamwork contract outlines the agreed-upon expectations, responsibilities, and guidelines for effective collaboration among the members of Team X. By adhering to this contract, we aim to foster a productive, respectful, and supportive team environment conducive to the success of our project.*
+*This teamwork contract outlines the agreed-upon expectations, responsibilities, and guidelines for effective collaboration among the members of Team 1. By adhering to this contract, we aim to foster a productive, respectful, and supportive team environment conducive to the success of our project.*
 
 
 ## **Team Expectations**
-
-In this section, the team will discuss and clearly define their collective expectations in various key areas. Be specific to ensure mutual understanding.
 
 ### **1. Participation** *(Engagement and Effort in the Project)*
 
@@ -23,7 +20,6 @@ In this section, the team will discuss and clearly define their collective expec
   - Use our time wisely, when we meet we focus on the project
   - Let someone know if you cannot make it to a meeting, something has been completed, or if you need help.
 
-
 ### **2. Contribution** *(Progress on the Project)*
 
 - **Expectation:** Each team member is expected to:
@@ -31,14 +27,12 @@ In this section, the team will discuss and clearly define their collective expec
   - Contribute at least 15% or more to the project's progress.
   - It is a team project, use your team mates as often as possible, don’t struggle on your own and leave others in the dark.
 
-
 ### **3. Communication**
 
 - **Expectation:** Team communication should be:
   - Team to customer/advisor conversations should always be respectful and professional.
   - Conducted at a minimum of 36 hours in advance before meetings.
   - Quick, there are many ways to contact one another. Stay on top of that.
-
 
 ### **4. Meetings**
 
@@ -73,10 +67,7 @@ In this section, the team will discuss and clearly define their collective expec
   - Spread the work load amongst team members.
 
 
-
 ## **Unique Roles**
-
-Assigning specific roles can help streamline team operations. Below, define any unique roles, their responsibilities, the powers granted, and any changes to expectations.
 
 **a. Team Leader/Coordinator: (Required)** Matthew Henderson
 
