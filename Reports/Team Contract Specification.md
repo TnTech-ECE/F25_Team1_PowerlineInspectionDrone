@@ -30,9 +30,11 @@
 ### **3. Communication**
 
 - **Expectation:** Team communication should be:
+  - Team communication will be conducted primarily using test messages and email.
   - Team to customer/advisor conversations should always be respectful and professional.
   - Conducted at a minimum of 36 hours in advance before meetings.
   - Quick, there are many ways to contact one another. Stay on top of that.
+  
 
 ### **4. Meetings**
 
