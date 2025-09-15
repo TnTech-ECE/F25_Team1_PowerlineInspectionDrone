@@ -65,12 +65,12 @@ Cooper -
 
 For the Team: 1.
 
-Evan -
+Matthew -
 
-Connor -
+Brady -
 
-Kamden -
+Daniel -
 
-Wayne -
+Grant -
 
-Cooper -
+Lawson -
