@@ -70,19 +70,52 @@ Define how the project’s success will be measured. This involves explaining th
 
 ## Resources
 
-Each project proposal must include a comprehensive description of the necessary resources.
+To successfully design and implement this project, the team must draw on a diverse set of technical skills while working within the constraints of budget, timeline, and stakeholder expectations. Each team member brings complementary strengths, ensuring comprehensive coverage of all aspects of the project. The team has a strong foundation in electrical and computer engineering, with experience in embedded hardware, circuit design, and programming. These competencies will be critical to the development and integration of both the drone platform and its autonomous inspection capabilities.
+
+In addition to designing and integrating a stable drone platform, this project requires specialized sensing to detect early signs of equipment failure such as arcing and corona discharge. To support this, we plan to explore the integration of low-cost ultraviolet sensors and acoustic microphones capable of picking up high-frequency emissions associated with corona effects.
+
+Key skills include the use of CAD tools for custom component design. The team is proficient in C++ and Python, which will be used to program flight behavior, integrate sensors, and develop navigation algorithms. Knowledge of communication protocols, power systems, and PCB design will also be instrumental in ensuring reliable hardware performance during field tests.
+
+Throughout the project, team members will utilize a combination of school-provided lab equipment, open-source software tools, and low-cost commercial components.
+
+As development progresses, the team will continue to adapt to emerging challenges by applying problem-solving and iterative design strategies. Special attention will be given to sensor implementation and environmental awareness, as these are crucial to safely navigating around transmission lines. Through active collaboration, ongoing testing, and a focus on system-level integration, the team is confident in delivering a working prototype that demonstrates the feasibility of semi-autonomous drone inspection in real-world conditions.
+
 
 ### Budget
 
-Provide a budget proposal with justifications for expenses such as software, equipment, components, testing machinery, and prototyping costs. This should be an estimate, not a detailed bill of materials.
+The total estimated budget for this project is approximately $2,500, which covers the essential components needed to build a functional prototype of a semi-autonomous drone for transmission line inspection. This includes the drone platform, onboard camera, GPS module, basic sensors, onboard computing,  spare batteries, and components required for arcing and corona detection. The budget is kept intentionally low by leveraging school-provided lab equipment and low-cost commercial parts.
+
+| **Item**                          | **Description**                                         | **Estimated Cost**      |
+|----------------------------------|---------------------------------------------------------|--------------------------|
+| **Base Drone Platform**          | With enough payload for sensors and onboard computer    | $800 – $1,000            |
+| **Visual Camera**                | 1080p/4K for standard visual inspection                 | $100 – $300              |
+| **Onboard Computer**             | Raspberry Pi 5 or Jetson Nano for data processing       | $100 – $150              |
+| **GPS Module + Proximity Sensors** | Basic navigation and obstacle detection               | $100                     |
+| **Extra Batteries + Spare Parts** | For extended flight time and backup components         | $200                     |
+| **Low-Cost UV Sensor**           | For detecting corona discharge  | $500 – $1,000            |
+| **Ultrasonic Microphone** | For acoustic detection of arcing                     | $100 – $300              |
 
 ### Personel
 
-Identify the skills present in the team and compare them to those required to complete the project. Address any skill gaps with a plan to acquire the necessary knowledge.
+**Faculty:**
 
-Besides the team, also state who you choose to be you supervisor and why.
+Instructor - Dr. Johnson, the team’s instructor, will meet with the team weekly to discuss progression and answer questions the team may have. Dr. Johnson will also attend certain meetings between the team and customer.
 
-State who your instrucotr is and what role you expect them to play in the project.
+Advisor - Dr. Van Neste, the team’s advisor, was chosen because of his expertise in certain aspects of the capstone project. Dr. Van Neste will assist the team with technical questions regarding electrical principles, as well as help keep the project moving forward. 
+
+Customer - unknown atm
+
+**Team Members:**
+
+Matthew Henderson - Experience with AutoCAD, soldering, troubleshooting, and programming
+
+Lawson Stricklin - 
+
+Grant Christy - 
+
+Daniel Attih - 
+
+Brady Goodman - 
 
 ### Timeline
 
