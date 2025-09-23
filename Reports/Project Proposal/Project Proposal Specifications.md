@@ -109,18 +109,25 @@ Customer - unknown atm
 
 Matthew Henderson - Experience with AutoCAD, soldering, troubleshooting, and programming
 
-Lawson Stricklin - 
+Lawson Stricklin - Experience with Technical drawings/interconnected diagreams, programming, power analysis, and production proposal support
 
-Grant Christy - 
+Grant Christy - Experience with Revit 2023-2025, coding and troubleshooting, and circuit design
 
-Daniel Attih - 
+Daniel Attih - Experience in STM32 microcontrollers, c/c++, Allen Bradley PLC, VHDL code, Assembly code
 
 Brady Goodman - 
 
 ### Timeline
 
-Provide a detailed timeline, including all major deadlines and tasks. This should be illustrated with a professional Gantt chart.
+![Gantt Chart](ArcAngel%20Gantt%20Chart.png)
 
+The capstone team has one academic year to design and develop a semi-autonomous drone for power line inspection, capable of detecting excessive corona discharge or arcing.
+
+In the first semester, the focus will be on defining the project scope, breaking it into smaller tasks, and beginning the design process.
+
+During the second semester, the team will refine the prototype, finalize parts and specifications, and move into system integration. The final phase includes building, testing, troubleshooting, and validating the completed drone.
+
+If the team follows the schedule outlined in the Gantt chart, the project will result in a fully functional inspection drone by May 2026.
 
 ## Specific Implications
 
