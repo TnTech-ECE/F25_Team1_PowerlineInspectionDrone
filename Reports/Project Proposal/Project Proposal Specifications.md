@@ -95,7 +95,7 @@ The total estimated budget for this project is approximately $2,500, which cover
 | **Low-Cost UV Sensor**           | For detecting corona discharge  | $500 – $1,000            |
 | **Ultrasonic Microphone** | For acoustic detection of arcing                     | $100 – $300              |
 
-### Personel
+### Personnel
 
 **Faculty:**
 
@@ -103,19 +103,21 @@ Instructor - Dr. Johnson, the team’s instructor, will meet with the team weekl
 
 Advisor - Dr. Van Neste, the team’s advisor, was chosen because of his expertise in certain aspects of the capstone project. Dr. Van Neste will assist the team with technical questions regarding electrical principles, as well as help keep the project moving forward. 
 
-Customer - unknown atm
+Customer - Joe Wheeler Electric Membership Corp (JWEMC), the project's customer, will help guide the team in completing this project adhering to industry standards. They will give great insight as to what the industry already has and what it needs.
 
 **Team Members:**
 
 Matthew Henderson - Experience with AutoCAD, soldering, troubleshooting, and programming
 
-Lawson Stricklin - Experience with Technical drawings/interconnected diagreams, programming, power analysis, and production proposal support
+Lawson Stricklin - Experience with Technical drawings/interconnected diagrams, programming, power analysis, and production proposal support
 
 Grant Christy - Experience with Revit 2023-2025, coding and troubleshooting, and circuit design
 
 Daniel Attih - Experience in STM32 microcontrollers, c/c++, Allen Bradley PLC, VHDL code, Assembly code
 
-Brady Goodman - 
+Brady Goodman - Experience in single-line diagrams, power quality monitors, computer programming, and project management
+
+All skills that are needed, but not yet present, will be acquired by individual research, and consulting with Dr. Van Neste, Dr Johnson, and JWEMC.
 
 ### Timeline
 
