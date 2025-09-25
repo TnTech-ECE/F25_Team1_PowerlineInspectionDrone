@@ -135,9 +135,9 @@ If the team follows the schedule outlined in the Gantt chart, the project will r
 
 Implementing the ArcAngel Drone offers significant benefits that directly address the challenges and dangers associated with inspecting power lines.
 
-# Enhanced Personnel Safety:
+Enhanced Personnel Safety:
 The drone system mitigates the substantial risks associated with manual power line inspections, which typically involve human exposure to high-voltage environments, elevated work, and adverse weather conditions. By substituting human inspectors with an autonomous drone, the system minimizes personnel's physical proximity to live power lines and elevated structures. This strategic shift in methodology directly reduces the probability of fatal accidents and injuries, aligning with stringent occupational safety protocols.
-# Operational Adaptability:
+Operational Adaptability:
 Equipped with an integrated sensor suite, the drone can be effectively deployed across a variety of complex scenarios. Key technical components include:
 High-Resolution Visual Camera: Captures detailed imagery for precise fault identification.
 GPS Module: Ensures accurate navigation and real-time location tracking.
