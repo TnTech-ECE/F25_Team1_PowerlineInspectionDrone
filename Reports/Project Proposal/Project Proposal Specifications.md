@@ -74,6 +74,8 @@ To successfully design and implement this project, the team must draw on a diver
 
 In addition to designing and integrating a stable drone platform, this project requires specialized sensing to detect early signs of equipment failure such as arcing and corona discharge. To support this, we plan to explore the integration of low-cost ultraviolet sensors and acoustic microphones capable of picking up high-frequency emissions associated with corona effects.
 
+In addition to sensing capabilities, the team is also investigating the feasibility of charging the drone directly from the transmission line. This is an exploratory task, and it is not yet known if such a system can be practically implemented. The concept will likely require the design of a custom circuit with currently unknown parts and specifications, capable of safely attaching to and drawing power from the line. The outcome of this investigation will determine whether in-flight or on-line charging could become part of the prototype.
+
 Key skills include the use of CAD tools for custom component design. The team is proficient in C++ and Python, which will be used to program flight behavior, integrate sensors, and develop navigation algorithms. Knowledge of communication protocols, power systems, and PCB design will also be instrumental in ensuring reliable hardware performance during field tests.
 
 Throughout the project, team members will utilize a combination of school-provided lab equipment, open-source software tools, and low-cost commercial components.
@@ -94,6 +96,7 @@ The total estimated budget for this project is approximately $2,500, which cover
 | **Extra Batteries + Spare Parts** | For extended flight time and backup components         | $200                     |
 | **Low-Cost UV Sensor**           | For detecting corona discharge  | $500 – $1,000            |
 | **Ultrasonic Microphone** | For acoustic detection of arcing                     | $100 – $300              |
+| **Drone Charging Hardware** | For design of circuit capable of charging drone battery      | $50 – $200              |
 
 ### Personnel
 
@@ -123,7 +126,7 @@ All skills that are needed, but not yet present, will be acquired by individual 
 
 ![Gantt Chart](ArcAngel%20Gantt%20Chart.png)
 
-The capstone team has one academic year to design and develop a semi-autonomous drone for power line inspection, capable of detecting excessive corona discharge or arcing.
+The capstone team has one academic year to design and develop a semi-autonomous drone for power line inspection. The drone will be capable of detecting excessive corona discharge or arcing and may also incorporate a system to recharge from the transmission line.
 
 In the first semester, the focus will be on defining the project scope, breaking it into smaller tasks, and beginning the design process.
 
