@@ -29,6 +29,7 @@ The stakeholders for this project include the instructor Dr. Storm Johnson, who 
 The customer benefits are clear: ArcAngel Drone reduces human exposure to hazardous environments, lowers inspection costs, and increases operational adaptability during grid failures. Broader impacts extend to environmental sustainability by replacing helicopters and heavy trucks, thereby reducing carbon emissions, as well as ethical responsibilities in ensuring safe operation, reliability, and data privacy. While challenges remain, including regulatory compliance and preventing technical failure near live lines, ArcAngel Drone represents a meaningful advancement in both engineering practice and public safety.
 
 The remainder of this proposal is organized into the following sections:
+
 •	Problem Definition and Objectives – specifying requirements with “shall” statements.
 
 •	Background and Existing Solutions – reviewing prior drones and enabling technologies.
