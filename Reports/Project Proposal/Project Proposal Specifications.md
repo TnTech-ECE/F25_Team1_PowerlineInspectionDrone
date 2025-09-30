@@ -20,9 +20,30 @@ This document provides a comprehensive explanation of what a project proposal sh
 
 ## Introduction
 
-The introduction must be the opening section of the proposal. It acts as the "elevator pitch" of the project, briefly introducing the objective, its importance, and the proposed solution. Because readers may only read this section, it should effectively capture their attention and encourage them to read further.
+Electrical power infrastructure is one of the most critical assets in modern society, yet it remains vulnerable to damage from storms, environmental stress, and equipment aging. Traditionally, inspection of high-voltage power lines has relied on inefficient and time-consuming methods that can be improved upon. These methods shall continue to pose safety risks, high operational costs, and limited efficiency (EPRI, 2020). There shall be a safer, more autonomous, and cost-effective method of performing routine and emergency inspections.
 
-Toward the end of the introduction, include a subsection that outlines what the proposal will cover. This helps set reader expectations for the ensuing sections.
+The proposed project, ArcAngel Drone, is a semi-autonomous inspection system specifically designed to operate near power lines and identify potential faults. Unlike existing solutions that are limited by flight time and require constant operator control, ArcAngel Drone shall feature autonomous navigation, onboard corona detection, and the capability to recharge directly from high-voltage lines using single-wire energy transfer. This would enable operators real time feedback during potentially dangerous scenarios, and could catch impacts before or immediately after occurring, such as fires. Research prototypes have already demonstrated the feasibility of UAV-mounted corona detection sensors (BST Caltek, 2021) and live-line recharging through electromagnetic energy harvesting (Nomadic Drones, 2022). These features shall enable extended missions, rapid post-storm response, and reduced downtime for electric grids. For customers such as power utilities, this technology provides faster fault identification, minimized repair delays, and significant cost savings compared to traditional inspection methods.
+
+The stakeholders for this project include the instructor Dr. Storm Johnson, who shall evaluate academic performance; the technical supervisor Dr. Van Neste, who shall guide the engineering process; the customer JWERC, represented by electric utilities and line maintenance teams, who shall benefit directly from improved inspection safety and efficiency; and the project team members, who are responsible for the design, implementation, and validation of ArcAngel Drone. Successful implementation shall require skills in embedded systems, power electronics, communications, and autonomous navigation. The estimated project cost shall not exceed $2,500, with completion expected within the senior design project timeline.
+
+The customer benefits are clear: ArcAngel Drone reduces human exposure to hazardous environments, lowers inspection costs, and increases operational adaptability during grid failures. Broader impacts extend to environmental sustainability by replacing helicopters and heavy trucks, thereby reducing carbon emissions, as well as ethical responsibilities in ensuring safe operation, reliability, and data privacy. While challenges remain, including regulatory compliance and preventing technical failure near live lines, ArcAngel Drone represents a meaningful advancement in both engineering practice and public safety.
+
+The remainder of this proposal is organized into the following sections:
+•	Problem Definition and Objectives – specifying requirements with “shall” statements.
+
+•	Background and Existing Solutions – reviewing prior drones and enabling technologies.
+
+•	Methodology and Design Plan – describing the approach to development.
+
+•	Project Management – outlining resources, costs, skills, and schedule.
+
+•	Success Criteria and Evaluation – defining metrics for performance.
+
+•	Customer Benefits and Broader Implications – addressing value and ethical responsibility.
+
+•	Team Contributions – stating each member’s role.
+
+•	References – citing supporting sources.
 
 
 ## Formulating the Problem
@@ -65,7 +86,10 @@ Research existing solutions, whether in literature, on the market, or within the
 
 ## Measures of Success
 
-Define how the project’s success will be measured. This involves explaining the experiments and methodologies to verify that the system meets its specifications and constraints.
+The success of the ArcAngel Drone shall be measured by its ability to perform safe and reliable power line inspections while meeting the functional requirements outlined in the specifications. At the most general level, the drone must demonstrate semi- autonomous flight capability near power lines and be able to provide data regarding the inspected lines. Success will also be determined by the drone’s ability to demonstrate power transfer from high-voltage lines. If these objectives are met within the constraints of cost, safety standards, and operability in chosen conditions, the project shall be considered a success.
+
+To verify these outcomes, the team shall conduct a series of structured tests and demonstrations. These will include evaluating navigation and stability during semi-autonomous flight, verifying that onboard sensors correctly capture inspection data. Additional emphasis shall be placed on validating safety protocols, such as obstacle avoidance and adherence to FAA flight limits. While the evaluation process will not replicate every possible real-world condition, successful demonstration under controlled scenarios shall provide sufficient evidence that the design is practical, scalable, and beneficial to the customer.
+
 
 
 ## Resources
