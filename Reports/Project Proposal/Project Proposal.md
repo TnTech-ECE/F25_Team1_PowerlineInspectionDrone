@@ -1,22 +1,12 @@
-# Project Proposal
+# ArcAngel Power Line Inspection Drone
 
-This document provides a comprehensive explanation of what a project proposal should encompass. The content here is detailed and is intended to highlight the guiding principles rather than merely listing expectations. The sections that follow contain all the necessary information to understand the requirements for creating a project proposal.
+### Matthew Henderson, Brady Goodman, Grant Christy, Daniel Attih, Lawson Stricklin
 
+Department of Electrical and Computer Engineering
 
-## General Requirements for the Document
-- All submissions must be composed in markdown format.
-- All sources must be cited unless the information is common knowledge for the target audience.
-- The document must be written in third person.
-- The document must identify all stakeholders including the instuctor, supervisor, and cusotmer.
-- The problem must be clearly defined using "shall" statements.
-- Existing solutions or technologies that enable novel solutions must be identified.
-- Success criteria must be explicitly stated.
-- An estimate of required skills, costs, and time to implement the solution must be provided.
-- The document must explain how the customer will benefit from the solution.
-- Broader implications, including ethical considerations and responsibilities as engineers, must be explored.
-- A list of references must be included.
-- A statement detailing the contributions of each team member must be provided.
+Tennessee Technological University
 
+mghenderso43@tntech.edu, brgoodman42@tntech.edu, gbchristy42@tntech.edu, dattih42@tntech.edu, lwstrickli42@tntech.edu
 
 ## Introduction
 
@@ -275,4 +265,12 @@ Zhang, Zhi, et al. “A Novel Charging Station on Overhead Power Lines for UAVs.
 
 ## Statement of Contributions
 
-Each team member must contribute meaningfully to the project proposal. In this section, each team member is required to document their individual contributions to the report. One team member may not record another member's contributions on their behalf. By submitting, the team certifies that each member's statement of contributions is accurate.
+Matthew Henderson - Contributed to Resources, including budget, personnel, and timeline
+
+Brady Goodman - Contributed to Introduction, Measures of Success, and revisions
+
+Grant Christy - Contributed to Formulating the Problem, including Background, Specifications, Constraints, and revisions
+
+Daniel Attih - Contributed to Specific Implications, Broader Implications, and revisions
+
+Lawson Stricklin - Contributed to Survey of Existing Solutions and revisions
