@@ -53,7 +53,6 @@ Consumers lack a reliable and efficient tool that can effectively follow high-vo
 
 ArcAngel Drone is a semi-autonomous aerial system designed to operate within a specified distance of a power line while relaying high-resolution video and detecting excess corona discharge without continuous human control. This capability would allow ground personnel to rapidly locate and safely repair downed or damaged lines. ArcAngel Drone is intended to be weather-resistant and operable under mild post-storm conditions.
 
-
 Key challenges include:
 - Autonomous navigation adjacent to high-voltage conductors.
 - Sustaining stable flight and effective videography during mild to inclement weather.
@@ -122,7 +121,6 @@ The success of the ArcAngel Drone shall be measured by its ability to perform sa
 To verify these outcomes, the team shall conduct a series of structured tests and demonstrations. These will include evaluating navigation and stability during semi-autonomous flight, verifying that onboard sensors correctly capture inspection data. Additional emphasis shall be placed on validating safety protocols, such as obstacle avoidance and adherence to FAA flight limits. While the evaluation process will not replicate every possible real-world condition, successful demonstration under controlled scenarios shall provide sufficient evidence that the design is practical, scalable, and beneficial to the customer.
 
 
-
 ## Resources
 
 To successfully design and implement this project, the team must draw on a diverse set of technical skills while working within the constraints of budget, timeline, and stakeholder expectations. Each team member brings complementary strengths, ensuring comprehensive coverage of all aspects of the project. The team has a strong foundation in electrical and computer engineering, with experience in embedded hardware, circuit design, and programming. These competencies will be critical to the development and integration of both the drone platform and its autonomous inspection capabilities.
@@ -189,6 +187,7 @@ During the second semester, the team will refine the prototype, finalize parts a
 
 If the team follows the schedule outlined in the Gantt chart, the project will result in a fully functional inspection drone by May 2026.
 
+
 ## Specific Implications
 
 Implementing the ArcAngel Drone offers significant benefits that directly address the challenges and dangers associated with inspecting power lines.
@@ -209,7 +208,6 @@ Cost Efficiency and Reduced Risk:
 - Decreasing Time-on-Task: Drones can complete inspections significantly faster than traditional methods, reducing system downtime.
 - Eliminating High-Cost Assets: The system negates the need for expensive and resource-intensive equipment such as helicopters and specialized bucket trucks.
 These efficiencies collectively contribute to a more cost-effective and streamlined maintenance paradigm, leading to a demonstrable return on investment and a strengthened long-term operational posture.
-
 
 
 ## Broader Implications, Ethics, and Responsibility as Engineers
@@ -234,27 +232,45 @@ By prioritizing these ethical considerations, the team can not only deliver a va
 
 ## References
 
-BST Caltek Industrial Ltd. BC20 DR Corona Detection Camera System. DirectIndustry, https://www.directindustry.com/prod/bst-caltek-industrial-ltd/product-50655-2489740.html.  
+“Aerial Thermal Inspections for Industry.” Aerial Vista Productions, https://aerialvistaproductions.com/thermal-inspections/.
 
-“Aerial Thermal Inspections for Industry.” Aerial Vista Productions, https://aerialvistaproductions.com/thermal-inspections/.  
+Al-Hussein, Mohammed, et al. “Autonomous Overhead Powerline Recharging for UAVs.” arXiv, 2024, https://arxiv.org/abs/2403.06533.
 
-“DJI Zenmuse L2 Power Line Follow Mode.” Heliguy, https://www.heliguy.com/blogs/posts/dji-l2-power-line-follow-mode/.  
+American National Standards Institute. ANSI/RIA R15.08 — Industrial Mobile Robot (IMR) Safety Requirements. ANSI Webstore, https://webstore.ansi.org/standards/ria/ansiria-r1508-2020.
 
-NASA. Technologies and Operations for High Voltage Corona Detection with UAVs. NASA Technical Reports Server, 2019, https://ntrs.nasa.gov/api/citations/20190027131/downloads/20190027131.pdf.  
+American Society of Civil Engineers. 2021 Report Card for America’s Infrastructure – Energy. ASCE, https://infrastructurereportcard.org/cat-item/energy/.
 
-Bishop, Todd. “Drone Startup Surveying Power Lines to Prevent Fires Wins Top Prize at Prestigious UW Competition.” GeekWire, 24 May 2025, https://www.geekwire.com/2025/drone-startup-surveying-power-lines-to-prevent-fires-wins-top-prize-at-prestigious-uw-competition/.  
+“Autonomous Self-Charging Drones for Continuous Power Line Monitoring.” Transformers Magazine, 2024, https://transformers-magazine.com/tm-news/autonomous-self-charging-drones-for-continuous-power-line-monitoring/.
 
-“Autonomous SelfCharging Drones for Continuous Power Line Monitoring.” Transformers Magazine, 2024, https://transformers-magazine.com/tm-news/autonomous-self-charging-drones-for-continuous-power-line-monitoring/.  
+Bishop, Todd. “Drone Startup Surveying Power Lines to Prevent Fires Wins Top Prize at Prestigious UW Competition.” GeekWire, 24 May 2025, https://www.geekwire.com/2025/drone-startup-surveying-power-lines-to-prevent-fires-wins-top-prize-at-prestigious-uw-competition/.
 
-Zhang, Zhi, et al. “A Novel Charging Station on Overhead Power Lines for UAVs.” Applied Sciences, vol. 13, no. 18, 2023, p. 10175. MDPI, https://www.mdpi.com/2076-3417/13/18/10175.  
+BST Caltek Industrial Ltd. BC-20 DR Corona Detection Camera System. DirectIndustry, https://www.directindustry.com/prod/bst-caltek-industrial-ltd/product-50655-2489740.html.
 
-“NonStop Drone Operations via Power Line Recharging.” Interesting Engineering, 2024, https://interestingengineering.com/innovation/non-stop-drone-operations-power-line-recharging.  
+DJI Enterprise. Drone Solutions for Powerline Inspection. DJI, https://enterprise.dji.com/powerline-inspection.
 
-UViRCO Technologies. CoroCAM UVS for UAV Integration. UViRCO, https://www.uvirco.com/corocam-uvs1/.  
+“DJI Zenmuse L2 Power Line Follow Mode.” Heliguy, https://www.heliguy.com/blogs/posts/dji-l2-power-line-follow-mode/.
 
-Xing, Yifan, et al. “PerceptionAware Model Predictive Control for Power Line Inspection.” IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023, https://rpg.ifi.uzh.ch/docs/IROS23_Xing.pdf.  
+Federal Aviation Administration. Small Unmanned Aircraft Systems (UAS) Regulations (Part 107). FAA, https://www.faa.gov/uas/commercial_operators/part_107_remote_pilot.
 
-AlHussein, Mohammed, et al. “Autonomous Overhead Powerline Recharging for UAVs.” arXiv, 2024, https://arxiv.org/abs/2403.06533.  
+IEEE Standards Association. IEEE 1808-2011 — Guide for Collecting and Managing Transmission Line Inspection and Maintenance Data. IEEE, https://standards.ieee.org/ieee/1808/5266/.
+
+International Electrotechnical Commission. IEC 61010 — Safety Requirements for Electrical Equipment for Measurement, Control, and Laboratory Use. IEC Webstore, https://webstore.iec.ch/publication/61010.
+
+NASA. Technologies and Operations for High Voltage Corona Detection with UAVs. NASA Technical Reports Server, 2019, https://ntrs.nasa.gov/api/citations/20190027131/downloads/20190027131.pdf.
+
+“Non-Stop Drone Operations via Power Line Recharging.” Interesting Engineering, 2024, https://interestingengineering.com/innovation/non-stop-drone-operations-power-line-recharging.
+
+Occupational Safety and Health Administration. 29 CFR 1910 Subpart O — Machinery and Machine Guarding. OSHA, https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910SubpartO.
+
+Occupational Safety and Health Administration. 29 CFR 1910.212 — General Requirements for All Machines. OSHA, https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.212.
+
+Stracqualursi, E., et al. “The Corona Phenomenon in Overhead Lines: Critical Review of Effects and Detection Approaches.” Energies, vol. 15, no. 21, 2022, p. 7853. MDPI, https://www.mdpi.com/1996-1073/15/21/7853.
+
+UViRCO Technologies. CoroCAM UVS for UAV Integration. UViRCO, https://www.uvirco.com/corocam-uvs1/.
+
+Xing, Yifan, et al. “Perception-Aware Model Predictive Control for Power Line Inspection.” IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023, https://rpg.ifi.uzh.ch/docs/IROS23_Xing.pdf.
+
+Zhang, Zhi, et al. “A Novel Charging Station on Overhead Power Lines for UAVs.” Applied Sciences, vol. 13, no. 18, 2023, p. 10175. MDPI, https://www.mdpi.com/2076-3417/13/18/10175.
 
 
 ## Statement of Contributions
