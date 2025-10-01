@@ -46,9 +46,9 @@ ArcAngel Drone is a semi-autonomous aerial system designed to operate within a s
 Key challenges include:
 - Autonomous navigation adjacent to high-voltage conductors.
 - Sustaining stable flight and effective videography during mild to inclement weather.
-- Reliable detection of excess corona as an indicator of line faults or insulation failure. [9]
+- Reliable detection of excess corona as an indicator of line faults or insulation failure.
 
-Former power-line inspection drones face several limitations. There are over 600,000 circuit miles of transmission infrastructure in the U.S., which represents a large inspection load for manual systems. [2] With typical consumer and enterprise drones offering limited flight endurance, inspecting long line sections requires multiple takeoffs and landings. Additionally, drones operating too close to energized conductors can experience electromagnetic interference that degrades sensor performance and pilot visibility, while flying too far reduces inspection fidelity. Enterprise inspection platforms are commonly manually operated today. [3] Finally, current regulation restricts many drone flights to visual line-of-sight (VLOS) unless special waivers are obtained. [1] 
+Former power-line inspection drones face several limitations. There are over 600,000 circuit miles of transmission infrastructure in the U.S., which represents a large inspection load for manual systems. With typical consumer and enterprise drones offering limited flight endurance, inspecting long line sections requires multiple takeoffs and landings. Additionally, drones operating too close to energized conductors can experience electromagnetic interference that degrades sensor performance and pilot visibility, while flying too far reduces inspection fidelity. Enterprise inspection platforms are commonly manually operated today. Finally, current regulation restricts many drone flights to visual line-of-sight (VLOS) unless special waivers are obtained. 
 
 The proposed solution is a semi-autonomous drone that supports on-line recharging (single-wire transmission concept) to minimize downtime and enable longer mission durations. Autonomy reduces operator burden: ArcAngel can remain in a monitoring state until it detects an anomaly and then reposition to an appropriate communication distance to relay alerts without interference.
 
@@ -67,7 +67,7 @@ Most crucial to the project is autonomous piloting: the drone must maintain a sa
 
 - ArcAngel Drone shall be designed to fly semi-autonomously along power lines, execute commands from the controller software, and present data to operators. It shall accept and follow predefined flight paths until a fault is located or a user intervenes.
 - ArcAngel Drone shall operate in mild to inclement weather conditions appropriate for post-storm inspections (see Constraints for exact thresholds).
-- ArcAngel Drone shall maintain safe flight characteristics in accordance with applicable safety guidelines for operations near power lines, including (but not limited to) operating at or below 400 ft AGL when appropriate and within regulatory limits. [1]
+- ArcAngel Drone shall maintain safe flight characteristics in accordance with applicable safety guidelines for operations near power lines, including (but not limited to) operating at or below 400 ft AGL when appropriate and within regulatory limits.
 - ArcAngel Drone shall support onboard recharging using a single-wire transmission concept (design and safety validation required).
 - ArcAngel Drone shall transmit real-time telemetry and inspection data, including: current position and travel time, current velocity, live video and still images for line inspection, battery life percentage, and any diagnostic or inspection error codes.
 - ArcAngel Drone shall achieve ≥ 30 minutes of flight endurance under nominal payload/sensor load and report error codes autonomously.
@@ -80,14 +80,14 @@ Budget: total material cost ≤ $2,500.
 #### Constraints
 
 - The material cost for ArcAngel Drone shall not exceed the outlined budget; any remaining funds will be returned to Tennessee Tech University.
-- ArcAngel Drone shall comply with relevant UAS safety and operational standards, including FAA Part 107 (operational limits, VLOS/BVLOS waiver process, altitude limits). [1]
-- ArcAngel Drone shall comply with machine and workplace safety regulations, including OSHA 29 CFR 1910 Subpart O and OSHA 29 CFR 1910.212 for guarding and general machine safety where applicable. [5]
-- ArcAngel Drone shall adhere to autonomous mobile robot safety guidance such as ANSI/RIA R15.08 for sensor-based obstacle detection, safe stopping performance, and fail-safe behaviors where applicable. [6] 
-- ArcAngel Drone shall incorporate safety considerations and inspection data management aligned with utility industry guidance for transmission-line inspection (e.g., IEEE guides on transmission-line inspection and data management). [7]
-- ArcAngel Drone shall meet applicable electrical equipment safety requirements (e.g., IEC 61010 family) for integrating corona sensors and charging electronics. [8]
-- ArcAngel Drone shall adhere to Remote ID and identification/traceability requirements as required by the FAA for autonomous missions. [1] 
-- ArcAngel Drone shall maintain a minimum clearance (design target: 10 ft / 3 m) from energized conductors during inspection to reduce arcing risk — the precise clearance will be validated against utility procedures and IEEE/industry guidance. [7]
-- ArcAngel Drone shall limit corona-detection operational range to practical distances. [9]
+- ArcAngel Drone shall comply with relevant UAS safety and operational standards, including FAA Part 107 (operational limits, VLOS/BVLOS waiver process, altitude limits).
+- ArcAngel Drone shall comply with machine and workplace safety regulations, including OSHA 29 CFR 1910 Subpart O and OSHA 29 CFR 1910.212 for guarding and general machine safety where applicable.
+- ArcAngel Drone shall adhere to autonomous mobile robot safety guidance such as ANSI/RIA R15.08 for sensor-based obstacle detection, safe stopping performance, and fail-safe behaviors where applicable. 
+- ArcAngel Drone shall incorporate safety considerations and inspection data management aligned with utility industry guidance for transmission-line inspection (e.g., IEEE guides on transmission-line inspection and data management).
+- ArcAngel Drone shall meet applicable electrical equipment safety requirements (e.g., IEC 61010 family) for integrating corona sensors and charging electronics.
+- ArcAngel Drone shall adhere to Remote ID and identification/traceability requirements as required by the FAA for autonomous missions. 
+- ArcAngel Drone shall maintain a minimum clearance (design target: 10 ft / 3 m) from energized conductors during inspection to reduce arcing risk — the precise clearance will be validated against utility procedures and IEEE/industry guidance.
+- ArcAngel Drone shall limit corona-detection operational range to practical distances.
 - ArcAngel Drone shall cap charging current for the single-wire concept to safe levels pending electrical safety validation and utility coordination.
 - ArcAngel Drone shall have a maximum practical wind tolerance design target (nominal) of 20 mph (≈32 kph) for stable autonomous flight and clear video capture; operations beyond this will be classified as unsafe.
 - ArcAngel Drone shall be weather-resistant and operable in light rain and temperatures between 32°F and 104°F (0°C–40°C), but shall not be deployed in lightning, heavy precipitation, or extreme winds.
