@@ -222,45 +222,45 @@ By prioritizing these ethical considerations, the team can not only deliver a va
 
 ## References
 
-“Aerial Thermal Inspections for Industry.” Aerial Vista Productions, https://aerialvistaproductions.com/thermal-inspections/.
+[1] Aerial Vista Productions, “Aerial Thermal Inspections for Industry.” [Online]. Available: https://aerialvistaproductions.com/thermal-inspections/
 
-Al-Hussein, Mohammed, et al. “Autonomous Overhead Powerline Recharging for UAVs.” arXiv, 2024, https://arxiv.org/abs/2403.06533.
+[2] M. Al-Hussein et al., “Autonomous Overhead Powerline Recharging for UAVs,” arXiv preprint arXiv:2403.06533, 2024. [Online]. Available: https://arxiv.org/abs/2403.06533
 
-American National Standards Institute. ANSI/RIA R15.08 — Industrial Mobile Robot (IMR) Safety Requirements. ANSI Webstore, https://webstore.ansi.org/standards/ria/ansiria-r1508-2020.
+[3] American National Standards Institute, ANSI/RIA R15.08 — Industrial Mobile Robot (IMR) Safety Requirements. ANSI Webstore. [Online]. Available: https://webstore.ansi.org/standards/ria/ansiria-r1508-2020
 
-American Society of Civil Engineers. 2021 Report Card for America’s Infrastructure – Energy. ASCE, https://infrastructurereportcard.org/cat-item/energy/.
+[4] American Society of Civil Engineers, “2021 Report Card for America’s Infrastructure – Energy,” ASCE. [Online]. Available: https://infrastructurereportcard.org/cat-item/energy/
 
-“Autonomous Self-Charging Drones for Continuous Power Line Monitoring.” Transformers Magazine, 2024, https://transformers-magazine.com/tm-news/autonomous-self-charging-drones-for-continuous-power-line-monitoring/.
+[5] “Autonomous Self-Charging Drones for Continuous Power Line Monitoring,” Transformers Magazine, 2024. [Online]. Available: https://transformers-magazine.com/tm-news/autonomous-self-charging-drones-for-continuous-power-line-monitoring/
 
-Bishop, Todd. “Drone Startup Surveying Power Lines to Prevent Fires Wins Top Prize at Prestigious UW Competition.” GeekWire, 24 May 2025, https://www.geekwire.com/2025/drone-startup-surveying-power-lines-to-prevent-fires-wins-top-prize-at-prestigious-uw-competition/.
+[6] T. Bishop, “Drone Startup Surveying Power Lines to Prevent Fires Wins Top Prize at Prestigious UW Competition,” GeekWire, May 24, 2025. [Online]. Available: https://www.geekwire.com/2025/drone-startup-surveying-power-lines-to-prevent-fires-wins-top-prize-at-prestigious-uw-competition/
 
-BST Caltek Industrial Ltd. BC-20 DR Corona Detection Camera System. DirectIndustry, https://www.directindustry.com/prod/bst-caltek-industrial-ltd/product-50655-2489740.html.
+[7] BST Caltek Industrial Ltd., “BC-20 DR Corona Detection Camera System,” DirectIndustry. [Online]. Available: https://www.directindustry.com/prod/bst-caltek-industrial-ltd/product-50655-2489740.html
 
-DJI Enterprise. Drone Solutions for Powerline Inspection. DJI, https://enterprise.dji.com/powerline-inspection.
+[8] DJI Enterprise, “Drone Solutions for Powerline Inspection.” [Online]. Available: https://enterprise.dji.com/powerline-inspection
 
-“DJI Zenmuse L2 Power Line Follow Mode.” Heliguy, https://www.heliguy.com/blogs/posts/dji-l2-power-line-follow-mode/.
+[9] “DJI Zenmuse L2 Power Line Follow Mode,” Heliguy. [Online]. Available: https://www.heliguy.com/blogs/posts/dji-l2-power-line-follow-mode/
 
-Federal Aviation Administration. Small Unmanned Aircraft Systems (UAS) Regulations (Part 107). FAA, https://www.faa.gov/uas/commercial_operators/part_107_remote_pilot.
+[10] Federal Aviation Administration, “Small Unmanned Aircraft Systems (UAS) Regulations (Part 107),” FAA. [Online]. Available: https://www.faa.gov/uas/commercial_operators/part_107_remote_pilot
 
-IEEE Standards Association. IEEE 1808-2011 — Guide for Collecting and Managing Transmission Line Inspection and Maintenance Data. IEEE, https://standards.ieee.org/ieee/1808/5266/.
+[11] IEEE Standards Association, IEEE 1808-2011 — Guide for Collecting and Managing Transmission Line Inspection and Maintenance Data. [Online]. Available: https://standards.ieee.org/ieee/1808/5266/
 
-International Electrotechnical Commission. IEC 61010 — Safety Requirements for Electrical Equipment for Measurement, Control, and Laboratory Use. IEC Webstore, https://webstore.iec.ch/publication/61010.
+[12] International Electrotechnical Commission, IEC 61010 — Safety Requirements for Electrical Equipment for Measurement, Control, and Laboratory Use. [Online]. Available: https://webstore.iec.ch/publication/61010
 
-NASA. Technologies and Operations for High Voltage Corona Detection with UAVs. NASA Technical Reports Server, 2019, https://ntrs.nasa.gov/api/citations/20190027131/downloads/20190027131.pdf.
+[13] NASA, “Technologies and Operations for High Voltage Corona Detection with UAVs,” NASA Technical Reports Server, 2019. [Online]. Available: https://ntrs.nasa.gov/api/citations/20190027131/downloads/20190027131.pdf
 
-“Non-Stop Drone Operations via Power Line Recharging.” Interesting Engineering, 2024, https://interestingengineering.com/innovation/non-stop-drone-operations-power-line-recharging.
+[14] “Non-Stop Drone Operations via Power Line Recharging,” Interesting Engineering, 2024. [Online]. Available: https://interestingengineering.com/innovation/non-stop-drone-operations-power-line-recharging
 
-Occupational Safety and Health Administration. 29 CFR 1910 Subpart O — Machinery and Machine Guarding. OSHA, https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910SubpartO.
+[15] Occupational Safety and Health Administration, “29 CFR 1910 Subpart O — Machinery and Machine Guarding.” [Online]. Available: https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910SubpartO
 
-Occupational Safety and Health Administration. 29 CFR 1910.212 — General Requirements for All Machines. OSHA, https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.212.
+[16] Occupational Safety and Health Administration, “29 CFR 1910.212 — General Requirements for All Machines.” [Online]. Available: https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.212
 
-Stracqualursi, E., et al. “The Corona Phenomenon in Overhead Lines: Critical Review of Effects and Detection Approaches.” Energies, vol. 15, no. 21, 2022, p. 7853. MDPI, https://www.mdpi.com/1996-1073/15/21/7853.
+[17] E. Stracqualursi et al., “The Corona Phenomenon in Overhead Lines: Critical Review of Effects and Detection Approaches,” Energies, vol. 15, no. 21, p. 7853, 2022. [Online]. Available: https://www.mdpi.com/1996-1073/15/21/7853
 
-UViRCO Technologies. CoroCAM UVS for UAV Integration. UViRCO, https://www.uvirco.com/corocam-uvs1/.
+[18] UViRCO Technologies, “CoroCAM UVS for UAV Integration.” [Online]. Available: https://www.uvirco.com/corocam-uvs1/
 
-Xing, Yifan, et al. “Perception-Aware Model Predictive Control for Power Line Inspection.” IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2023, https://rpg.ifi.uzh.ch/docs/IROS23_Xing.pdf.
+[19] Y. Xing et al., “Perception-Aware Model Predictive Control for Power Line Inspection,” in Proc. IEEE/RSJ Int. Conf. Intell. Robots Syst. (IROS), 2023. [Online]. Available: https://rpg.ifi.uzh.ch/docs/IROS23_Xing.pdf
 
-Zhang, Zhi, et al. “A Novel Charging Station on Overhead Power Lines for UAVs.” Applied Sciences, vol. 13, no. 18, 2023, p. 10175. MDPI, https://www.mdpi.com/2076-3417/13/18/10175.
+[20] Z. Zhang et al., “A Novel Charging Station on Overhead Power Lines for UAVs,” Appl. Sci., vol. 13, no. 18, p. 10175, 2023. [Online]. Available: https://www.mdpi.com/2076-3417/13/18/10175
 
 
 ## Statement of Contributions
