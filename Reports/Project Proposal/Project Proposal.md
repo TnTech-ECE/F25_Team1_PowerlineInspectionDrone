@@ -10,12 +10,12 @@ mghenderso43@tntech.edu, brgoodman42@tntech.edu, gbchristy42@tntech.edu, dattih4
 
 ## Introduction
 
-Electrical power infrastructure is one of the most critical assets in modern society, yet it remains vulnerable to damage from storms, environmental stress, and equipment aging. Traditionally, inspection of high-voltage power lines has relied on bucket trucks, helicopters, and personnel climbing utility poles. These methods shall continue to pose safety risks, high operational costs, and limited efficiency [4]. There shall be a safer, more autonomous, and cost-effective method of performing routine and emergency inspections.
-The proposed project, ArcAngel Drone, is a semi-autonomous inspection system specifically designed to operate near power lines and identify potential faults. Unlike existing solutions that are limited by flight time and require constant operator control, ArcAngel Drone shall feature autonomous navigation, onboard corona detection, and the capability to recharge directly from high-voltage lines using single-wire energy transfer. Research prototypes have already demonstrated the feasibility of UAV-mounted corona detection sensors [7], [13], [18] and live-line recharging through electromagnetic energy harvesting [2], [5], [14], [20]. These features shall enable extended missions, rapid post-storm response, and reduced downtime for electric grids. For customers such as power utilities, this technology provides faster fault localization, minimized repair delays, and significant cost savings compared to traditional inspection methods [8], [9].
+Electrical power infrastructure is one of the most critical assets in modern society, yet it remains vulnerable to damage from storms, environmental stress, and equipment aging. Traditionally, inspection of high-voltage power lines has relied on bucket trucks, helicopters, and personnel climbing utility poles. These methods shall continue to pose safety risks, high operational costs, and limited efficiency [1]. There shall be a safer, more autonomous, and cost-effective method of performing routine and emergency inspections.
+The proposed project, ArcAngel Drone, is a semi-autonomous inspection system specifically designed to operate near power lines and identify potential faults. Unlike existing solutions that are limited by flight time and require constant operator control, ArcAngel Drone shall feature autonomous navigation, onboard corona detection, and the capability to recharge directly from high-voltage lines using single-wire energy transfer. Research prototypes have already demonstrated the feasibility of UAV-mounted corona detection sensors [2], [3], [4] and live-line recharging through electromagnetic energy harvesting [5], [6], [7], [8]. These features shall enable extended missions, rapid post-storm response, and reduced downtime for electric grids. For customers such as power utilities, this technology provides faster fault localization, minimized repair delays, and significant cost savings compared to traditional inspection methods [9], [10].
 
 The stakeholders for this project include the instructor, who shall evaluate academic performance; the technical supervisor, who shall guide the engineering process; the customer, represented by electric utilities and line maintenance teams, who shall benefit directly from improved inspection safety and efficiency; and the project team members, who are responsible for the design, implementation, and validation of ArcAngel Drone. Successful implementation shall require skills in embedded systems, power electronics, communications, and autonomous navigation. The estimated project cost shall not exceed $2,500, with completion expected within the senior design project timeline.
 
-The customer benefits are clear: ArcAngel Drone reduces human exposure to hazardous environments, lowers inspection costs, and increases operational adaptability during grid failures. Broader impacts extend to environmental sustainability by replacing helicopters and heavy trucks, thereby reducing carbon emissions, as well as ethical responsibilities in ensuring safe operation, reliability, and data privacy [3], [10], [11], [12], [15], [16]. While challenges remain, including regulatory compliance and preventing technical failure near live lines, ArcAngel Drone represents a meaningful advancement in both engineering practice and public safety.
+The customer benefits are clear: ArcAngel Drone reduces human exposure to hazardous environments, lowers inspection costs, and increases operational adaptability during grid failures. Broader impacts extend to environmental sustainability by replacing helicopters and heavy trucks, thereby reducing carbon emissions, as well as ethical responsibilities in ensuring safe operation, reliability, and data privacy [11], [12], [13], [14], [15], [16]. While challenges remain, including regulatory compliance and preventing technical failure near live lines, ArcAngel Drone represents a meaningful advancement in both engineering practice and public safety.
 
 Proposal Roadmap
 
@@ -49,7 +49,7 @@ Key challenges include:
 - Sustaining stable flight and effective videography during mild to inclement weather.
 - Reliable detection of excess corona as an indicator of line faults or insulation failure. [17]
 
-Former power-line inspection drones face several limitations. There are over 600,000 circuit miles of transmission infrastructure in the U.S., which represents a large inspection load for manual systems. [4] With typical consumer and enterprise drones offering limited flight endurance, inspecting long line sections requires multiple takeoffs and landings. Additionally, drones operating too close to energized conductors can experience electromagnetic interference that degrades sensor performance and pilot visibility, while flying too far reduces inspection fidelity. Enterprise inspection platforms are commonly manually operated today. [8] Finally, current regulation restricts many drone flights to visual line-of-sight (VLOS) unless special waivers are obtained. [10]
+Former power-line inspection drones face several limitations. There are over 600,000 circuit miles of transmission infrastructure in the U.S., which represents a large inspection load for manual systems. [1] With typical consumer and enterprise drones offering limited flight endurance, inspecting long line sections requires multiple takeoffs and landings. Additionally, drones operating too close to energized conductors can experience electromagnetic interference that degrades sensor performance and pilot visibility, while flying too far reduces inspection fidelity. Enterprise inspection platforms are commonly manually operated today. [9] Finally, current regulation restricts many drone flights to visual line-of-sight (VLOS) unless special waivers are obtained. [12]
 
 The proposed solution is a semi-autonomous drone that supports on-line recharging (single-wire transmission concept) to minimize downtime and enable longer mission durations. Autonomy reduces operator burden: ArcAngel can remain in a monitoring state until it detects an anomaly and then reposition to an appropriate communication distance to relay alerts without interference.
 
@@ -68,7 +68,7 @@ Most crucial to the project is autonomous piloting: the drone must maintain a sa
 
 - ArcAngel Drone shall be designed to fly semi-autonomously along power lines, execute commands from the controller software, and present data to operators. It shall accept and follow predefined flight paths until a fault is located or a user intervenes.
 - ArcAngel Drone shall operate in mild to inclement weather conditions appropriate for post-storm inspections (see Constraints for exact thresholds).
-- ArcAngel Drone shall maintain safe flight characteristics in accordance with applicable safety guidelines for operations near power lines, including (but not limited to) operating at or below 400 ft AGL when appropriate and within regulatory limits. [10]
+- ArcAngel Drone shall maintain safe flight characteristics in accordance with applicable safety guidelines for operations near power lines, including (but not limited to) operating at or below 400 ft AGL when appropriate and within regulatory limits. [12]
 - ArcAngel Drone shall support onboard recharging using a single-wire transmission concept (design and safety validation required).
 - ArcAngel Drone shall transmit real-time telemetry and inspection data, including: current position and travel time, current velocity, live video and still images for line inspection, battery life percentage, and any diagnostic or inspection error codes.
 - ArcAngel Drone shall achieve ≥ 30 minutes of flight endurance under nominal payload/sensor load and report error codes autonomously.
@@ -81,13 +81,13 @@ Budget: total material cost ≤ $2,500.
 #### Constraints
 
 - The material cost for ArcAngel Drone shall not exceed the outlined budget; any remaining funds will be returned to Tennessee Tech University.
-- ArcAngel Drone shall comply with relevant UAS safety and operational standards, including FAA Part 107 (operational limits, VLOS/BVLOS waiver process, altitude limits). [10]
+- ArcAngel Drone shall comply with relevant UAS safety and operational standards, including FAA Part 107 (operational limits, VLOS/BVLOS waiver process, altitude limits). [12]
 - ArcAngel Drone shall comply with machine and workplace safety regulations, including OSHA 29 CFR 1910 Subpart O and OSHA 29 CFR 1910.212 for guarding and general machine safety where applicable. [16]
-- ArcAngel Drone shall adhere to autonomous mobile robot safety guidance such as ANSI/RIA R15.08 for sensor-based obstacle detection, safe stopping performance, and fail-safe behaviors where applicable. [3]
-- ArcAngel Drone shall incorporate safety considerations and inspection data management aligned with utility industry guidance for transmission-line inspection (e.g., IEEE guides on transmission-line inspection and data management). [11]
-- ArcAngel Drone shall meet applicable electrical equipment safety requirements (e.g., IEC 61010 family) for integrating corona sensors and charging electronics. [12]
-- ArcAngel Drone shall adhere to Remote ID and identification/traceability requirements as required by the FAA for autonomous missions. [10]
-- ArcAngel Drone shall maintain a minimum clearance (design target: 10 ft / 3 m) from energized conductors during inspection to reduce arcing risk — the precise clearance will be validated against utility procedures and IEEE/industry guidance. [11]
+- ArcAngel Drone shall adhere to autonomous mobile robot safety guidance such as ANSI/RIA R15.08 for sensor-based obstacle detection, safe stopping performance, and fail-safe behaviors where applicable. [11]
+- ArcAngel Drone shall incorporate safety considerations and inspection data management aligned with utility industry guidance for transmission-line inspection (e.g., IEEE guides on transmission-line inspection and data management). [13]
+- ArcAngel Drone shall meet applicable electrical equipment safety requirements (e.g., IEC 61010 family) for integrating corona sensors and charging electronics. [14]
+- ArcAngel Drone shall adhere to Remote ID and identification/traceability requirements as required by the FAA for autonomous missions. [12]
+- ArcAngel Drone shall maintain a minimum clearance (design target: 10 ft / 3 m) from energized conductors during inspection to reduce arcing risk — the precise clearance will be validated against utility procedures and IEEE/industry guidance. [13]
 - ArcAngel Drone shall limit corona-detection operational range to practical distances. [17]
 - ArcAngel Drone shall cap charging current for the single-wire concept to safe levels pending electrical safety validation and utility coordination.
 - ArcAngel Drone shall have a maximum practical wind tolerance design target (nominal) of 20 mph (≈32 kph) for stable autonomous flight and clear video capture; operations beyond this will be classified as unsafe.
@@ -98,13 +98,13 @@ Budget: total material cost ≤ $2,500.
 
 ## Survey of Existing Solutions
 
-Autonomous inspection of high‑voltage transmission lines increasingly employs ultraviolet (UV) sensing to detect otherwise invisible corona discharge and arcing. Commercial payloads such as BST Caltek’s BC‑20 DR and UV CoroCAM systems are designed for UAV integration, enabling airborne detection of electrical discharges [7], [18]. There are manufacturers that now offer turnkey drones equipped with thermal infrared, ultraviolet, and visible‑spectrum cameras, allowing simultaneous identification of thermal anomalies, corona events, and physical damage in a single flight [1]. Field studies have validated the reliability of UAV‑mounted corona detection sensors [13].
+Autonomous inspection of high‑voltage transmission lines increasingly employs ultraviolet (UV) sensing to detect otherwise invisible corona discharge and arcing. Commercial payloads such as BST Caltek’s BC‑20 DR and UV CoroCAM systems are designed for UAV integration, enabling airborne detection of electrical discharges [2], [4]. There are manufacturers that now offer turnkey drones equipped with thermal infrared, ultraviolet, and visible‑spectrum cameras, allowing simultaneous identification of thermal anomalies, corona events, and physical damage in a single flight [18]. Field studies have validated the reliability of UAV‑mounted corona detection sensors [3].
 
-Navigation autonomy is evolving from simple GPS waypointing to perception‑driven control capable of tracking conductors while avoiding masts, vegetation, and terrain. The University of Zurich has demonstrated a vision‑only line‑tracking system trained entirely on synthetic data and successfully transferred to real‑world conditions, eliminating the need for pre‑mapped routes [19]. State‑of‑the‑art inspection drones now integrate high‑precision GPS/RTK positioning, LiDAR‑generated 3D corridor maps, and computer vision algorithms that recognize and follow known structures along the route, enabling safer and more efficient autonomous operations [9].
+Navigation autonomy is evolving from simple GPS waypointing to perception‑driven control capable of tracking conductors while avoiding masts, vegetation, and terrain. The University of Zurich has demonstrated a vision‑only line‑tracking system trained entirely on synthetic data and successfully transferred to real‑world conditions, eliminating the need for pre‑mapped routes [19]. State‑of‑the‑art inspection drones now integrate high‑precision GPS/RTK positioning, LiDAR‑generated 3D corridor maps, and computer vision algorithms that recognize and follow known structures along the route, enabling safer and more efficient autonomous operations [10].
 
-A key frontier is reducing downtime through on‑line recharging. Research prototypes have demonstrated the ability to perch on live conductors, harvest energy via split‑core current transformers, and autonomously cycle between inspection and charging [2]. Outdoor trials have sustained multi‑hour operations, with harvested power dependent on line current [2]. Alternative approaches mount lightweight charging stations directly on conductors, with laboratory and field tests reporting up to 145 W at 600 A [20]. In industry, Nomadic Drones is developing self‑charging UAVs that draw power from the electromagnetic field surrounding transmission lines, achieving typical recharge times of about two hours [5], while the University of Washington’s Voltair concept reflects a growing pipeline of self‑sustaining inspection platforms aimed at continuous, autonomous monitoring [6].
+A key frontier is reducing downtime through on‑line recharging. Research prototypes have demonstrated the ability to perch on live conductors, harvest energy via split‑core current transformers, and autonomously cycle between inspection and charging [5]. Outdoor trials have sustained multi‑hour operations, with harvested power dependent on line current [5]. Alternative approaches mount lightweight charging stations directly on conductors, with laboratory and field tests reporting up to 145 W at 600 A [8]. In industry, Nomadic Drones is developing self‑charging UAVs that draw power from the electromagnetic field surrounding transmission lines, achieving typical recharge times of about two hours [6], while the University of Washington’s Voltair concept reflects a growing pipeline of self‑sustaining inspection platforms aimed at continuous, autonomous monitoring [20].
 
-Existing solutions demonstrate clear progress but also reveal important trade‑offs. UV and multisensor payloads provide comprehensive fault detection by capturing thermal anomalies, corona discharge, and visible damage in a single flight [1], [7], [13], [18], though their cost, weight, and sensitivity to weather can limit endurance and reliability. Advances in navigation — from GPS/RTK and LiDAR mapping to vision‑based line tracking — enable safer, more autonomous operations [9], [19], yet they remain constrained by regulatory limits on Beyond Visual Line of Sight (BVLOS) and the need for highly robust obstacle avoidance near energized conductors. Finally, self‑charging concepts such as perching drones and inductive recharging directly from transmission lines promise near‑continuous monitoring and reduced labor costs [2], [5], [20], but these systems are still experimental, with safety concerns, variable charging rates, and long recharge cycles posing barriers to widespread adoption [6].
+Existing solutions demonstrate clear progress but also reveal important trade‑offs. UV and multisensor payloads provide comprehensive fault detection by capturing thermal anomalies, corona discharge, and visible damage in a single flight [18], [3], [3], [4], though their cost, weight, and sensitivity to weather can limit endurance and reliability. Advances in navigation — from GPS/RTK and LiDAR mapping to vision‑based line tracking — enable safer, more autonomous operations [10], [19], yet they remain constrained by regulatory limits on Beyond Visual Line of Sight (BVLOS) and the need for highly robust obstacle avoidance near energized conductors. Finally, self‑charging concepts such as perching drones and inductive recharging directly from transmission lines promise near‑continuous monitoring and reduced labor costs [5], [6], [8], but these systems are still experimental, with safety concerns, variable charging rates, and long recharge cycles posing barriers to widespread adoption [20].
 
 
 ## Measures of Success
@@ -236,33 +236,33 @@ By prioritizing these ethical considerations, the team can not only deliver a va
 
 ## References
 
-[1] Aerial Vista Productions, “Aerial Thermal Inspections for Industry.” [Online]. Available: https://aerialvistaproductions.com/thermal-inspections/
+[1] American Society of Civil Engineers, “2021 Report Card for America’s Infrastructure – Energy,” ASCE. [Online]. Available: https://infrastructurereportcard.org/cat-item/energy/
 
-[2] M. Al-Hussein et al., “Autonomous Overhead Powerline Recharging for UAVs,” arXiv preprint arXiv:2403.06533, 2024. [Online]. Available: https://arxiv.org/abs/2403.06533
+[2] BST Caltek Industrial Ltd., “BC-20 DR Corona Detection Camera System,” DirectIndustry. [Online]. Available: https://www.directindustry.com/prod/bst-caltek-industrial-ltd/product-50655-2489740.html
 
-[3] American National Standards Institute, ANSI/RIA R15.08 — Industrial Mobile Robot (IMR) Safety Requirements. ANSI Webstore. [Online]. Available: https://webstore.ansi.org/standards/ria/ansiria-r1508-2020
+[3] NASA, “Technologies and Operations for High Voltage Corona Detection with UAVs,” NASA Technical Reports Server, 2019. [Online]. Available: https://ntrs.nasa.gov/api/citations/20190027131/downloads/20190027131.pdf
 
-[4] American Society of Civil Engineers, “2021 Report Card for America’s Infrastructure – Energy,” ASCE. [Online]. Available: https://infrastructurereportcard.org/cat-item/energy/
+[4] UViRCO Technologies, “CoroCAM UVS for UAV Integration.” [Online]. Available: https://www.uvirco.com/corocam-uvs1/
 
-[5] “Autonomous Self-Charging Drones for Continuous Power Line Monitoring,” Transformers Magazine, 2024. [Online]. Available: https://transformers-magazine.com/tm-news/autonomous-self-charging-drones-for-continuous-power-line-monitoring/
+[5] M. Al-Hussein et al., “Autonomous Overhead Powerline Recharging for UAVs,” arXiv preprint arXiv:2403.06533, 2024. [Online]. Available: https://arxiv.org/abs/2403.06533
 
-[6] T. Bishop, “Drone Startup Surveying Power Lines to Prevent Fires Wins Top Prize at Prestigious UW Competition,” GeekWire, May 24, 2025. [Online]. Available: https://www.geekwire.com/2025/drone-startup-surveying-power-lines-to-prevent-fires-wins-top-prize-at-prestigious-uw-competition/
+[6] “Autonomous Self-Charging Drones for Continuous Power Line Monitoring,” Transformers Magazine, 2024. [Online]. Available: https://transformers-magazine.com/tm-news/autonomous-self-charging-drones-for-continuous-power-line-monitoring/
 
-[7] BST Caltek Industrial Ltd., “BC-20 DR Corona Detection Camera System,” DirectIndustry. [Online]. Available: https://www.directindustry.com/prod/bst-caltek-industrial-ltd/product-50655-2489740.html
+[7] “Non-Stop Drone Operations via Power Line Recharging,” Interesting Engineering, 2024. [Online]. Available: https://interestingengineering.com/innovation/non-stop-drone-operations-power-line-recharging
 
-[8] DJI Enterprise, “Drone Solutions for Powerline Inspection.” [Online]. Available: https://enterprise.dji.com/powerline-inspection
+[8] Z. Zhang et al., “A Novel Charging Station on Overhead Power Lines for UAVs,” Appl. Sci., vol. 13, no. 18, p. 10175, 2023. [Online]. Available: https://www.mdpi.com/2076-3417/13/18/10175
 
-[9] “DJI Zenmuse L2 Power Line Follow Mode,” Heliguy. [Online]. Available: https://www.heliguy.com/blogs/posts/dji-l2-power-line-follow-mode/
+[9] DJI Enterprise, “Drone Solutions for Powerline Inspection.” [Online]. Available: https://enterprise.dji.com/powerline-inspection
 
-[10] Federal Aviation Administration, “Small Unmanned Aircraft Systems (UAS) Regulations (Part 107),” FAA. [Online]. Available: https://www.faa.gov/uas/commercial_operators/part_107_remote_pilot
+[10] “DJI Zenmuse L2 Power Line Follow Mode,” Heliguy. [Online]. Available: https://www.heliguy.com/blogs/posts/dji-l2-power-line-follow-mode/
 
-[11] IEEE Standards Association, IEEE 1808-2011 — Guide for Collecting and Managing Transmission Line Inspection and Maintenance Data. [Online]. Available: https://standards.ieee.org/ieee/1808/5266/
+[11] American National Standards Institute, ANSI/RIA R15.08 — Industrial Mobile Robot (IMR) Safety Requirements. ANSI Webstore. [Online]. Available: https://webstore.ansi.org/standards/ria/ansiria-r1508-2020
 
-[12] International Electrotechnical Commission, IEC 61010 — Safety Requirements for Electrical Equipment for Measurement, Control, and Laboratory Use. [Online]. Available: https://webstore.iec.ch/publication/61010
+[12] Federal Aviation Administration, “Small Unmanned Aircraft Systems (UAS) Regulations (Part 107),” FAA. [Online]. Available: https://www.faa.gov/uas/commercial_operators/part_107_remote_pilot
 
-[13] NASA, “Technologies and Operations for High Voltage Corona Detection with UAVs,” NASA Technical Reports Server, 2019. [Online]. Available: https://ntrs.nasa.gov/api/citations/20190027131/downloads/20190027131.pdf
+[13] IEEE Standards Association, IEEE 1808-2011 — Guide for Collecting and Managing Transmission Line Inspection and Maintenance Data. [Online]. Available: https://standards.ieee.org/ieee/1808/5266/
 
-[14] “Non-Stop Drone Operations via Power Line Recharging,” Interesting Engineering, 2024. [Online]. Available: https://interestingengineering.com/innovation/non-stop-drone-operations-power-line-recharging
+[14] International Electrotechnical Commission, IEC 61010 — Safety Requirements for Electrical Equipment for Measurement, Control, and Laboratory Use. [Online]. Available: https://webstore.iec.ch/publication/61010
 
 [15] Occupational Safety and Health Administration, “29 CFR 1910 Subpart O — Machinery and Machine Guarding.” [Online]. Available: https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910SubpartO
 
@@ -270,11 +270,11 @@ By prioritizing these ethical considerations, the team can not only deliver a va
 
 [17] E. Stracqualursi et al., “The Corona Phenomenon in Overhead Lines: Critical Review of Effects and Detection Approaches,” Energies, vol. 15, no. 21, p. 7853, 2022. [Online]. Available: https://www.mdpi.com/1996-1073/15/21/7853
 
-[18] UViRCO Technologies, “CoroCAM UVS for UAV Integration.” [Online]. Available: https://www.uvirco.com/corocam-uvs1/
+[18] Aerial Vista Productions, “Aerial Thermal Inspections for Industry.” [Online]. Available: https://aerialvistaproductions.com/thermal-inspections/
 
 [19] Y. Xing et al., “Perception-Aware Model Predictive Control for Power Line Inspection,” in Proc. IEEE/RSJ Int. Conf. Intell. Robots Syst. (IROS), 2023. [Online]. Available: https://rpg.ifi.uzh.ch/docs/IROS23_Xing.pdf
 
-[20] Z. Zhang et al., “A Novel Charging Station on Overhead Power Lines for UAVs,” Appl. Sci., vol. 13, no. 18, p. 10175, 2023. [Online]. Available: https://www.mdpi.com/2076-3417/13/18/10175
+[20] T. Bishop, “Drone Startup Surveying Power Lines to Prevent Fires Wins Top Prize at Prestigious UW Competition,” GeekWire, May 24, 2025. [Online]. Available: https://www.geekwire.com/2025/drone-startup-surveying-power-lines-to-prevent-fires-wins-top-prize-at-prestigious-uw-competition/
 
 
 ## Statement of Contributions
