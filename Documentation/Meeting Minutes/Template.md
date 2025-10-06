@@ -47,15 +47,15 @@ This is a format to use for meeting minutes each week.
 
 ## Member Updates
 
-Evan -
+Matthew -
 
-Connor -
+Brady -
 
-Kamden -
+Daniel -
 
-Wayne -
+Grant -
 
-Cooper -
+Lawson -
 
 ## Meeting Minutes (Summary)
 
