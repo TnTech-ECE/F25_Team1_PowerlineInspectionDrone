@@ -33,14 +33,18 @@ The total estimated budget for this project is approximately $640, which covers 
 After evaluating the skills of each team member and the requirements of the project’s subsystems, responsibilities were assigned to align with individual strengths and expertise.
 
 Power Line Charging - Matthew Henderson
+
 Corona Detection and Camera Sensing - Lawson Stricklin
+
 Communication/Computing - Daniel Attih
+
 Battery Safety (BMS) - Brady Goodman
+
 Mechanical/Structural - Grant Christy
 
 ### Timeline
 
-![Gantt Chart](ArcAngel%20Gantt%20Chart.png)
+![Gantt Chart](gantt%20chart.png)
 
 The capstone team has one academic year to design and develop a drone housing for power line inspection. The drone will be capable of detecting excessive corona discharge and will also incorporate a system to recharge from the transmission line.
 
