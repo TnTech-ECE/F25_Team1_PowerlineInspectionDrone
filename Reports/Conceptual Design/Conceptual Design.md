@@ -70,6 +70,24 @@ A telescoping extension uses nested tubes or rails that slide linearly to extend
 Linear Axis Arm for Line Connection Hook:
 A linear axis arm uses a rotating axle to convert rotary motion into a linear motion to extend a rigid arm. This will use either a motor or piston to drive the arm up to connect to the line and then let it lay down after disconnection. These decreases moving part counts and is not affected by debris or weather. It is much more accurate and easier to control precisely with less failure points but could increase weight of the mechanism and the stowed volume is unchanged.
 
+### Atomic Subsystem Specifications
+
+## Power Harvesting & Charging Subsystem
+# Description
+The subsystem converts high-voltage AC from an energized transmission line into isolated, conditioned DC power for the onboard load (capacitor or battery). It includes coupling contacts, rectification, surge suppression, and charge control. It can be configured for half-wave or full-wave rectification depending on line characteristics and required charging rate. 
+# Interfaces
+- Mechanical interface: Coupling plate and clamp mechanism from the Mechanical Subsystem for line contact.
+- Electrical inputs: AC signal from HV line
+- Control signals: Enable/disable line coupling and charging (I²C or GPIO input from the compute and control subsystem).
+- Telemetry: Output of sensed voltage, current, temperature, and fault flags to the compute and control subsystem (I²C)
+# Operation
+1.) When the mechanical clamp contacts the energized line, the input AC voltage is rectified through diodes and is stored in a load (capacitor or battery).
+2.) Sensors continuously report voltage, current, and charge status; the compute subsystem adjusts charge enable/disable logic.
+# User Interface
+- Graphical readout via the Compute subsystem UI showing line voltage, charge current, and system status.
+- Local indicators (LEDs) for “Charging,” “Fault,” and “Ready.”
+# Estimated Power Consumption
+
 ## Ethical, Professional, and Standards Considerations
 
 The proposed drone system for power line charging and corona detection carries significant implications across culture, society, the environment, public health, safety, and the economy. At its core, the project addresses a critical societal need: maintaining reliable electrical infrastructure while reducing risks to human workers. By shifting inspection and charging tasks from manual crews and helicopters to lightweight autonomous drones, the project enhances public safety. This transition also strengthens public trust in utility providers by ensuring that inspections are performed more frequently, more safely, and with greater precision.
