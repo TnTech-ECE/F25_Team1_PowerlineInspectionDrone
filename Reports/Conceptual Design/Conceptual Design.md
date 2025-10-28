@@ -8,6 +8,19 @@ Tennessee Technological University
 
 mghenderso43@tntech.edu, brgoodman42@tntech.edu, gbchristy42@tntech.edu, dattih42@tntech.edu, lwstrickli42@tntech.edu
 
+## Introduction
+Electrical power infrastructure is a cornerstone of modern society, yet it remains vulnerable to damage from storms, environmental stress, and equipment aging. Traditional inspection methods for high-voltage power lines, such as bucket trucks, helicopters, and personnel climbing utility poles, continue to pose safety risks, incur high operational costs, and exhibit limited efficiency [1]. These challenges necessitate the development of innovative solutions to enhance the safety, cost-effectiveness, and efficiency of power line inspections.
+
+The ArcAngel Drone project aims to address these challenges by developing a semi-autonomous aerial system capable of operating near high-voltage power lines to identify potential faults. Unlike existing solutions that are limited by flight time and require constant operator control, ArcAngel Drone will feature live-line charging capabilities, enabling extended missions without the need for frequent returns to base for recharging [2], [3]. This capability will facilitate rapid post-storm response and reduce downtime for electric grids. Future iterations of the ArcAngel Drone will incorporate corona detection sensors to identify insulation failures and other anomalies, further enhancing the system's diagnostic capabilities [4], [5], [6].
+
+The primary stakeholders for this project include Joe Wheeler Electric Membership Corporation (JWEMC), which has expressed a need for a drone system capable of in-field recharging to improve inspection efficiency and reduce operational downtime. The project team will be responsible for the design, implementation, and validation of the ArcAngel Drone, ensuring that it meets the specified requirements and addresses the identified challenges.
+
+## Restating the Problem
+Utility providers, such as Joe Wheeler Electric Membership Corporation (JWEMC), face significant challenges in maintaining and inspecting high-voltage power lines, particularly after storms or other disruptive events. Traditional inspection methods are often time-consuming and hazardous, requiring personnel to access difficult-to-reach areas [1]. Additionally, the limited flight endurance of current drone systems necessitates frequent returns to base for recharging, further delaying inspections and prolonging power outages [2], [3].
+
+The ArcAngel Drone project seeks to develop a solution to these challenges by creating a semi-autonomous drone capable of recharging directly from high-voltage power lines using a single-wire energy transfer system [2], [3]. This capability will allow the drone to remain operational for extended periods, reducing the need for frequent recharging and enabling more efficient inspections. The system will also include features to ensure safe operation near energized conductors, such as maintaining a minimum clearance distance to prevent arcing and incorporating safety protocols to handle potential system failures [2].
+
+By addressing these challenges, the ArcAngel Drone aims to provide utility providers with a reliable, efficient, and safe tool for power line inspections, ultimately improving grid reliability and reducing operational costs [4], [5], [6].
 
 ## Comparative Analysis of Potential Solutions
 
@@ -281,9 +294,17 @@ If the team follows the schedule outlined in the Gantt chart, the project will r
 
 ## References
 
-[1] 
+[1] DJI Enterprise, "Powerline Inspection," DJI Enterprise. [Online]. Available: https://enterprise.dji.com/inspection/powerline-inspection. [Accessed: 28-Oct-2025].
 
-[2] 
+[2] Y. Liu, "High-Efficiency Wireless Charging System for UAVs Based on PT Symmetry," SCIEpublish, 2025. [Online]. Available: https://www.sciepublish.com/article/pii/521. [Accessed: 28-Oct-2025].
+
+[3] B. Ben-Moshe et al., "Power Line Charging Mechanism for Drones," MDPI Electronics, vol. 5, no. 4, pp. 108, 2021. [Online]. Available: https://www.mdpi.com/2504-446X/5/4/108. [Accessed: 28-Oct-2025].
+
+[4] "UV Inspection for Corona Detection on High-Voltage Lines via UAV," Drone Division. [Online]. Available: https://dronedivision.be/en/blog/2023/02/09/uv-inspection-for-corona-detection-on-high-voltage-lines-via-uav/. [Accessed: 28-Oct-2025].
+
+[5] "How Power Utilities Detect Corona Discharge with Drones," ABJ Drones. [Online]. Available: https://abjdrones.com/how-power-utilities-detect-corona-discharge-with-drones/. [Accessed: 28-Oct-2025].
+
+[6] "Aerial Power Line Inspection with Corona Camera," Hepta. [Online]. Available: https://www.youtube.com/watch?v=1n2TpImqnlc. [Accessed: 28-Oct-2025].
 
 ## Statement of Contributions
 
