@@ -1,6 +1,6 @@
 ## Comparative Analysis of Potential Solutions
 
-# Potential Solutions for Power Line Charging
+### Potential Solutions for Power Line Charging
 
 Half Wave Rectifier:
 Due to the charging capabilities of the drone attachment, a half wave rectifier to assist in current displacement through the load and into our capacitor plate was considered. Half wave rectifiers are lighter in weight and cheaper overall. Maximum payload for drones is not very high so all types of circuit conditions need to be considered for the operation. The simple design may be needed for payload and an additional non-critical application of half-wave rectifiers could be essential for our charging mount.
@@ -14,7 +14,7 @@ Using a capacitor stores energy delivered by the rectifier and will supply short
 Battery Load:
 Using the internal batteries as the primary energy sink on the mounting device to trickle charge the drone is also considered. The rectifier is designed to safely charge the battery which will provide regulated and dense energy storage for the drone. Charging these internal batteries could be an issue due to safety risks and could need temperature monitoring. A battery management system will need to be implemented as well.
 
-# Potential Solutions for Corona Detection and Camera Sensing
+### Potential Solutions for Corona Detection and Camera Sensing
 
 Infrared/Thermal Imaging:
 A potential solution for detecting excess corona can be solved with an IR camera which generates localized heating to do ionization and current leaking. Infrared and thermal imaging can detect heat signatures to pinpoint areas of excess thermal signatures or arcing. IR detects emitted infrared radiation hotspots, which will allow for identification of stressed components. These cameras can also monitor overloaded connections and mechanical stress. These are affected by temperature and wind and will need extensive calibration strategies to distinguish excess corona from other thermal sources.
@@ -28,7 +28,7 @@ High resolution RGB or multispectral cameras will be useful in providing confirm
 Depth/Stereo Cameras:
 With many drones having their own attached camera, a stereo or structured light camera can compute depth by comparing two or more visual perspectives. These could provide depth maps for autonomous navigation and terrain avoidance which are beneficial for identifying tower geometry and wire positioning. These cameras can be potentially power straining and are sensitive to sunlight interference.
 
-# Potential Solutions for Communication and Computing
+### Potential Solutions for Communication and Computing
 
 Raspberry Pi Zero:
 The original Raspberry Pi Zero is a very minimalist, single core computer designed for very low power embedded applications. It does require external Wi-Fi or Bluetooth dongles for communication. The power draw and weight are extremely low compared to other solutions but comparable to the Raspberry Pi Zero 2 W. It will be good for monitoring charging status and battery voltage and current and forwarding periodic GPS position data. It only operates with a single CPU core with 512 MB of RAM, so it cannot handle multitask heavy computations and extreme camera based processing.
@@ -45,7 +45,7 @@ The ADS1115 is a 16-bit, low power analog to digital converter that communicates
 u-blox ZED-F9F:
 The ZED-F9F is a high precision dual-band, multi-constellation receiver designed for advanced GPS applications. It has four satellite connections leading to accurate location finding within one meter. It can output velocity and heaving with low latency, using up to 30 Hz update rates. It draws around 50-70 mA and also uses I^2C communication. It uses Real-Time Kinematic which is ideal for real time updates of drone location and while using this setting location can be found at approximately 1 cm.
 
-# Potential Solutions for Battery and BMS
+### Potential Solutions for Battery and BMS
 
 Lithium-Ion Battery Pack:
 The Lithium-Ion Battery Pack is the most common choice for drones and portable power. It has high energy density, lightweight construction and stable voltage characteristics. A Li-Ion pack configured as a 4S or 6S, which is 14.8V-22.2V nominal, provides a suitable balance of energy storage and weight. When integrated with proper current limiting and BMS protection, it offers long term service of around 500-1000 cycles.
@@ -56,7 +56,7 @@ The Lithium-Polymer Battery is a subtype of Li-Ion chemistry using a polymer ele
 Texas Instruments BQ76930:
 For a Battery Management System (BMS) the formerly listed ADS1115 and INA3221 will do more than suffice but a third option could be BQ76930. It provides essential monitoring and protection features: cell voltage measurement, overcurrent protection and cell balancing. It also communicates with I^2C, making it compatible with the Raspberry Pi. It lacks digital configuration customization and is not built with Coulomb counting.
 
-# Potential Solutions for Mechanical and Structural Subsystems
+### Potential Solutions for Mechanical and Structural Subsystems
 
 LW-PLA For 3D Printing:
 The LW-PLA filament is a foaming thermoplastic material that has a low-density internal structure without requiring a hollow infill. When heated to approximately 220-250 C, the polymer foams resulting in a weight reduction of 30-50% compared to standard PLA, this is crucial for low weight operations. It is easy to print on common FDM printers. It will be most commonly used on areas where high mechanical strength is not required and is sensitive to heat and UV exposure.
@@ -70,94 +70,94 @@ A telescoping extension uses nested tubes or rails that slide linearly to extend
 Linear Axis Arm for Line Connection Hook:
 A linear axis arm uses a rotating axle to convert rotary motion into a linear motion to extend a rigid arm. This will use either a motor or piston to drive the arm up to connect to the line and then let it lay down after disconnection. These decreases moving part counts and is not affected by debris or weather. It is much more accurate and easier to control precisely with less failure points but could increase weight of the mechanism and the stowed volume is unchanged.
 
-# High-Level Solution
+## High-Level Solution
 
 The integrated system is a drone-mounted inspection and charging module engineered to safely harvest energy from live transmission lines, detect corona discharge activity, and provide synchronized data communication for power line monitoring applications. The system is organized into five atomic subsystems—Power Harvesting & Charging, Corona Detection & Camera Sensing, Control/Compute & Communication, Battery & BMS, and Mechanical & Structural—each tailored to fulfill a distinct set of functional, safety, and performance requirements. The Power Harvesting & Charging Subsystem uses a full-wave rectifier with a capacitor load to efficiently convert AC power from the line into stable DC voltage for onboard use. The Corona Detection & Camera Sensing Subsystem employs a UV sensor for identifying corona discharges and a visual camera for contextual image capture, ensuring accurate detection and verification of electrical activity. The Control/Compute & Communication Subsystem, built around a Raspberry Pi Zero 2W and a u-blox ZED-F9F GNSS module, manages system logic, data fusion, and wireless telemetry while maintaining precise timing and location synchronization. The Battery & BMS Subsystem utilizes a voltage divider network and an AOSIII5-based controller to monitor, protect, and regulate power delivery throughout the system. Finally, the Mechanical & Structural Subsystem, fabricated from LW-PLA and featuring a linear-axis arm for line connection, provides lightweight durability, mechanical stability, and safe electrical insulation. Together, these subsystems form a cohesive, modular architecture that optimizes energy efficiency, detection reliability, and structural integrity while minimizing weight, power consumption, and operational risk. 
 
-# Atomic Subsystem Specifications
+## Atomic Subsystem Specifications
 
-## Power Harvesting & Charging Subsystem
-### Description
+### Power Harvesting & Charging Subsystem
+#### Description
 The Power Harvesting & Charging Subsystem converts high-voltage AC from the transmission line into a regulated DC supply using a full-wave rectifier circuit. The rectified output charges a capacitor load, which stabilizes the DC voltage before it is transferred to the Battery & BMS Subsystem. This arrangement minimizes output ripple and provides efficient power conversion with high energy transfer reliability.
-### Interfaces
+#### Interfaces
 - Signal Type: Power (AC input, DC output)
 - Direction: AC input from line (input), DC output to BMS (output)
 - Protocol: Analog voltage and current sense via I²C to the compute unit
 - Data: Voltage/current readings, charge enable/disable commands
-### Operation
+#### Operation
 1. Detect line contact through the mechanical coupling signal.
 2. Enable the rectifier circuit and begin charging the capacitor load.
 3. Monitor voltage and current; transfer stabilized DC to BMS.
 4. Disable charging upon reaching the threshold or detecting a fault.
-### Shall Statements
+#### Shall Statements
 - The subsystem shall rectify high-voltage AC using a full-wave rectifier and output regulated DC.
 - It shall charge a capacitor load to buffer transient power fluctuations.
 - It shall include overvoltage and surge protection elements.
 - It shall communicate charge status and fault conditions to the compute subsystem via I²C.
 - It shall safely isolate the HV input to comply with insulation and creepage standards.
 
-## Corona Detection & Camera Sensing Subsystem
-### Description
+### Corona Detection & Camera Sensing Subsystem
+#### Description
 This subsystem detects and verifies corona discharges using a UV sensor for emission detection and an optical/visual camera for high-resolution image capture. The UV sensor monitors ultraviolet radiation signatures associated with partial discharges, while the camera provides corresponding visual context for each event. The data is processed and timestamped by the compute subsystem to confirm and classify detected corona activity.
-### Interfaces
+#### Interfaces
 - Signal Type: Digital (I²C or SPI for UV sensor data), Video stream (CSI/USB for camera)
 - Direction: Output (sensor → compute/control and communication subsystem)
 - Protocol: I²C for sensor telemetry, MIPI-CSI for camera data
 - Data: UV intensity readings, image frames, and timestamped detection events
-### Operation
+#### Operation
 1. Initialize the UV sensor and camera.
 2. Continuously monitor UV intensity and trigger on threshold exceedance.
 3. Capture a visual image and send both data sets to the compute unit.
 4. Log and transmit the combined event package for analysis or storage.
-### Shall Statements
+#### Shall Statements
 - The subsystem shall detect corona discharge events via UV emissions.
 - It shall capture visual imagery synchronized with each detected event.
 - It shall timestamp and transmit data to the compute unit.
 - It shall provide adjustable sensitivity thresholds via I²C configuration.
 - It shall operate within environmental limits defined by the structural subsystem.
 
-## Control/Compute & Communication Subsystem
-### Description
+### Control/Compute & Communication Subsystem
+#### Description
 The Control/Compute & Communication Subsystem is built around a Raspberry Pi Zero 2W and a u-blox ZED-F9F GNSS module. It coordinates data acquisition, manages subsystem communication, and controls charging logic. The Raspberry Pi processes UV and camera data, manages battery telemetry, and communicates with external systems via wireless interfaces. The ZED-F9F module provides precise GPS positioning and time synchronization for event correlation and logging.
-### Interface
+#### Interface
 - Signal Type: Digital (I²C, UART, SPI, Wi-Fi)
 - Direction: Bidirectional (control and telemetry)
 - Protocol: I²C to sensors/BMS, UART to GNSS, Wi-Fi to ground station
 - Data: Event logs, GPS coordinates, voltage data, control signals
-### Operation
+#### Operation
 1. Initialize all peripherals at startup.
 2. Receive data from sensors, BMS, and the rectifier subsystem.
 3. Fuse and timestamp incoming data with GPS synchronization.
 4. Control charging enable/disable logic based on BMS feedback.
 5. Transmit telemetry and visual data to the operator interface.
-### Shall Statements
+#### Shall Statements
 - The subsystem shall use a Raspberry Pi Zero 2W for data processing and control.
 - It shall interface with the u-blox ZED-F9F GNSS module for precise timing and position data.
 - It shall control charging logic via GPIO/I²C.
 - It shall store and transmit sensor and event data via Wi-Fi.
 - It shall operate within a 6–10 W nominal power range and manage power states for efficiency.
 
-## Battery & BMS Subsystem
-### Description
+### Battery & BMS Subsystem
+#### Description
 The Battery & BMS Subsystem manages onboard energy storage, protection, and telemetry. It employs a voltage divider for pack voltage measurement and an AOSIII5 BMS controller to regulate charge/discharge cycles. The BMS protects against overvoltage, undervoltage, and overcurrent conditions, ensuring safe and efficient power delivery to all electronic loads.
-### Interfaces
+#### Interfaces
 - Signal Type: Power (DC), Analog telemetry via voltage divider, I²C communication
 - Direction: Input (charging), Output (power to compute/sensors)
 - Protocol: I²C telemetry and control signals
 - Data: Voltage levels, charge status, fault flags
-### Operation
+#### Operation
 1. Receive DC from the power harvesting subsystem.
 2. Measure the pack voltage through the divider network.
 3. Regulate charging/discharging through AOSIII5 logic
 4. Report the state-of-charge and faults to the compute subsystem.
-### Shall Statements
+#### Shall Statements
 - The subsystem shall regulate energy flow between the charger and the load.
 - It shall use a voltage divider to monitor the pack voltage.
 - It shall implement cell protection and balancing through the AOSIII5 BMS controller.
 - It shall communicate voltage and status data to the compute subsystem.
 - It shall disconnect the pack automatically during fault or overcurrent conditions.
   
-## Estimated Power Consumption
+### Estimated Power Consumption
 | **Subsystem** | **Typical/Nominal (W)** | **Peak (W)** |
 |----------------|--------------------------|---------------|
 | Power Harvesting and Charging (electronics only) | 3.0 W | 6.0 W |
@@ -167,20 +167,20 @@ The Battery & BMS Subsystem manages onboard energy storage, protection, and tele
 | Mechanical/Structural (electronics + actuator) | 0.5 W | 25.0 W |
 | **Total** | **12.5 W** | **45 W** |
 
-## Mechanical & Structural Subsystem
-### Description
+### Mechanical & Structural Subsystem
+#### Description
 The Mechanical & Structural Subsystem is constructed using LW-PLA filament for lightweight and durable 3D-printed components. It houses all electronic subsystems, maintains balance relative to the drone’s center of gravity, and includes a linear axis arm for line connection via a mechanical hook. The subsystem provides insulation, structural rigidity, and protection from vibration and environmental exposure.
-### Interface
+#### Interface
 - Signal Type: Mechanical interface, physical mount, and sensor enclosure
 - Direction: Physical coupling to the drone and the electrical subsystems
 - Protocol: N/A (mechanical system)
 - Data: Limit switch feedback (digital signal) for engagement confirmation
-### Operation
+#### Operation
 1. Mount the subsystem to the drone leg or the designated interface.
 2. Deploy the linear arm for line engagement under the compute/control and communication subsystem.
 3. Confirm contact via the limit switch and enable charging.
 4. Retract the arm after the operation and secure the enclosure.
-### Shall Statements
+#### Shall Statements
 - The subsystem shall be fabricated from LW-PLA for low weight and rigidity.
 - It shall include a linear axis arm for precise line engagement.
 - It shall maintain insulation and creepage distances for high-voltage operation.
