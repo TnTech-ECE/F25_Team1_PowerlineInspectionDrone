@@ -1,3 +1,14 @@
+# ArcAngel Power Line Inspection Drone
+
+### Matthew Henderson, Brady Goodman, Grant Christy, Daniel Attih, Lawson Stricklin
+
+Department of Electrical and Computer Engineering
+
+Tennessee Technological University
+
+mghenderso43@tntech.edu, brgoodman42@tntech.edu, gbchristy42@tntech.edu, dattih42@tntech.edu, lwstrickli42@tntech.edu
+
+
 ## Comparative Analysis of Potential Solutions
 
 ### Potential Solutions for Power Line Charging
@@ -267,3 +278,21 @@ During the second semester, the team will refine the prototype, finalize parts a
 
 If the team follows the schedule outlined in the Gantt chart, the project will result in a fully functional inspection drone by May 2026.
 
+
+## References
+
+[1] 
+
+[2] 
+
+## Statement of Contributions
+
+Matthew Henderson - Contributed to Resources, including budget and timeline. Created block diagram and flow chart.
+
+Brady Goodman - Contributed to Introduction, Restating the Problem, and revisions.
+
+Grant Christy - Contributed to Comparative Analysis of Solutions and revisions.
+
+Daniel Attih - Contributed to High-Level Solutions and Atomic Subsystem Specifications.
+
+Lawson Stricklin - Contributed to Ethical, Professional, and Standards Conciderations. 
