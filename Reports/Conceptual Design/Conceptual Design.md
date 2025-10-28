@@ -71,7 +71,9 @@ Linear Axis Arm for Line Connection Hook:
 A linear axis arm uses a rotating axle to convert rotary motion into a linear motion to extend a rigid arm. This will use either a motor or piston to drive the arm up to connect to the line and then let it lay down after disconnection. These decreases moving part counts and is not affected by debris or weather. It is much more accurate and easier to control precisely with less failure points but could increase weight of the mechanism and the stowed volume is unchanged.
 
 ### Atomic Subsystem Specifications
+
 ## Power Harvesting & Charging Subsystem
+
 # Description
 The Power Harvesting & Charging Subsystem converts high-voltage AC from the transmission line into a regulated DC supply using a full-wave rectifier circuit. The rectified output charges a capacitor load, which stabilizes the DC voltage before it is transferred to the Battery & BMS Subsystem. This arrangement minimizes output ripple and provides efficient power conversion with high energy transfer reliability.
 # Interfaces
@@ -93,7 +95,9 @@ The Power Harvesting & Charging Subsystem converts high-voltage AC from the tran
 - It shall include overvoltage and surge protection elements.
 - It shall communicate charge status and fault conditions to the compute subsystem via I²C.
 - It shall safely isolate the HV input to comply with insulation and creepage standards.
+
 ## Corona Detection & Camera Sensing Subsystem
+
 # Description
 This subsystem detects and verifies corona discharges using a UV sensor for emission detection and an optical/visual camera for high-resolution image capture. The UV sensor monitors ultraviolet radiation signatures associated with partial discharges, while the camera provides corresponding visual context for each event. The data is processed and timestamped by the compute subsystem to confirm and classify detected corona activity.
 # Interfaces
@@ -112,7 +116,9 @@ This subsystem detects and verifies corona discharges using a UV sensor for emis
 - It shall timestamp and transmit data to the compute unit.
 - It shall provide adjustable sensitivity thresholds via I²C configuration.
 - It shall operate within environmental limits defined by the structural subsystem.
+
 ## Control/Compute & Communication Subsystem
+
 # Description
 The Control/Compute & Communication Subsystem is built around a Raspberry Pi Zero 2W and a u-blox ZED-F9F GNSS module. It coordinates data acquisition, manages subsystem communication, and controls charging logic. The Raspberry Pi processes UV and camera data, manages battery telemetry, and communicates with external systems via wireless interfaces. The ZED-F9F module provides precise GPS positioning and time synchronization for event correlation and logging.
 # Interface
@@ -132,7 +138,9 @@ The Control/Compute & Communication Subsystem is built around a Raspberry Pi Zer
 - It shall control charging logic via GPIO/I²C.
 - It shall store and transmit sensor and event data via Wi-Fi.
 - It shall operate within a 6–10 W nominal power range and manage power states for efficiency.
+
 ## Battery & BMS Subsystem
+
 # Description
 The Battery & BMS Subsystem manages onboard energy storage, protection, and telemetry. It employs a voltage divider for pack voltage measurement and an AOSIII5 BMS controller to regulate charge/discharge cycles. The BMS protects against overvoltage, undervoltage, and overcurrent conditions, ensuring safe and efficient power delivery to all electronic loads.
 # Interfaces
@@ -151,8 +159,11 @@ The Battery & BMS Subsystem manages onboard energy storage, protection, and tele
 - It shall implement cell protection and balancing through the AOSIII5 BMS controller.
 - It shall communicate voltage and status data to the compute subsystem.
 - It shall disconnect the pack automatically during fault or overcurrent conditions.
+  
 ## Estimated Power Consumption
+
 ## Mechanical & Structural Subsystem
+
 # Description
 The Mechanical & Structural Subsystem is constructed using LW-PLA filament for lightweight and durable 3D-printed components. It houses all electronic subsystems, maintains balance relative to the drone’s center of gravity, and includes a linear axis arm for line connection via a mechanical hook. The subsystem provides insulation, structural rigidity, and protection from vibration and environmental exposure.
 # Interface
