@@ -70,6 +70,10 @@ A telescoping extension uses nested tubes or rails that slide linearly to extend
 Linear Axis Arm for Line Connection Hook:
 A linear axis arm uses a rotating axle to convert rotary motion into a linear motion to extend a rigid arm. This will use either a motor or piston to drive the arm up to connect to the line and then let it lay down after disconnection. These decreases moving part counts and is not affected by debris or weather. It is much more accurate and easier to control precisely with less failure points but could increase weight of the mechanism and the stowed volume is unchanged.
 
+# High-Level Solution
+
+The integrated system is a drone-mounted inspection and charging module engineered to safely harvest energy from live transmission lines, detect corona discharge activity, and provide synchronized data communication for power line monitoring applications. The system is organized into five atomic subsystems—Power Harvesting & Charging, Corona Detection & Camera Sensing, Control/Compute & Communication, Battery & BMS, and Mechanical & Structural—each tailored to fulfill a distinct set of functional, safety, and performance requirements. The Power Harvesting & Charging Subsystem uses a full-wave rectifier with a capacitor load to efficiently convert AC power from the line into stable DC voltage for onboard use. The Corona Detection & Camera Sensing Subsystem employs a UV sensor for identifying corona discharges and a visual camera for contextual image capture, ensuring accurate detection and verification of electrical activity. The Control/Compute & Communication Subsystem, built around a Raspberry Pi Zero 2W and a u-blox ZED-F9F GNSS module, manages system logic, data fusion, and wireless telemetry while maintaining precise timing and location synchronization. The Battery & BMS Subsystem utilizes a voltage divider network and an AOSIII5-based controller to monitor, protect, and regulate power delivery throughout the system. Finally, the Mechanical & Structural Subsystem, fabricated from LW-PLA and featuring a linear-axis arm for line connection, provides lightweight durability, mechanical stability, and safe electrical insulation. Together, these subsystems form a cohesive, modular architecture that optimizes energy efficiency, detection reliability, and structural integrity while minimizing weight, power consumption, and operational risk. 
+
 # Atomic Subsystem Specifications
 
 ## Power Harvesting & Charging Subsystem
@@ -154,6 +158,14 @@ The Battery & BMS Subsystem manages onboard energy storage, protection, and tele
 - It shall disconnect the pack automatically during fault or overcurrent conditions.
   
 ## Estimated Power Consumption
+| **Subsystem** | **Typical/Nominal (W)** | **Peak (W)** |
+|----------------|--------------------------|---------------|
+| Power Harvesting and Charging (electronics only) | 3.0 W | 6.0 W |
+| Battery and BMS (AOSIII5 and monitoring) | 0.5 W | 2.0 W |
+| Sensor and Detection (UV sensor + optical sensor + sensor MCU) | 4.0 W | 6.0 W |
+| Control/Compute and Comm (Raspberry Pi Zero 2W + u-blox ZED-F9F) | 4.5 W | 6.0 W |
+| Mechanical/Structural (electronics + actuator) | 0.5 W | 25.0 W |
+| **Total** | **12.5 W** | **45 W** |
 
 ## Mechanical & Structural Subsystem
 ### Description
