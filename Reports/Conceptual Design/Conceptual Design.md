@@ -70,9 +70,19 @@ A telescoping extension uses nested tubes or rails that slide linearly to extend
 Linear Axis Arm for Line Connection Hook:
 A linear axis arm uses a rotating axle to convert rotary motion into a linear motion to extend a rigid arm. This will use either a motor or piston to drive the arm up to connect to the line and then let it lay down after disconnection. These decreases moving part counts and is not affected by debris or weather. It is much more accurate and easier to control precisely with less failure points but could increase weight of the mechanism and the stowed volume is unchanged.
 
+
 ## High-Level Solution
 
 The integrated system is a drone-mounted inspection and charging module engineered to safely harvest energy from live transmission lines, detect corona discharge activity, and provide synchronized data communication for power line monitoring applications. The system is organized into five atomic subsystems—Power Harvesting & Charging, Corona Detection & Camera Sensing, Control/Compute & Communication, Battery & BMS, and Mechanical & Structural—each tailored to fulfill a distinct set of functional, safety, and performance requirements. The Power Harvesting & Charging Subsystem uses a full-wave rectifier with a capacitor load to efficiently convert AC power from the line into stable DC voltage for onboard use. The Corona Detection & Camera Sensing Subsystem employs a UV sensor for identifying corona discharges and a visual camera for contextual image capture, ensuring accurate detection and verification of electrical activity. The Control/Compute & Communication Subsystem, built around a Raspberry Pi Zero 2W and a u-blox ZED-F9F GNSS module, manages system logic, data fusion, and wireless telemetry while maintaining precise timing and location synchronization. The Battery & BMS Subsystem utilizes a voltage divider network and an AOSIII5-based controller to monitor, protect, and regulate power delivery throughout the system. Finally, the Mechanical & Structural Subsystem, fabricated from LW-PLA and featuring a linear-axis arm for line connection, provides lightweight durability, mechanical stability, and safe electrical insulation. Together, these subsystems form a cohesive, modular architecture that optimizes energy efficiency, detection reliability, and structural integrity while minimizing weight, power consumption, and operational risk. 
+
+### Hardware Block Diagram
+
+![Block Diagram](DroneHardwareBlockDiagram.png)
+
+### Operational Flow Chart
+
+![Flow Chart](DroneFlowChart.png)
+
 
 ## Atomic Subsystem Specifications
 
@@ -186,6 +196,7 @@ The Mechanical & Structural Subsystem is constructed using LW-PLA filament for l
 - It shall maintain insulation and creepage distances for high-voltage operation.
 - It shall provide sealed feedthroughs for wiring and component protection.
 - It shall maintain proper CG alignment and pass vibration, shock, and ingress tests.
+
 
 ## Ethical, Professional, and Standards Considerations
 
