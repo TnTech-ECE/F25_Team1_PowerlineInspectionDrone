@@ -70,26 +70,22 @@ A telescoping extension uses nested tubes or rails that slide linearly to extend
 Linear Axis Arm for Line Connection Hook:
 A linear axis arm uses a rotating axle to convert rotary motion into a linear motion to extend a rigid arm. This will use either a motor or piston to drive the arm up to connect to the line and then let it lay down after disconnection. These decreases moving part counts and is not affected by debris or weather. It is much more accurate and easier to control precisely with less failure points but could increase weight of the mechanism and the stowed volume is unchanged.
 
-### Atomic Subsystem Specifications
+# Atomic Subsystem Specifications
 
 ## Power Harvesting & Charging Subsystem
-
-# Description
+### Description
 The Power Harvesting & Charging Subsystem converts high-voltage AC from the transmission line into a regulated DC supply using a full-wave rectifier circuit. The rectified output charges a capacitor load, which stabilizes the DC voltage before it is transferred to the Battery & BMS Subsystem. This arrangement minimizes output ripple and provides efficient power conversion with high energy transfer reliability.
-# Interfaces
+### Interfaces
 - Signal Type: Power (AC input, DC output)
 - Direction: AC input from line (input), DC output to BMS (output)
 - Protocol: Analog voltage and current sense via I²C to the compute unit
 - Data: Voltage/current readings, charge enable/disable commands
-# Operation
+### Operation
 1. Detect line contact through the mechanical coupling signal.
 2. Enable the rectifier circuit and begin charging the capacitor load.
 3. Monitor voltage and current; transfer stabilized DC to BMS.
 4. Disable charging upon reaching the threshold or detecting a fault.
-# User Interface
-- Graphical readout via the Compute subsystem UI showing line voltage, charge current, and system status.
-- Local indicators (LEDs) for “Charging,” “Fault,” and “Ready.”
-# Shall Statements
+### Shall Statements
 - The subsystem shall rectify high-voltage AC using a full-wave rectifier and output regulated DC.
 - It shall charge a capacitor load to buffer transient power fluctuations.
 - It shall include overvoltage and surge protection elements.
@@ -97,20 +93,19 @@ The Power Harvesting & Charging Subsystem converts high-voltage AC from the tran
 - It shall safely isolate the HV input to comply with insulation and creepage standards.
 
 ## Corona Detection & Camera Sensing Subsystem
-
-# Description
+### Description
 This subsystem detects and verifies corona discharges using a UV sensor for emission detection and an optical/visual camera for high-resolution image capture. The UV sensor monitors ultraviolet radiation signatures associated with partial discharges, while the camera provides corresponding visual context for each event. The data is processed and timestamped by the compute subsystem to confirm and classify detected corona activity.
-# Interfaces
+### Interfaces
 - Signal Type: Digital (I²C or SPI for UV sensor data), Video stream (CSI/USB for camera)
 - Direction: Output (sensor → compute/control and communication subsystem)
 - Protocol: I²C for sensor telemetry, MIPI-CSI for camera data
 - Data: UV intensity readings, image frames, and timestamped detection events
-# Operation
+### Operation
 1. Initialize the UV sensor and camera.
 2. Continuously monitor UV intensity and trigger on threshold exceedance.
 3. Capture a visual image and send both data sets to the compute unit.
 4. Log and transmit the combined event package for analysis or storage.
-# Shall Statements
+### Shall Statements
 - The subsystem shall detect corona discharge events via UV emissions.
 - It shall capture visual imagery synchronized with each detected event.
 - It shall timestamp and transmit data to the compute unit.
@@ -118,21 +113,20 @@ This subsystem detects and verifies corona discharges using a UV sensor for emis
 - It shall operate within environmental limits defined by the structural subsystem.
 
 ## Control/Compute & Communication Subsystem
-
-# Description
+### Description
 The Control/Compute & Communication Subsystem is built around a Raspberry Pi Zero 2W and a u-blox ZED-F9F GNSS module. It coordinates data acquisition, manages subsystem communication, and controls charging logic. The Raspberry Pi processes UV and camera data, manages battery telemetry, and communicates with external systems via wireless interfaces. The ZED-F9F module provides precise GPS positioning and time synchronization for event correlation and logging.
-# Interface
+### Interface
 - Signal Type: Digital (I²C, UART, SPI, Wi-Fi)
 - Direction: Bidirectional (control and telemetry)
 - Protocol: I²C to sensors/BMS, UART to GNSS, Wi-Fi to ground station
 - Data: Event logs, GPS coordinates, voltage data, control signals
-# Operation
+### Operation
 1. Initialize all peripherals at startup.
 2. Receive data from sensors, BMS, and the rectifier subsystem.
 3. Fuse and timestamp incoming data with GPS synchronization.
 4. Control charging enable/disable logic based on BMS feedback.
 5. Transmit telemetry and visual data to the operator interface.
-# Shall Statements
+### Shall Statements
 - The subsystem shall use a Raspberry Pi Zero 2W for data processing and control.
 - It shall interface with the u-blox ZED-F9F GNSS module for precise timing and position data.
 - It shall control charging logic via GPIO/I²C.
@@ -140,20 +134,19 @@ The Control/Compute & Communication Subsystem is built around a Raspberry Pi Zer
 - It shall operate within a 6–10 W nominal power range and manage power states for efficiency.
 
 ## Battery & BMS Subsystem
-
-# Description
+### Description
 The Battery & BMS Subsystem manages onboard energy storage, protection, and telemetry. It employs a voltage divider for pack voltage measurement and an AOSIII5 BMS controller to regulate charge/discharge cycles. The BMS protects against overvoltage, undervoltage, and overcurrent conditions, ensuring safe and efficient power delivery to all electronic loads.
-# Interfaces
+### Interfaces
 - Signal Type: Power (DC), Analog telemetry via voltage divider, I²C communication
 - Direction: Input (charging), Output (power to compute/sensors)
 - Protocol: I²C telemetry and control signals
 - Data: Voltage levels, charge status, fault flags
-# Operation
+### Operation
 1. Receive DC from the power harvesting subsystem.
 2. Measure the pack voltage through the divider network.
 3. Regulate charging/discharging through AOSIII5 logic
 4. Report the state-of-charge and faults to the compute subsystem.
-# Shall Statements
+### Shall Statements
 - The subsystem shall regulate energy flow between the charger and the load.
 - It shall use a voltage divider to monitor the pack voltage.
 - It shall implement cell protection and balancing through the AOSIII5 BMS controller.
@@ -163,20 +156,19 @@ The Battery & BMS Subsystem manages onboard energy storage, protection, and tele
 ## Estimated Power Consumption
 
 ## Mechanical & Structural Subsystem
-
-# Description
+### Description
 The Mechanical & Structural Subsystem is constructed using LW-PLA filament for lightweight and durable 3D-printed components. It houses all electronic subsystems, maintains balance relative to the drone’s center of gravity, and includes a linear axis arm for line connection via a mechanical hook. The subsystem provides insulation, structural rigidity, and protection from vibration and environmental exposure.
-# Interface
+### Interface
 - Signal Type: Mechanical interface, physical mount, and sensor enclosure
 - Direction: Physical coupling to the drone and the electrical subsystems
 - Protocol: N/A (mechanical system)
 - Data: Limit switch feedback (digital signal) for engagement confirmation
-# Operation
+### Operation
 1. Mount the subsystem to the drone leg or the designated interface.
 2. Deploy the linear arm for line engagement under the compute/control and communication subsystem.
 3. Confirm contact via the limit switch and enable charging.
 4. Retract the arm after the operation and secure the enclosure.
-# Shall Statements
+### Shall Statements
 - The subsystem shall be fabricated from LW-PLA for low weight and rigidity.
 - It shall include a linear axis arm for precise line engagement.
 - It shall maintain insulation and creepage distances for high-voltage operation.
