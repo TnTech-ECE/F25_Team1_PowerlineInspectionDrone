@@ -241,43 +241,44 @@ In summary, the broader impacts of this project have directly shaped subsystem c
 
 ### Budget
 
-The total estimated budget for this project is approximately $640, which covers the essential components needed to build a functional prototype drone housing for transmission line inspection. This includes the drone platform, basic sensors, onboard computing,  spare batteries, and components required for charging off of a transmission line. The budget is kept intentionally low by leveraging school-provided lab equipment and low-cost commercial parts.
+The total estimated budget for this project is approximately $640, which covers the essential components required to develop a functional prototype of the ArcAngel Drone subsystem assembly for power line inspection and live-line charging. Each item listed below includes a justification linking it to the corresponding subsystem described in the Atomic Subsystem Specifications section. The team minimizes costs by using school-provided equipment and low-cost commercial parts while maintaining technical alignment with subsystem requirements.
 
 | **Item**                          | **Description**                                         | **Estimated Cost**      |
 |----------------------------------|---------------------------------------------------------|--------------------------|
 | **Mechanical/Structural**         |                                                         |                          |
-| Drone Base Platform              | Base drone to attach our hardware to                    | Provided by School/Customer |
-| 3D Printing Filament             | Filament to print our housing and mounts               | $75                |
-| Power Line Hook Assembly   | Conductive hook and insulation materials for safe attachment to transmission line | $75|
+| Drone Base Platform              | Provided by the school or customer. Serves as the foundation for mounting all subsystems, supporting the Mechanical & Structural Subsystem requirements for weight distribution, vibration tolerance, and balance.                    | Provided  |
+| 3D Printing Filament             | Used to fabricate lightweight structural housings, enclosures, and mounts as specified in the Mechanical & Structural Subsystem. LW-PLA reduces weight by up to 50%, satisfying the design’s low payload constraint.               | $75                |
+| Power Line Hook Assembly   | Includes conductive hook, insulation, and mounting hardware necessary for safe attachment to transmission lines. Directly supports the Power Harvesting & Charging Subsystem by enabling physical connection for energy transfer while maintaining insulation and clearance standards.| $75|
 | **Subtotal**         |                                                                    |  $150              |
 | **Power Line Charging**                |             |               |
-| Rectifier + Coupling Circuit Components   | Diodes, capacitors, resistors, and wiring for AC-DC conversion | $100      |
-| Metal Plate | Metal plate acting like a coupling capacitor,s providing a path to ground        | $20                     |
-| Voltage Divider | Components for voltage divider regulating drone battery voltage        | $30                    |
-| BMS | Component to protect battery        | $70                   |
-| Drone Battery | Extra drone battery in case of failure        | $50                   |
+| Rectifier + Coupling Circuit Components   | Diodes, capacitors, and resistors for AC-DC conversion in the Power Harvesting & Charging Subsystem. These components implement the full-wave rectifier and capacitor load described in subsystem specifications to produce regulated DC for the BMS. | $100      |
+| Metal Plate | Acts as the coupling plate between the drone and the high-voltage line, allowing displacement current flow for the charging mechanism described in the Power Harvesting & Charging Subsystem. Provides an isolated charging interface.        | $20                     |
+| Voltage Divider | Used to measure and regulate the internal battery voltage as described in the Battery & BMS Subsystem.        | $30                    |
+| BMS | Manages charge/discharge cycles, overcurrent, and overvoltage protection per Battery & BMS Subsystem requirements. Ensures safe power regulation and data communication with the compute unit.        | $70                   |
+| Drone Battery | Serves as the primary onboard energy storage per the Battery & BMS Subsystem. Provides stable DC output for compute, sensor, and actuator loads during flight and while disconnected from the line.        | $50                   |
 | **Subtotal**         |                                                                    |  $270              |
 | **Sensing and Communication**           |  |             |
-| Raspberry Pi Zero | Minimalistic lightweight onboard computer                     | $15              |
-| UV Sensor | Minimalistic lightweight UV sensor for detecting excess corona                     | $30              |
-| User UI | Web-based dashboard usable on a phone, tablet, or laptop with access to the internet    | $25              |
+| Raspberry Pi Zero 2 W| Central controller for the Control/Compute & Communication Subsystem. Provides onboard processing, subsystem coordination, and Wi-Fi connectivity for telemetry and data transmission.                     | $15              |
+| UV Sensor | Core sensing component of the Corona Detection & Camera Sensing Subsystem. Detects ultraviolet emissions from corona discharge for real-time fault identification.                     | $30              |
+| User UI | Software component enabling remote monitoring, live data visualization, and control of system telemetry. Supports Control/Compute & Communication Subsystem by providing operator access to charging and sensor data.    | $25              |
 | **Subtotal**         |                                                                    |  $70              |
-| Unforseen Expenses | Expenses not yet thought about like leads, safety equipment, etc.                     | $150             |
+| Unforseen Expenses | Covers miscellaneous costs (connectors, wiring, leads, safety gear, small hardware replacements). Supports all subsystems for integration and testing.                     | $150             |
 | **Project Total**         |                                                                    |  $640            |
 
 ### Division of Labor
 
 After evaluating the skills of each team member and the requirements of the project’s subsystems, responsibilities were assigned to align with individual strengths and expertise.
 
-Power Line Charging - Matthew Henderson
+Power Line Charging Subsystem – Matthew Henderson is responsible for developing the high-voltage charging circuitry. His background in circuit analysis and prior experience working with high-voltage systems make him well suited to design and implement the live-line rectifier and coupling components safely and effectively.
 
-Corona Detection and Camera Sensing - Lawson Stricklin
+Battery Safety and BMS Subsystem – Brady Goodman oversees the design of the battery protection and management system. His skills in circuit analysis and understanding of high-voltage safety complement Matthew’s work, ensuring reliable charging, balancing, and energy regulation for the onboard power system.
 
-Communication/Computing - Daniel Attih
+Corona Detection and Camera Sensing Subsystem – Lawson Stricklin leads the design of the UV and visual sensing system. He has experience with embedded electronics and camera integration through prior coursework and independent projects, making him capable of implementing the sensor calibration and image capture functions needed for corona detection.
+Battery Safety (BMS)
 
-Battery Safety (BMS) - Brady Goodman
+Control/Compute and Communication Subsystem – Daniel Attih is responsible for system coordination, data processing, and wireless communication. As the team’s computer engineering major, Daniel brings expertise in embedded programming, communication protocols, and system integration, ensuring that all subsystems operate together through reliable software control.
 
-Mechanical/Structural - Grant Christy
+This division of labor ensures that each subsystem is led by a team member whose skills and experience align with the technical requirements of their assigned area, promoting efficiency and effective system integration.
 
 ### Timeline
 
@@ -314,6 +315,6 @@ Brady Goodman - Contributed to Introduction, Restating the Problem, and revision
 
 Grant Christy - Contributed to Comparative Analysis of Solutions and revisions.
 
-Daniel Attih - Contributed to High-Level Solutions and Atomic Subsystem Specifications.
+Daniel Attih - Contributed to High-Level Solution and Atomic Subsystem Specifications.
 
 Lawson Stricklin - Contributed to Ethical, Professional, and Standards Conciderations. 
