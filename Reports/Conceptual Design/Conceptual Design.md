@@ -138,14 +138,26 @@ For a Battery Management System (BMS) the formerly listed ADS1115 and INA3221 wi
 LW-PLA For 3D Printing:
 The LW-PLA filament is a foaming thermoplastic material that has a low-density internal structure without requiring a hollow infill. When heated to approximately 220-250 C, the polymer foams resulting in a weight reduction of 30-50% compared to standard PLA, this is crucial for low weight operations. It is easy to print on common FDM printers. It will be most commonly used on areas where high mechanical strength is not required and is sensitive to heat and UV exposure.
 
+<img width="1920" height="1197" alt="image" src="https://github.com/user-attachments/assets/e72f35ad-7d6e-4eab-a2e4-c52215ea6446" />
+
+
 PA12 for 3D Printing:
 Polyamide-12 is a professional grade material printed using Selective Laser Sintering. It is very common for lightweight structural parts due to it’s excellent mechanical properties, impact resistance, and low moisture absorption. SLS printing does not require support structures which make hollow internal geometries and highly optimized that are both strong and extremely light. This is ideal for mounts, arms, and moving parts where rigidity and weight efficiency are required. It does need outsourced printing and post processing which lead to longer lead times.
+
+<img width="1024" height="1152" alt="image" src="https://github.com/user-attachments/assets/a010c731-db14-4255-95b9-ec45fc4cae0e" />
+
 
 Telescoping Extension for Line Connecting Hook:
 A telescoping extension uses nested tubes or rails that slide linearly to extend reach. It’s compacted form at rest and longer reach when opened is useful for latching onto a power line from a safer standoff. Nested sections with a round or rectangular profile slide out in sequence by a passive or active drive mechanism that push sections to extend and retract. It has a possibility to have minor sealing and debris issues and could potentially be flexible if extended too thin, vibration from the line and weather conditions must be considered.
 
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/6b034d38-b060-4d9b-a2bd-0afe3afd4962" />
+
+
 Linear Axis Arm for Line Connection Hook:
 A linear axis arm uses a rotating axle to convert rotary motion into a linear motion to extend a rigid arm. This will use either a motor or piston to drive the arm up to connect to the line and then let it lay down after disconnection. These decreases moving part counts and is not affected by debris or weather. It is much more accurate and easier to control precisely with less failure points but could increase weight of the mechanism and the stowed volume is unchanged.
+
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/3a719beb-2c7c-4fcb-973f-f9bc7873da58" />
+
 
 
 ## High-Level Solution
