@@ -156,7 +156,8 @@ A telescoping extension uses nested tubes or rails that slide linearly to extend
 Linear Axis Arm for Line Connection Hook:
 A linear axis arm uses a rotating axle to convert rotary motion into a linear motion to extend a rigid arm. This will use either a motor or piston to drive the arm up to connect to the line and then let it lay down after disconnection. These decreases moving part counts and is not affected by debris or weather. It is much more accurate and easier to control precisely with less failure points but could increase weight of the mechanism and the stowed volume is unchanged.
 
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/3a719beb-2c7c-4fcb-973f-f9bc7873da58" />
+<img width="2380" height="2380" alt="image" src="https://github.com/user-attachments/assets/6518cc7e-6b3f-4469-af14-0278122ce6c3" />
+
 
 
 
