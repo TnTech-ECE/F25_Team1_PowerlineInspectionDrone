@@ -40,26 +40,39 @@ Due to the charging capabilities of the drone attachment, a half wave rectifier 
 
 Full Wave Rectifier:
 A full wave rectifier was also considered for the load charging capabilities it produces. The full-wave rectifier converts both haves of the AC waveform into a DC output, this could be implemented as a bridge rectifier with four diodes. This full wave rectifier gives a lower ripple and better power delivery for the same peak voltage. This improves efficiency and reduces stress on the energy storage with time. Although it seems like the perfect fit, weight is still a major factor in decision making procedures.
+<img width="780" height="439" alt="image" src="https://github.com/user-attachments/assets/472dd78a-2233-4360-aaba-8d8f6a30f8d8" />
+
 
 Capacitor Load:
 Using a capacitor stores energy delivered by the rectifier and will supply short bursts to the downstream internal drone battery. Rectified AC will charge the capacitor, then the capacitor will displace current to the downstream battery when needed. A capacitor load is considered for its smooth output and high instantaneous power at output. Capacitors can be fairly heavy though, using a capacitor really negates how much payload a drone could carry, a DC-DC converter will also be needed because the capacitor falls linearly at discharge.
+<img width="1000" height="667" alt="image" src="https://github.com/user-attachments/assets/6b02c921-41b3-4f8b-bcd9-253e04551f82" />
+
 
 Battery Load:
 Using the internal batteries as the primary energy sink on the mounting device to trickle charge the drone is also considered. The rectifier is designed to safely charge the battery which will provide regulated and dense energy storage for the drone. Charging these internal batteries could be an issue due to safety risks and could need temperature monitoring. A battery management system will need to be implemented as well.
+<img width="1200" height="675" alt="image" src="https://github.com/user-attachments/assets/ce1b02be-785c-4843-abef-392bcef5c840" />
+
 
 ### Potential Solutions for Corona Detection and Camera Sensing
 
 Infrared/Thermal Imaging:
 A potential solution for detecting excess corona can be solved with an IR camera which generates localized heating to do ionization and current leaking. Infrared and thermal imaging can detect heat signatures to pinpoint areas of excess thermal signatures or arcing. IR detects emitted infrared radiation hotspots, which will allow for identification of stressed components. These cameras can also monitor overloaded connections and mechanical stress. These are affected by temperature and wind and will need extensive calibration strategies to distinguish excess corona from other thermal sources.
+<img width="640" height="450" alt="image" src="https://github.com/user-attachments/assets/9ad48b28-69f4-4c4e-963e-8a4164f4c7ae" />
+
 
 Ultraviolet Imaging Sensors:
 Corona discharge emits energy mostly in the ultraviolet spectrum, making UV imaging one of the most reliable methods. These specialized cameras detect UV photons from ionized air near high-voltage conductors in daylight conditions. UV sensors capture short-wavelength emissions, invisible to the naked eye, to identify intensity and location of strongly correlated corona activity. They do need shielding from sunlight to prevent false positives and can be relatively expensive.
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/657bac02-dd93-4056-bd21-e66a852511ed" />
+
 
 Optical/Visual Spectrum Cameras (RGB/Multispectral):
 High resolution RGB or multispectral cameras will be useful in providing confirmation of physical damage, arcing, and surface degradation. Image processing and machine learning algorithms can also detect characteristic color changes, carbon tracking, and visible arcing patterns to assist in areas where excess corona could occur. These are readily available at a low cost with very lightweight camera modules. It cannot directly see corona discharge and may be affected by glare.
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/71d2aed4-33d3-44e9-ba98-37cd9978be9f" />
+
 
 Depth/Stereo Cameras:
 With many drones having their own attached camera, a stereo or structured light camera can compute depth by comparing two or more visual perspectives. These could provide depth maps for autonomous navigation and terrain avoidance which are beneficial for identifying tower geometry and wire positioning. These cameras can be potentially power straining and are sensitive to sunlight interference.
+<img width="2300" height="1400" alt="image" src="https://github.com/user-attachments/assets/c7a19c19-ec77-409f-8f15-4dad37e6c49a" />
 
 ### Potential Solutions for Communication and Computing
 
