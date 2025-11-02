@@ -97,7 +97,7 @@ The ADS1115 is a 16-bit, low power analog to digital converter that communicates
 
 
 u-blox ZED-F9F:
-The ZED-F9F is a high precision dual-band, multi-constellation receiver designed for advanced GPS applications. It has four satellite connections leading to accurate location finding within one meter. It can output velocity and heaving with low latency, using up to 30 Hz update rates. It draws around 50-70 mA and also uses I^2C communication. It uses Real-Time Kinematic which is ideal for real time updates of drone location and while using this setting location can be found at approximately 1 cm.
+The ZED-F9F is a high precision dual-band, multi-constellation receiver designed for advanced GPS applications. It has four satellite connections leading to accurate location finding within one meter. It can output velocity and heaving with low latency, using up to 30 Hz update rates. It draws around 50-70 mA and also uses I^2C communication. It uses Real-Time Kinematic which is ideal for real time updates of drone location and while using this setting location can be found at approximately 1 cm. \n
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/6bf89791-e6d8-405f-8365-6995a302a746" />
 
 
