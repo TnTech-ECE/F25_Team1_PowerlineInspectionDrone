@@ -103,7 +103,7 @@ The integrated system is a drone-mounted inspection and charging module engineer
 
 ### Hardware Block Diagram
 
-![Block Diagram](DroneHardwareBlockDiagram.png)
+![Block Diagram](DroneHardwareBlockDiagramRev1.png)
 
 ### Operational Flow Chart
 
