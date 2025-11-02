@@ -97,7 +97,8 @@ The ADS1115 is a 16-bit, low power analog to digital converter that communicates
 
 
 u-blox ZED-F9F:
-The ZED-F9F is a high precision dual-band, multi-constellation receiver designed for advanced GPS applications. It has four satellite connections leading to accurate location finding within one meter. It can output velocity and heaving with low latency, using up to 30 Hz update rates. It draws around 50-70 mA and also uses I^2C communication. It uses Real-Time Kinematic which is ideal for real time updates of drone location and while using this setting location can be found at approximately 1 cm. \n
+The ZED-F9F is a high precision dual-band, multi-constellation receiver designed for advanced GPS applications. It has four satellite connections leading to accurate location finding within one meter. It can output velocity and heaving with low latency, using up to 30 Hz update rates. It draws around 50-70 mA and also uses I^2C communication. It uses Real-Time Kinematic which is ideal for real time updates of drone location and while using this setting location can be found at approximately 1 cm.
+
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/6bf89791-e6d8-405f-8365-6995a302a746" />
 
 
@@ -105,12 +106,18 @@ The ZED-F9F is a high precision dual-band, multi-constellation receiver designed
 
 Lithium-Ion Battery Pack:
 The Lithium-Ion Battery Pack is the most common choice for drones and portable power. It has high energy density, lightweight construction and stable voltage characteristics. A Li-Ion pack configured as a 4S or 6S, which is 14.8V-22.2V nominal, provides a suitable balance of energy storage and weight. When integrated with proper current limiting and BMS protection, it offers long term service of around 500-1000 cycles.
+<img width="970" height="728" alt="image" src="https://github.com/user-attachments/assets/3027dbe7-f982-469d-8939-73cbe3631db5" />
+
 
 Lithium-Polymer Battery Pack:
 The Lithium-Polymer Battery is a subtype of Li-Ion chemistry using a polymer electrolyte which offers higher discharging rates and very light packaging. These are often used in UAVs where high current draw and rapid power responses are required. An Li-Po configuration can deliver high current outage while remaining lightweight but must be paired with a robust BMS to avoid over discharge and contain a shorter lifespan of around 200-300 cycles.
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/4fb56b72-441a-4eb1-a1fb-71afdb0d434b" />
+
 
 Texas Instruments BQ76930:
 For a Battery Management System (BMS) the formerly listed ADS1115 and INA3221 will do more than suffice but a third option could be BQ76930. It provides essential monitoring and protection features: cell voltage measurement, overcurrent protection and cell balancing. It also communicates with I^2C, making it compatible with the Raspberry Pi. It lacks digital configuration customization and is not built with Coulomb counting.
+<img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/71f6e4d0-9eba-457f-aa8c-add35bd3e7b7" />
+
 
 ### Potential Solutions for Mechanical and Structural Subsystems
 
