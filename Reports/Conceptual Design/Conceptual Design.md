@@ -304,17 +304,25 @@ If the team follows the schedule outlined in the Gantt chart, the project will r
 
 ## References
 
-[1] DJI Enterprise, "Powerline Inspection," DJI Enterprise. [Online]. Available: https://enterprise.dji.com/inspection/powerline-inspection. [Accessed: 28-Oct-2025].
+[1] S. Khalil et al., “Power Transmission Line Inspections: Methods, Challenges, Current Status, and Usage of Unmanned Aerial Systems,” ResearchGate, Apr. 2024. [Online]. Available: https://www.researchgate.net/publication/379304790_Power_Transmission_Line_Inspections_Methods_Challenges_Current_Status_and_Usage_of_Unmanned_Aerial_Systems
 
-[2] Y. Liu, "High-Efficiency Wireless Charging System for UAVs Based on PT Symmetry," SCIEpublish, 2025. [Online]. Available: https://www.sciepublish.com/article/pii/521. [Accessed: 28-Oct-2025].
+[2] DJI Enterprise, “Powerline Inspection,” DJI Enterprise. [Online]. Available: https://enterprise.dji.com/inspection/powerline-inspection
 
-[3] B. Ben-Moshe et al., "Power Line Charging Mechanism for Drones," MDPI Electronics, vol. 5, no. 4, pp. 108, 2021. [Online]. Available: https://www.mdpi.com/2504-446X/5/4/108. [Accessed: 28-Oct-2025].
+[3] B. Ben-Moshe et al., “Power Line Charging Mechanism for Drones,” MDPI Electronics, vol. 5, no. 4, p. 108, 2021.
 
-[4] "UV Inspection for Corona Detection on High-Voltage Lines via UAV," Drone Division. [Online]. Available: https://dronedivision.be/en/blog/2023/02/09/uv-inspection-for-corona-detection-on-high-voltage-lines-via-uav/. [Accessed: 28-Oct-2025].
+[4] “Diode Bridge Rectifier Tutorial,” Electronics Tutorials. [Online]. Available: https://www.electronics-tutorials.ws/diode/diode_6.html
 
-[5] "How Power Utilities Detect Corona Discharge with Drones," ABJ Drones. [Online]. Available: https://abjdrones.com/how-power-utilities-detect-corona-discharge-with-drones/. [Accessed: 28-Oct-2025].
+[5] “How to Build a Bridge Rectifier,” Build Electronic Circuits. [Online]. Available: https://www.build-electronic-circuits.com/diode-bridge-rectifier/
 
-[6] "Aerial Power Line Inspection with Corona Camera," Hepta. [Online]. Available: https://www.youtube.com/watch?v=1n2TpImqnlc. [Accessed: 28-Oct-2025].
+[6] ColorFabb, “LW-PLA Technical Data Sheet,” ColorFabb Materials, 2024. [Online]. Available: https://colorfabb.com/media/datasheets/tds/colorfabb/TDS_E_ColorFabb_LW-PLA.pdf
+
+[7] Raspberry Pi, “Raspberry Pi Zero 2 W Product Brief,” Raspberry Pi Documentation, 2024. [Online]. Available: https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-product-brief.pdf
+
+[8] u-blox, “ZED-F9P High Precision GNSS Module,” u-blox AG. [Online]. Available: https://www.u-blox.com/en/product/zed-f9p-module
+
+[9] M. Kuffel et al., “The Ultraviolet Detection of Corona Discharge in Power Transmission Lines,” ResearchGate, May 2024. [Online]. Available: https://www.researchgate.net/publication/276494629_The_Ultraviolet_Detection_of_Corona_Discharge_in_Power_Transmission_Lines
+
+[10] F. Zhang et al., “Detection of Corona Discharge Using a Multi-Spectral UAV Sensor,” MDPI Sensors, vol. 20, no. 17, p. 4767, 2020.
 
 ## Statement of Contributions
 
