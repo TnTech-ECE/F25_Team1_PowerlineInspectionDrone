@@ -35,21 +35,25 @@ The ArcAngel Drone conceptual design thus serves as a foundation for developing 
 
 Half Wave Rectifier:
 Due to the charging capabilities of the drone attachment, a half wave rectifier to assist in current displacement through the load and into our capacitor plate was considered. Half wave rectifiers are lighter in weight and cheaper overall. Maximum payload for drones is not very high so all types of circuit conditions need to be considered for the operation. The simple design may be needed for payload and an additional non-critical application of half-wave rectifiers could be essential for our charging mount.
+
 <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/64daf015-7869-4a2e-bb10-c7592948349e" />
 
 
 Full Wave Rectifier:
 A full wave rectifier was also considered for the load charging capabilities it produces. The full-wave rectifier converts both haves of the AC waveform into a DC output, this could be implemented as a bridge rectifier with four diodes. This full wave rectifier gives a lower ripple and better power delivery for the same peak voltage. This improves efficiency and reduces stress on the energy storage with time. Although it seems like the perfect fit, weight is still a major factor in decision making procedures.
+
 <img width="780" height="439" alt="image" src="https://github.com/user-attachments/assets/472dd78a-2233-4360-aaba-8d8f6a30f8d8" />
 
 
 Capacitor Load:
 Using a capacitor stores energy delivered by the rectifier and will supply short bursts to the downstream internal drone battery. Rectified AC will charge the capacitor, then the capacitor will displace current to the downstream battery when needed. A capacitor load is considered for its smooth output and high instantaneous power at output. Capacitors can be fairly heavy though, using a capacitor really negates how much payload a drone could carry, a DC-DC converter will also be needed because the capacitor falls linearly at discharge.
+
 <img width="1000" height="667" alt="image" src="https://github.com/user-attachments/assets/6b02c921-41b3-4f8b-bcd9-253e04551f82" />
 
 
 Battery Load:
 Using the internal batteries as the primary energy sink on the mounting device to trickle charge the drone is also considered. The rectifier is designed to safely charge the battery which will provide regulated and dense energy storage for the drone. Charging these internal batteries could be an issue due to safety risks and could need temperature monitoring. A battery management system will need to be implemented as well.
+
 <img width="1200" height="675" alt="image" src="https://github.com/user-attachments/assets/ce1b02be-785c-4843-abef-392bcef5c840" />
 
 
@@ -57,6 +61,7 @@ Using the internal batteries as the primary energy sink on the mounting device t
 
 Infrared/Thermal Imaging:
 A potential solution for detecting excess corona can be solved with an IR camera which generates localized heating to do ionization and current leaking. Infrared and thermal imaging can detect heat signatures to pinpoint areas of excess thermal signatures or arcing. IR detects emitted infrared radiation hotspots, which will allow for identification of stressed components. These cameras can also monitor overloaded connections and mechanical stress. These are affected by temperature and wind and will need extensive calibration strategies to distinguish excess corona from other thermal sources.
+
 <img width="640" height="450" alt="image" src="https://github.com/user-attachments/assets/9ad48b28-69f4-4c4e-963e-8a4164f4c7ae" />
 
 
@@ -67,32 +72,38 @@ Corona discharge emits energy mostly in the ultraviolet spectrum, making UV imag
 
 Optical/Visual Spectrum Cameras (RGB/Multispectral):
 High resolution RGB or multispectral cameras will be useful in providing confirmation of physical damage, arcing, and surface degradation. Image processing and machine learning algorithms can also detect characteristic color changes, carbon tracking, and visible arcing patterns to assist in areas where excess corona could occur. These are readily available at a low cost with very lightweight camera modules. It cannot directly see corona discharge and may be affected by glare.
+
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/71d2aed4-33d3-44e9-ba98-37cd9978be9f" />
 
 
 Depth/Stereo Cameras:
 With many drones having their own attached camera, a stereo or structured light camera can compute depth by comparing two or more visual perspectives. These could provide depth maps for autonomous navigation and terrain avoidance which are beneficial for identifying tower geometry and wire positioning. These cameras can be potentially power straining and are sensitive to sunlight interference.
+
 <img width="2300" height="1400" alt="image" src="https://github.com/user-attachments/assets/c7a19c19-ec77-409f-8f15-4dad37e6c49a" />
 
 ### Potential Solutions for Communication and Computing
 
 Raspberry Pi Zero:
 The original Raspberry Pi Zero is a very minimalist, single core computer designed for very low power embedded applications. It does require external Wi-Fi or Bluetooth dongles for communication. The power draw and weight are extremely low compared to other solutions but comparable to the Raspberry Pi Zero 2 W. It will be good for monitoring charging status and battery voltage and current and forwarding periodic GPS position data. It only operates with a single CPU core with 512 MB of RAM, so it cannot handle multitask heavy computations and extreme camera based processing.
+
 <img width="3236" height="2589" alt="image" src="https://github.com/user-attachments/assets/223c0c61-dd6f-41c8-91f1-583c4b7360f7" />
 
 
 Raspberry Pi Zero 2 W:
 The updated Raspberry Pi Zero 2 W provides an updated performance over the original Zero while maintaining a very similar size and weight profile. It features a 1 GHz processor with a 512 MB RAM and built in Wi-Fi and Bluetooth capabilities. This provides onboard computations and wireless communication capabilities without external connection. The extra processing allows for reading voltage/current sensors and logging GPS data through a ground Wi-Fi station. It also has the ability to run lightweight image recognition.
+
 <img width="413" height="309" alt="image" src="https://github.com/user-attachments/assets/2b07c36f-e271-442d-aebd-22a62e77e0f7" />
 
 
 Texas Instruments INA3221:
 The TI is a triple channel, high side current and bus voltage monitor made to measure voltage and current across up to three separate power rails. The design can be implemented to have Channel One monitor the battery, Channel 2 monitor the charging current, and Channel Three monitoring the payload. It communicates over the I^2C bus which allows easy communication with the Raspberry Pi for real time updates. The issue occurs with voltages over 26 V where it can no longer measure and requires very precise shunt resistors.
+
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/8191f2a7-49ae-4f0b-b7e4-6d4bfa37a2db" />
 
 
 ADS1115 + Discrete Shunt Amplifiers:
 The ADS1115 is a 16-bit, low power analog to digital converter that communicates with I^2C and provides up to four input channels. Each channel can be connected across a shunt resistor placed in current paths and amplified which will then be fed to the Raspberry Pi. It has very low power consumption and flexible gain and channel configuration. It has no maximum voltage measurement as well. It does need extra components and is most susceptible to noise.
+
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/ad4212ac-f481-48c6-90b9-7e2723c9c3ca" />
 
 
@@ -106,16 +117,19 @@ The ZED-F9F is a high precision dual-band, multi-constellation receiver designed
 
 Lithium-Ion Battery Pack:
 The Lithium-Ion Battery Pack is the most common choice for drones and portable power. It has high energy density, lightweight construction and stable voltage characteristics. A Li-Ion pack configured as a 4S or 6S, which is 14.8V-22.2V nominal, provides a suitable balance of energy storage and weight. When integrated with proper current limiting and BMS protection, it offers long term service of around 500-1000 cycles.
+
 <img width="970" height="728" alt="image" src="https://github.com/user-attachments/assets/3027dbe7-f982-469d-8939-73cbe3631db5" />
 
 
 Lithium-Polymer Battery Pack:
 The Lithium-Polymer Battery is a subtype of Li-Ion chemistry using a polymer electrolyte which offers higher discharging rates and very light packaging. These are often used in UAVs where high current draw and rapid power responses are required. An Li-Po configuration can deliver high current outage while remaining lightweight but must be paired with a robust BMS to avoid over discharge and contain a shorter lifespan of around 200-300 cycles.
+
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/4fb56b72-441a-4eb1-a1fb-71afdb0d434b" />
 
 
 Texas Instruments BQ76930:
 For a Battery Management System (BMS) the formerly listed ADS1115 and INA3221 will do more than suffice but a third option could be BQ76930. It provides essential monitoring and protection features: cell voltage measurement, overcurrent protection and cell balancing. It also communicates with I^2C, making it compatible with the Raspberry Pi. It lacks digital configuration customization and is not built with Coulomb counting.
+
 <img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/71f6e4d0-9eba-457f-aa8c-add35bd3e7b7" />
 
 
