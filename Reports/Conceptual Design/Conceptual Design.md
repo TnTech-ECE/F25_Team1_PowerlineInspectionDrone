@@ -87,16 +87,22 @@ Raspberry Pi Zero:
 The original Raspberry Pi Zero is a very minimalist, single core computer designed for very low power embedded applications. It does require external Wi-Fi or Bluetooth dongles for communication. The power draw and weight are extremely low compared to other solutions but comparable to the Raspberry Pi Zero 2 W. It will be good for monitoring charging status and battery voltage and current and forwarding periodic GPS position data. It only operates with a single CPU core with 512 MB of RAM, so it cannot handle multitask heavy computations and extreme camera based processing. The Zero has been implemented already in completing drone flights with eight servo outputs, barometer and IMU sensors, and a power supply. This also has continued work, trying to implement depth cameras and Lidar on multiple drones along with the prior applications.
 
 Specifications:
+
 Weight- 9 Grams 
+
 Size - 2.6 x 1.2 x 0.2 Inches
+
 I/O Pins - 40, CSI Camera Connector
+
 Ports - Micro USB, Mini HDMI
+
 Connectivity - None
 
+https://hackaday.com/2016/02/16/a-quadcopter-controlled-by-a-pi-zero/
 
+Image:
 <img width="3236" height="2589" alt="image" src="https://github.com/user-attachments/assets/223c0c61-dd6f-41c8-91f1-583c4b7360f7" />
 
-https://hackaday.com/2016/02/16/a-quadcopter-controlled-by-a-pi-zero/
 
 
 Raspberry Pi Zero 2 W:
@@ -119,7 +125,7 @@ Connectivity - Bluetooth 4.2, BLE, 2.4GHz Wireless LAN With Onboard Antenna.
 https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-product-brief.pdf
 
 
-
+Image:
 <img width="413" height="309" alt="image" src="https://github.com/user-attachments/assets/2b07c36f-e271-442d-aebd-22a62e77e0f7" />
 
 
@@ -127,14 +133,21 @@ Texas Instruments INA3221:
 The TI is a triple channel, high side current and bus voltage monitor made to measure voltage and current across up to three separate power rails. The design can be implemented to have Channel One monitor the battery, Channel 2 monitor the charging current, and Channel Three monitoring the payload. It communicates over the I^2C bus which allows easy communication with the Raspberry Pi for real time updates. The issue occurs with voltages over 26 V where it can no longer measure and requires very precise shunt resistors.
 
 Specifications:
+
 Weight - 6 Grams
+
 Size - 4 x 4 mm
+
 Bus Voltage Range - 0 to +26 V
+
 Supply Voltage - 2.7 to 5.5 V
+
 I^2C Addressing - 3 Programmable Responses
+
 Gain Error - 0.25% Maximum
 
 https://www.ti.com/lit/ds/symlink/ina3221.pdf?ts=1762084112695
+
 Image:
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/8191f2a7-49ae-4f0b-b7e4-6d4bfa37a2db" />
 
@@ -143,9 +156,13 @@ ADS1115 + Discrete Shunt Amplifiers:
 The ADS1115 is a 16-bit, low power analog to digital converter that communicates with I^2C and provides up to four input channels. Each channel can be connected across a shunt resistor placed in current paths and amplified which will then be fed to the Raspberry Pi. It has very low power consumption and flexible gain and channel configuration. It has no maximum voltage measurement as well. It does need extra components and is most susceptible to noise. The ADS1115 is more suitable for drone applications because it is more customizable per need.
 
 Specifications:
+
 Weight - 1.0 Grams
+
 Size - 2.0 x 1.5 x 0.4 mm
+
 Supply Voltage - 2.0 to 5.5 V
+
 I^2C Response - 4 Programmable Responses
 
 https://www.ti.com/lit/ds/symlink/ads1115.pdf?ts=1762102805769&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1115
@@ -166,19 +183,67 @@ Image:
 ### Potential Solutions for Battery and BMS
 
 Lithium-Ion Battery Pack:
-The Lithium-Ion Battery Pack is the most common choice for drones and portable power. It has high energy density, lightweight construction and stable voltage characteristics. A Li-Ion pack configured as a 4S or 6S, which is 14.8V-22.2V nominal, provides a suitable balance of energy storage and weight. When integrated with proper current limiting and BMS protection, it offers long term service of around 500-1000 cycles.
+The Lithium-Ion Battery Pack is the most common choice for drones and portable power. It has high energy density, lightweight construction and stable voltage characteristics. A Li-Ion pack configured as a 4S or 6S, which is 14.8V-22.2V nominal, provides a suitable balance of energy storage and weight. When integrated with proper current limiting and BMS protection, it offers long term service of around 500-1000 cycles. This has been implemented in a drone already by Oscar Liang to power the entire drone, we would only need it for camera and sensing capabilities.
 
-<img width="970" height="728" alt="image" src="https://github.com/user-attachments/assets/3027dbe7-f982-469d-8939-73cbe3631db5" />
+Specifications:
+
+Weight - 45 Grams
+
+Size - 18.3 mm diameter x 65 mm height
+
+Capacity - 1980 mAh
+
+Nominal Voltage - 3.7 V
+
+Chemistry - Lithium-Ion Rechargable
+
+https://www.durnergy.com/lp552535-420mah-3-7v-rechargeable-lithium-polymer-battery-product/
+https://oscarliang.com/rekon-3/
+
+Image:
+<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/bfdd6ae1-43d4-4f95-b0d4-7f0f2603a2ad" />
+
 
 
 Lithium-Polymer Battery Pack:
-The Lithium-Polymer Battery is a subtype of Li-Ion chemistry using a polymer electrolyte which offers higher discharging rates and very light packaging. These are often used in UAVs where high current draw and rapid power responses are required. An Li-Po configuration can deliver high current outage while remaining lightweight but must be paired with a robust BMS to avoid over discharge and contain a shorter lifespan of around 200-300 cycles.
+The Lithium-Polymer Battery is a subtype of Li-Ion chemistry using a polymer electrolyte which offers higher discharging rates and very light packaging. These are often used in UAVs where high current draw and rapid power responses are required. An Li-Po configuration can deliver high current outage while remaining lightweight but must be paired with a robust BMS to avoid over discharge and contain a shorter lifespan of around 200-300 cycles. These have been used for GPS trackers and drones very often and are extremely common.
 
-<img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/4fb56b72-441a-4eb1-a1fb-71afdb0d434b" />
+Specifications:
+
+Weight - 44 Grams
+
+Size - 5.5 x 25 x 35 mm
+
+Capacity - 420 mAh
+
+Nominal Voltage - 3.7 V
+
+Chemistry - Lithium-Ion Rechargable
+
+[https://www.durnergy.com/lp552535-420mah-3-7v-rechargeable-lithium-polymer-battery-product/
+](https://datasheet4u.com/datasheet/TENERGY/18650-1408721)
+
+Image:
+<img width="122" height="143" alt="image" src="https://github.com/user-attachments/assets/35744f8c-c9ed-43e4-a65f-ec8a660a5b01" />
+
 
 
 Texas Instruments BQ76930:
 For a Battery Management System (BMS) the formerly listed ADS1115 and INA3221 will do more than suffice but a third option could be BQ76930. It provides essential monitoring and protection features: cell voltage measurement, overcurrent protection and cell balancing. It also communicates with I^2C, making it compatible with the Raspberry Pi. It lacks digital configuration customization and is not built with Coulomb counting.
+
+Specifications:
+
+Weight - 1 g
+
+Size - 7.8 x 4.4 x 1.0 mm 
+
+Bus Voltage Range - 0 to 50 V
+
+Supply Voltage - 3.3 V
+
+I^2C Communication - 6 to 10 Series Cells
+
+https://www.ti.com/lit/ds/symlink/bq76930.pdf?ts=1762146710182
 
 <img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/71f6e4d0-9eba-457f-aa8c-add35bd3e7b7" />
 
@@ -186,21 +251,56 @@ For a Battery Management System (BMS) the formerly listed ADS1115 and INA3221 wi
 ### Potential Solutions for Mechanical and Structural Subsystems
 
 LW-PLA For 3D Printing:
-The LW-PLA filament is a foaming thermoplastic material that has a low-density internal structure without requiring a hollow infill. When heated to approximately 220-250 C, the polymer foams resulting in a weight reduction of 30-50% compared to standard PLA, this is crucial for low weight operations. It is easy to print on common FDM printers. It will be most commonly used on areas where high mechanical strength is not required and is sensitive to heat and UV exposure.
+The LW-PLA filament is a foaming thermoplastic material that has a low-density internal structure without requiring a hollow infill. When heated to approximately 220-250 C, the polymer foams resulting in a weight reduction of 30-50% compared to standard PLA, this is crucial for low weight operations. It is easy to print on common FDM printers. It will be most commonly used on areas where high mechanical strength is not required and is sensitive to heat and UV exposure. PolyLite LW-PLA is suitable for the drone appications we need and has the near highest strength compared to other PLAs.
 
+Specifications:
+
+Weight: 0.6 g / cm^3
+
+Bending Strength - 52.9 MPa (Megapascals)
+
+Impact Strength - 2.06 kJ / m^2
+
+Tensle Strength - 23.2 MPa
+
+https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf
+
+Image:
 <img width="1920" height="1197" alt="image" src="https://github.com/user-attachments/assets/e72f35ad-7d6e-4eab-a2e4-c52215ea6446" />
 
 
 PA12 for 3D Printing:
 Polyamide-12 is a professional grade material printed using Selective Laser Sintering. It is very common for lightweight structural parts due to it’s excellent mechanical properties, impact resistance, and low moisture absorption. SLS printing does not require support structures which make hollow internal geometries and highly optimized that are both strong and extremely light. This is ideal for mounts, arms, and moving parts where rigidity and weight efficiency are required. It does need outsourced printing and post processing which lead to longer lead times.
 
+Specifications:
+
+Weight: 1.02 g / cm^3
+
+Bending Strength - 90 MPa
+
+Impact Strength - 14 kJ / m^2
+
+Tensle Strength - 60 MPa
+
+Image:
 <img width="1024" height="1152" alt="image" src="https://github.com/user-attachments/assets/a010c731-db14-4255-95b9-ec45fc4cae0e" />
 
 
 Telescoping Extension for Line Connecting Hook:
-A telescoping extension uses nested tubes or rails that slide linearly to extend reach. It’s compacted form at rest and longer reach when opened is useful for latching onto a power line from a safer standoff. Nested sections with a round or rectangular profile slide out in sequence by a passive or active drive mechanism that push sections to extend and retract. It has a possibility to have minor sealing and debris issues and could potentially be flexible if extended too thin, vibration from the line and weather conditions must be considered.
+A telescoping extension uses nested tubes or rails that slide linearly to extend reach. It’s compacted form at rest and longer reach when opened is useful for latching onto a power line from a safer standoff. Nested sections with a round or rectangular profile slide out in sequence by a passive or active drive mechanism that push sections to extend and retract. It has a possibility to have minor sealing and debris issues and could potentially be flexible if extended too thin, vibration from the line and weather conditions must be considered. Telescoping retrievers are used for retrieving heavier objects in certain sports and are used to hook around and item for it to hang off of, these designs will do more than suffice for holding a drone as well.
 
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/6b034d38-b060-4d9b-a2bd-0afe3afd4962" />
+Specifications: Disc Retriever Comparison
+
+Weight - 13 g
+
+Dimensions - 16 x 2.5 x 1.4 in
+
+Extended Length - 10 ft
+
+Hook Amount - 3 Hooks
+
+Image:
+[<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/6b034d38-b060-4d9b-a2bd-0afe3afd4962" />](https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf)
 
 
 Linear Axis Arm for Line Connection Hook:
