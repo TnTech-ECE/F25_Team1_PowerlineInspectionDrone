@@ -119,7 +119,7 @@ Frame Rate - 9 Hz
 
 Supply Voltage - 3.3 to 5 V
 
-https://www.instrumentchoice.com.au/blogs/news/thermal-imaging-cameras-how-to-read-specifications?srsltid=AfmBOoq1PP0BLL00qFcHlvxpb1CZsP0d_80V9uzIpG_6zC6DXR_w4Xx6&utm_source=chatgpt.com
+https://www.instrumentchoice.com.au/blogs/news/thermal-imaging-cameras-how-to-read-specifications?srsltid=AfmBOoq1PP0BLL00qFcHlvxpb1CZsP0d_80V9uzIpG_6zC6DXR_w4Xx6&utm
 
 Image:
 
@@ -143,7 +143,7 @@ Supply Voltage - 5 V
 
 Detection range - 50 m
 
-https://sonel.pl/en/product/corona-camera-uv260?utm_source=chatgpt.com
+https://sonel.pl/en/product/corona-camera-uv260?utm
 
 Image:
 
@@ -165,7 +165,7 @@ Frame Rate - 30 FPS
 
 Supply Voltage - 3.3 to 5 V
 
-https://www.simtrum.com/WebShop/ProductInfo.aspx?id=19386&pid=1780&utm_source=chatgpt.com
+https://www.simtrum.com/WebShop/ProductInfo.aspx?id=19386&pid=1780&utm
 
 Image:
 
