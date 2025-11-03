@@ -334,17 +334,70 @@ The Mechanical & Structural Subsystem is constructed using LW-PLA filament for l
 
 ## Ethical, Professional, and Standards Considerations
 
-The proposed drone system for power line charging and corona detection carries significant implications across culture, society, the environment, public health, safety, and the economy. At its core, the project addresses a critical societal need: maintaining reliable electrical infrastructure while reducing risks to human workers. By shifting inspection and charging tasks from manual crews and helicopters to lightweight autonomous drones, the project enhances public safety. This transition also strengthens public trust in utility providers by ensuring that inspections are performed more frequently, more safely, and with greater precision.
+### Broader Impacts
+The proposed drone system for power line charging and corona detection has significant implications across culture, society, the environment, public health, safety, and the economy. At a societal level, the project addresses the critical need for reliable electrical infrastructure while reducing risks to human workers. By shifting inspection and charging tasks from manual crews and helicopters to lightweight autonomous drones, the system enhances public safety and strengthens trust in utility providers by enabling inspections that are more frequent, safer, and more precise.
 
-From an environmental perspective, the drone system reduces reliance on fuel-intensive inspection methods, lowering carbon emissions and minimizing the ecological footprint of routine maintenance. The potential use of lightweight materials such as LW‑PLA or PA12, combined with potential efficient energy storage solutions like Li‑Ion or Li‑Po batteries, further reduces energy consumption during flight. 
+From an environmental perspective, the drone reduces reliance on fuel‑intensive inspection methods, lowering carbon emissions and minimizing the ecological footprint of routine maintenance. The use of lightweight materials such as LW‑PLA and PA12, combined with efficient energy storage solutions like Li‑Ion or Li‑Po batteries, further reduces energy consumption during flight. These choices reflect a deliberate balance between performance and sustainability.
 
-Public health and safety are central to the project’s mission. By removing workers from high-voltage environments, the risk of electrocution, falls, and other occupational hazards is significantly reduced. The design incorporates safety-critical features such as a Battery Management System (BQ76930) to prevent overcharge, overcurrent, or thermal runaway, and robust mechanical subsystems that can withstand vibration, weather, and debris without failure. These practices ensure that the drone operates reliably in the field without posing risks to bystanders or infrastructure. Indirectly, the project also supports public health by safeguarding the continuity of power delivery, which is essential for hospitals, schools, and emergency services.
+Public health and safety are central to the project’s mission. By removing workers from high‑voltage environments, the risk of electrocution, falls, and other occupational hazards is significantly reduced. Safety‑critical features such as the BQ76930 Battery Management System prevent overcharge, overcurrent, or thermal runaway, while supplemental monitoring via the ADS1115 provides high‑resolution current and voltage sensing. Indirectly, the project also safeguards the continuity of power delivery, which is essential for hospitals, schools, and emergency services.
 
-Economically, the project offers long-term cost savings by reducing the need for manned inspections and extending the lifespan of power infrastructure through early detection of faults. The modular design approach, which leverages 3D‑printed components for non-critical parts and durable PA12 for structural elements, reduces prototyping and replacement costs. Sensor selection also reflects economic considerations: while ultraviolet cameras provide the most accurate corona detection, they are expensive, so pairing them with lower-cost RGB or multispectral cameras balances precision with affordability. Similarly, Li‑Ion batteries are prioritized for their longer cycle life, reducing replacement frequency compared to Li‑Po packs.
+Economically, the project offers long‑term cost savings by reducing the need for manned inspections and extending the lifespan of power infrastructure through early detection of faults. A modular design approach, leveraging 3D‑printed components for non‑critical parts and durable PA12 for structural elements, reduces prototyping and replacement costs. Sensor selection also reflects economic trade‑offs: while ultraviolet cameras provide the most accurate corona detection, their expense is balanced by pairing them with lower‑cost RGB or multispectral cameras. Similarly, Li‑Ion batteries are prioritized for their longer cycle life, reducing replacement frequency compared to Li‑Po packs.
 
-The design process is guided by established standards organizations to ensure compliance, safety, and interoperability. IEEE standards inform the design of rectifiers, communication protocols, and power electronics. IEC standards govern safety requirements for high-voltage equipment and corona detection instrumentation. FAA regulations constrain drone weight, altitude, and autonomous operation, shaping the overall system architecture. UL certification standards for battery safety and ISO guidelines for environmental and quality management further influence material selection, lifecycle planning, and operational practices. Together, these standards ensure that the system is not only technically sound but also safe, sustainable, and legally compliant.
 
-In summary, the broader impacts of this project have directly shaped subsystem choices and design practices. Weight constraints drive the use of lightweight materials and compact electronics; safety requirements necessitate robust BMS integration and sensor calibration; and economic realities guide sensor pairing and modular construction. By aligning with international standards and addressing cultural, societal, environmental, health, safety, and economic impacts, the project delivers a balanced, responsible, and forward-looking solution for power line inspection and charging.
+### Relevant Standards
+The design process is guided by established standards to ensure compliance, safety, and interoperability. Key standards and their direct constraints include:
+
+- **IEEE 519 (Harmonic Control in Power Systems):**  
+  Limits total harmonic distortion (THD) in rectifier outputs to <5%. This constrains rectifier design to use a full‑wave topology with capacitor filtering to minimize ripple.
+
+- **IEC 61010 (Safety Requirements for Electrical Equipment):**  
+  Defines insulation, creepage, and clearance distances (e.g., ≥3 mm for circuits up to 300 V). This shapes PCB layout, connector spacing, and protective housings for the rectifier and BMS.
+
+- **FAA Part 107 (Small UAS Regulations):**  
+  Limits maximum takeoff weight (<55 lbs), altitude (≤400 ft), and requires line‑of‑sight operation. This constrains subsystem mass budgets, requiring lightweight materials (LW‑PLA, PA12) and compact electronics.
+
+- **UL 1642 (Lithium Battery Safety):**  
+  Requires overcharge protection, short‑circuit testing, and thermal stability. This necessitates integration of the BQ76930 BMS and temperature monitoring for Li‑Ion/Li‑Po packs.
+
+- **IEC 62133 (Rechargeable Battery Safety):**  
+  Specifies maximum charge/discharge rates and mechanical abuse testing. This constrains current limits in the BMS and informs pack enclosure design.
+
+- **IEC 61000 (Electromagnetic Compatibility):**  
+  Sets conducted and radiated emission limits (e.g., <40 dBµV/m at 30 MHz). This requires EMI filtering in rectifiers and DC‑DC converters.
+
+- **FCC Part 15 (US) / ETSI EN 300 328 (EU):**  
+  Regulates Wi‑Fi/Bluetooth transmit power (<1 W EIRP) and spurious emissions. This constrains antenna design and communication range for the Raspberry Pi Zero 2 W.
+
+- **NMEA 0183 / RTCM Protocols (GNSS Data Standards):**  
+  Define message formats for GNSS receivers like the u‑blox ZED‑F9F. These standards ensure precise, interoperable position and timing data for inspection logging.
+
+- **ISO 14001 (Environmental Management):**  
+  Encourages lifecycle assessment and recyclability. This influences material selection (favoring recyclable polymers) and modular design for easier end‑of‑life disassembly.
+
+- **ASTM F3269 (Design and Construction of Drones/UAS):**  
+  Provides guidance on structural integrity and fail‑safe design. This constrains the design of the linear‑axis arm and other structural elements to withstand vibration and weather.
+
+
+### Influence on Subsystem Design
+These standards and broader impacts directly shape subsystem choices and practices:
+
+- **Power Electronics (Rectifier + Charging):**  
+  IEEE 519 ripple limits require a full‑wave rectifier with capacitor filtering. IEC 61010 clearance distances dictate minimum spacing between high‑voltage input and low‑voltage drone electronics. IEC 61000 EMI limits require LC filtering to reduce conducted noise.
+
+- **Energy Storage (Battery + BMS):**  
+  UL 1642 and IEC 62133 mandate overcurrent, thermal, and abuse protection, directly driving the choice of the BQ76930 BMS. The ADS1115 provides supplemental high‑resolution sensing. FAA weight limits constrain pack size, favoring Li‑Ion for higher cycle life within the mass budget.
+
+- **Mechanical Structure:**  
+  FAA Part 107 weight restrictions and ISO 14001 sustainability considerations drive the use of LW‑PLA for non‑critical parts and PA12 for structural elements. ASTM F3269 requires structural robustness and fail‑safe design, influencing the linear‑axis arm mechanism.
+
+- **Sensors (Corona Detection):**  
+  IEC calibration standards require UV and IR sensors to be tested against known emission sources. To reduce cost while meeting accuracy requirements, UV sensors are paired with RGB/multispectral cameras for redundancy.
+
+- **Communications & Control:**  
+  FCC Part 15/ETSI EN 300 328 limits transmit power and emissions, constraining antenna design and communication range. IEEE 802.11 standards ensure interoperability of the Raspberry Pi Zero 2 W with ground stations. NMEA/RTCM protocols ensure GNSS data from the u‑blox ZED‑F9F is precise and interoperable. FAA Part 107 operational limits require failsafe return‑to‑home programming.
+  
+
+
 
 
 ## Resources
