@@ -34,7 +34,14 @@ The ArcAngel Drone conceptual design thus serves as a foundation for developing 
 ### Potential Solutions for Power Line Charging
 
 Half Wave Rectifier:
-Due to the charging capabilities of the drone attachment, a half wave rectifier to assist in current displacement through the load and into our capacitor plate was considered. Half wave rectifiers are lighter in weight and cheaper overall. Maximum payload for drones is not very high so all types of circuit conditions need to be considered for the operation. The simple design may be needed for payload and an additional non-critical application of half-wave rectifiers could be essential for our charging mount.
+Due to the charging capabilities of the drone attachment, a half wave rectifier to assist in current displacement through the load and into our capacitor plate was considered. Half wave rectifiers are lighter in weight and cheaper overall. Maximum payload for drones is not very high so all types of circuit conditions need to be considered for the operation. The simple design may be needed for payload and an additional non-critical application of half-wave rectifiers could be essential for our charging mount. A half rectifier will provide only the positive half of a spectrum which will cut total current by 50% percent compared to a full wave rectifier but could also save major weight.
+Specifications:
+
+Diodes: 2
+
+Current 0.5 x AC Current
+
+Image:
 
 <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/64daf015-7869-4a2e-bb10-c7592948349e" />
 
@@ -42,17 +49,53 @@ Due to the charging capabilities of the drone attachment, a half wave rectifier 
 Full Wave Rectifier:
 A full wave rectifier was also considered for the load charging capabilities it produces. The full-wave rectifier converts both haves of the AC waveform into a DC output, this could be implemented as a bridge rectifier with four diodes. This full wave rectifier gives a lower ripple and better power delivery for the same peak voltage. This improves efficiency and reduces stress on the energy storage with time. Although it seems like the perfect fit, weight is still a major factor in decision making procedures.
 
+Specifications:
+
+Diodes: 4
+
+Current Amount: 1 x AC Current
+
+Image:
+
 <img width="780" height="439" alt="image" src="https://github.com/user-attachments/assets/472dd78a-2233-4360-aaba-8d8f6a30f8d8" />
 
 
 Capacitor Load:
 Using a capacitor stores energy delivered by the rectifier and will supply short bursts to the downstream internal drone battery. Rectified AC will charge the capacitor, then the capacitor will displace current to the downstream battery when needed. A capacitor load is considered for its smooth output and high instantaneous power at output. Capacitors can be fairly heavy though, using a capacitor really negates how much payload a drone could carry, a DC-DC converter will also be needed because the capacitor falls linearly at discharge.
 
+Specifications:
+
+Weight - 5 Grams
+
+Size - 12 x 8 x 8 mm
+
+Capactitance - 2700 microfarad
+
+Rated Voltage - 27 V
+
+Discharge Typing - Linear
+
+Image: 
+
 <img width="1000" height="667" alt="image" src="https://github.com/user-attachments/assets/6b02c921-41b3-4f8b-bcd9-253e04551f82" />
 
 
 Battery Load:
 Using the internal batteries as the primary energy sink on the mounting device to trickle charge the drone is also considered. The rectifier is designed to safely charge the battery which will provide regulated and dense energy storage for the drone. Charging these internal batteries could be an issue due to safety risks and could need temperature monitoring. A battery management system will need to be implemented as well.
+
+Specifications:
+
+Weight - 40 g
+
+Size - 65 x 18 x 18 mm
+
+Nominal Voltage - 3.7 V
+
+Capacity - 2000 mAh
+
+Chemistry - Lithium-Ion
+
+Image:
 
 <img width="1200" height="675" alt="image" src="https://github.com/user-attachments/assets/ce1b02be-785c-4843-abef-392bcef5c840" />
 
@@ -62,22 +105,83 @@ Using the internal batteries as the primary energy sink on the mounting device t
 Infrared/Thermal Imaging:
 A potential solution for detecting excess corona can be solved with an IR camera which generates localized heating to do ionization and current leaking. Infrared and thermal imaging can detect heat signatures to pinpoint areas of excess thermal signatures or arcing. IR detects emitted infrared radiation hotspots, which will allow for identification of stressed components. These cameras can also monitor overloaded connections and mechanical stress. These are affected by temperature and wind and will need extensive calibration strategies to distinguish excess corona from other thermal sources.
 
+Specifications:
+
+Weight - 35 g
+
+Size - 29 x 29 x 29 mm
+
+Resolution - 160 x 120 Pixels
+
+Frame Rate - 9 Hz
+
+Supply Voltage - 3.3 to 5 V
+
+Image:
+
 <img width="640" height="450" alt="image" src="https://github.com/user-attachments/assets/9ad48b28-69f4-4c4e-963e-8a4164f4c7ae" />
 
 
 Ultraviolet Imaging Sensors:
 Corona discharge emits energy mostly in the ultraviolet spectrum, making UV imaging one of the most reliable methods. These specialized cameras detect UV photons from ionized air near high-voltage conductors in daylight conditions. UV sensors capture short-wavelength emissions, invisible to the naked eye, to identify intensity and location of strongly correlated corona activity. They do need shielding from sunlight to prevent false positives and can be relatively expensive.
+
+Specifications:
+
+Weight - 28 g
+
+Size - 40 x 40 x 30 mm
+
+Spectral Range - 240-280 nm
+
+Frame Rate - 10 FPS
+
+Supply Voltage - 5 V
+
+Detection range - 50 m
+
+Image:
+
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/657bac02-dd93-4056-bd21-e66a852511ed" />
 
 
 Optical/Visual Spectrum Cameras (RGB/Multispectral):
 High resolution RGB or multispectral cameras will be useful in providing confirmation of physical damage, arcing, and surface degradation. Image processing and machine learning algorithms can also detect characteristic color changes, carbon tracking, and visible arcing patterns to assist in areas where excess corona could occur. These are readily available at a low cost with very lightweight camera modules. It cannot directly see corona discharge and may be affected by glare.
 
+Specifications:
+
+Weight - 20 g
+
+Size - 25 x 25 x 20 mm
+
+Resolution - 1080 Pixels
+
+Frame Rate - 30 FPS
+
+Supply Voltage - 3.3 to 5 V
+
+Image:
+
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/71d2aed4-33d3-44e9-ba98-37cd9978be9f" />
 
 
 Depth/Stereo Cameras:
 With many drones having their own attached camera, a stereo or structured light camera can compute depth by comparing two or more visual perspectives. These could provide depth maps for autonomous navigation and terrain avoidance which are beneficial for identifying tower geometry and wire positioning. These cameras can be potentially power straining and are sensitive to sunlight interference.
+
+Specifications:
+
+Weight - 45 g
+
+Size - 90 x 25 x 25 mm
+
+Depth Range - 0.3 to 10 m
+
+Resolution - 640 x 480 Depth, 1280 x 720 RGB
+
+Frame Rate - 30 FPS
+
+Supply Voltage - 5 V
+
+Image:
 
 <img width="2300" height="1400" alt="image" src="https://github.com/user-attachments/assets/c7a19c19-ec77-409f-8f15-4dad37e6c49a" />
 
@@ -101,6 +205,7 @@ Connectivity - None
 https://hackaday.com/2016/02/16/a-quadcopter-controlled-by-a-pi-zero/
 
 Image:
+
 <img width="3236" height="2589" alt="image" src="https://github.com/user-attachments/assets/223c0c61-dd6f-41c8-91f1-583c4b7360f7" />
 
 
@@ -126,6 +231,7 @@ https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-product-brief.
 
 
 Image:
+
 <img width="413" height="309" alt="image" src="https://github.com/user-attachments/assets/2b07c36f-e271-442d-aebd-22a62e77e0f7" />
 
 
@@ -149,6 +255,7 @@ Gain Error - 0.25% Maximum
 https://www.ti.com/lit/ds/symlink/ina3221.pdf?ts=1762084112695
 
 Image:
+
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/8191f2a7-49ae-4f0b-b7e4-6d4bfa37a2db" />
 
 
@@ -168,15 +275,29 @@ I^2C Response - 4 Programmable Responses
 https://www.ti.com/lit/ds/symlink/ads1115.pdf?ts=1762102805769&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1115
 
 Image:
+
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/ad4212ac-f481-48c6-90b9-7e2723c9c3ca" />
 
 
 u-blox ZED-F9F:
 The ZED-F9F is a high precision dual-band, multi-constellation receiver designed for advanced GPS applications. It has four satellite connections leading to accurate location finding within one meter. It can output velocity and heaving with low latency, using up to 30 Hz update rates. It draws around 50-70 mA and also uses I^2C communication. It uses Real-Time Kinematic which is ideal for real time updates of drone location and while using this setting location can be found at approximately 1 cm.
 
+Specifications:
+
+Weight - 2 g
+
+Size - 17 x 22 x 2.4 mm
+
+Supply Voltage - 2.7 to 3.6 V
+
+Horizontal and Vertical Accuracy - ~ 0.01 m
+
+Navigational Update Rate - 25 Hz (Maximum)
+
 https://content.u-blox.com/sites/default/files/documents/ZED-F9P-05B_DataSheet_UBXDOC-963802114-12824.pdf
 
 Image:
+
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/6bf89791-e6d8-405f-8365-6995a302a746" />
 
 
@@ -201,6 +322,7 @@ https://www.durnergy.com/lp552535-420mah-3-7v-rechargeable-lithium-polymer-batte
 https://oscarliang.com/rekon-3/
 
 Image:
+
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/bfdd6ae1-43d4-4f95-b0d4-7f0f2603a2ad" />
 
 
@@ -224,6 +346,7 @@ Chemistry - Lithium-Ion Rechargable
 ](https://datasheet4u.com/datasheet/TENERGY/18650-1408721)
 
 Image:
+
 <img width="122" height="143" alt="image" src="https://github.com/user-attachments/assets/35744f8c-c9ed-43e4-a65f-ec8a660a5b01" />
 
 
@@ -244,6 +367,8 @@ Supply Voltage - 3.3 V
 I^2C Communication - 6 to 10 Series Cells
 
 https://www.ti.com/lit/ds/symlink/bq76930.pdf?ts=1762146710182
+
+Image: 
 
 <img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/71f6e4d0-9eba-457f-aa8c-add35bd3e7b7" />
 
@@ -266,6 +391,7 @@ Tensle Strength - 23.2 MPa
 https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf
 
 Image:
+
 <img width="1920" height="1197" alt="image" src="https://github.com/user-attachments/assets/e72f35ad-7d6e-4eab-a2e4-c52215ea6446" />
 
 
@@ -283,6 +409,7 @@ Impact Strength - 14 kJ / m^2
 Tensle Strength - 60 MPa
 
 Image:
+
 <img width="1024" height="1152" alt="image" src="https://github.com/user-attachments/assets/a010c731-db14-4255-95b9-ec45fc4cae0e" />
 
 
@@ -297,14 +424,27 @@ Dimensions - 16 x 2.5 x 1.4 in
 
 Extended Length - 10 ft
 
-Hook Amount - 3 Hooks
+Hook Amount - 2 Hooks
 
 Image:
+
 [<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/6b034d38-b060-4d9b-a2bd-0afe3afd4962" />](https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf)
 
 
 Linear Axis Arm for Line Connection Hook:
-A linear axis arm uses a rotating axle to convert rotary motion into a linear motion to extend a rigid arm. This will use either a motor or piston to drive the arm up to connect to the line and then let it lay down after disconnection. These decreases moving part counts and is not affected by debris or weather. It is much more accurate and easier to control precisely with less failure points but could increase weight of the mechanism and the stowed volume is unchanged.
+A linear axis arm uses a rotating axle to convert rotary motion into a linear motion to extend a rigid arm. This will use either a motor or piston to drive the arm up to connect to the line and then let it lay down after disconnection. These decreases moving part counts and is not affected by debris or weather. It is much more accurate and easier to control precisely with less failure points but could increase weight of the mechanism and the stowed volume is unchanged. Compared to the telescoping mehanism, this could be very beneficial for the final solution because of the ease of access and less failure points at each junction and gives better stability.
+
+Specifications:
+
+Weight - 10 g
+
+Dimensions - Variable
+
+Full Standing Length - Variable
+
+Hook Amount - 2 Hooks
+
+Image:
 
 <img width="2380" height="2380" alt="image" src="https://github.com/user-attachments/assets/6518cc7e-6b3f-4469-af14-0278122ce6c3" />
 
