@@ -41,6 +41,8 @@ Diodes: 2
 
 Current 0.5 x AC Current
 
+
+
 Image:
 
 <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/64daf015-7869-4a2e-bb10-c7592948349e" />
@@ -117,6 +119,8 @@ Frame Rate - 9 Hz
 
 Supply Voltage - 3.3 to 5 V
 
+https://www.instrumentchoice.com.au/blogs/news/thermal-imaging-cameras-how-to-read-specifications?srsltid=AfmBOoq1PP0BLL00qFcHlvxpb1CZsP0d_80V9uzIpG_6zC6DXR_w4Xx6&utm_source=chatgpt.com
+
 Image:
 
 <img width="640" height="450" alt="image" src="https://github.com/user-attachments/assets/9ad48b28-69f4-4c4e-963e-8a4164f4c7ae" />
@@ -139,6 +143,8 @@ Supply Voltage - 5 V
 
 Detection range - 50 m
 
+https://sonel.pl/en/product/corona-camera-uv260?utm_source=chatgpt.com
+
 Image:
 
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/657bac02-dd93-4056-bd21-e66a852511ed" />
@@ -158,6 +164,8 @@ Resolution - 1080 Pixels
 Frame Rate - 30 FPS
 
 Supply Voltage - 3.3 to 5 V
+
+https://www.simtrum.com/WebShop/ProductInfo.aspx?id=19386&pid=1780&utm_source=chatgpt.com
 
 Image:
 
@@ -180,6 +188,8 @@ Resolution - 640 x 480 Depth, 1280 x 720 RGB
 Frame Rate - 30 FPS
 
 Supply Voltage - 5 V
+
+https://www.stereolabs.com/developers
 
 Image:
 
