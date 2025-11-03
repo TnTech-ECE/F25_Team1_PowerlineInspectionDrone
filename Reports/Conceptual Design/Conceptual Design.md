@@ -84,13 +84,35 @@ With many drones having their own attached camera, a stereo or structured light 
 ### Potential Solutions for Communication and Computing
 
 Raspberry Pi Zero:
-The original Raspberry Pi Zero is a very minimalist, single core computer designed for very low power embedded applications. It does require external Wi-Fi or Bluetooth dongles for communication. The power draw and weight are extremely low compared to other solutions but comparable to the Raspberry Pi Zero 2 W. It will be good for monitoring charging status and battery voltage and current and forwarding periodic GPS position data. It only operates with a single CPU core with 512 MB of RAM, so it cannot handle multitask heavy computations and extreme camera based processing.
+The original Raspberry Pi Zero is a very minimalist, single core computer designed for very low power embedded applications. It does require external Wi-Fi or Bluetooth dongles for communication. The power draw and weight are extremely low compared to other solutions but comparable to the Raspberry Pi Zero 2 W. It will be good for monitoring charging status and battery voltage and current and forwarding periodic GPS position data. It only operates with a single CPU core with 512 MB of RAM, so it cannot handle multitask heavy computations and extreme camera based processing. The Zero has been implemented already in completing drone flights with eight servo outputs, barometer and IMU sensors, and a power supply. This also has continued work, trying to implement depth cameras and Lidar on multiple drones along with the prior applications.
+
+Specifications:
+Weight- 9 Grams 
+Size - 2.6 x 1.2 x 0.2 Inches
+I/O Pins - 40, CSI Camera Connector
+Ports - Micro USB, Mini HDMI
+Connectivity - None
+
 
 <img width="3236" height="2589" alt="image" src="https://github.com/user-attachments/assets/223c0c61-dd6f-41c8-91f1-583c4b7360f7" />
 
+https://hackaday.com/2016/02/16/a-quadcopter-controlled-by-a-pi-zero/
+
 
 Raspberry Pi Zero 2 W:
-The updated Raspberry Pi Zero 2 W provides an updated performance over the original Zero while maintaining a very similar size and weight profile. It features a 1 GHz processor with a 512 MB RAM and built in Wi-Fi and Bluetooth capabilities. This provides onboard computations and wireless communication capabilities without external connection. The extra processing allows for reading voltage/current sensors and logging GPS data through a ground Wi-Fi station. It also has the ability to run lightweight image recognition.
+The updated Raspberry Pi Zero 2 W provides an updated performance over the original Zero while maintaining a very similar size and weight profile. It features a 1 GHz processor with a 512 MB RAM and built in Wi-Fi and Bluetooth capabilities. This provides onboard computations and wireless communication capabilities without external connection. The extra processing allows for reading voltage/current sensors and logging GPS data through a ground Wi-Fi station. It also has the ability to run lightweight image recognition. The former Zero was used in drone flight implementation, the new Zero 2 W has all of the former capabilities with extra additions. The connectivity is very important for Real Time Kinematics and live video feed.
+
+Specifications:
+Weight - 10 Grams
+Size - 2.6 x 1.2 x 0.2 Inches
+I/O Pins - 40
+Ports - microSD, CSI-2 Camera Connector, Mini HDMI
+Connectivity - Bluetooth 4.2, BLE, 2.4GHz Wireless LAN With Onboard Antenna.
+40% More Single Threaded Perfmormance / 5x More Multi-Threaded Performance (Than Zero)
+
+https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-product-brief.pdf
+
+
 
 <img width="413" height="309" alt="image" src="https://github.com/user-attachments/assets/2b07c36f-e271-442d-aebd-22a62e77e0f7" />
 
@@ -98,18 +120,40 @@ The updated Raspberry Pi Zero 2 W provides an updated performance over the origi
 Texas Instruments INA3221:
 The TI is a triple channel, high side current and bus voltage monitor made to measure voltage and current across up to three separate power rails. The design can be implemented to have Channel One monitor the battery, Channel 2 monitor the charging current, and Channel Three monitoring the payload. It communicates over the I^2C bus which allows easy communication with the Raspberry Pi for real time updates. The issue occurs with voltages over 26 V where it can no longer measure and requires very precise shunt resistors.
 
+Specifications:
+Weight - 6 Grams
+Size - 4 x 4 mm
+Bus Voltage Range - 0 to +26 V
+Supply Voltage - 2.7 to 5.5 V
+I^2C Addressing - 3 Programmable Responses
+Gain Error - 0.25% Maximum
+
+https://www.ti.com/lit/ds/symlink/ina3221.pdf?ts=1762084112695
+Image:
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/8191f2a7-49ae-4f0b-b7e4-6d4bfa37a2db" />
 
 
 ADS1115 + Discrete Shunt Amplifiers:
-The ADS1115 is a 16-bit, low power analog to digital converter that communicates with I^2C and provides up to four input channels. Each channel can be connected across a shunt resistor placed in current paths and amplified which will then be fed to the Raspberry Pi. It has very low power consumption and flexible gain and channel configuration. It has no maximum voltage measurement as well. It does need extra components and is most susceptible to noise.
+The ADS1115 is a 16-bit, low power analog to digital converter that communicates with I^2C and provides up to four input channels. Each channel can be connected across a shunt resistor placed in current paths and amplified which will then be fed to the Raspberry Pi. It has very low power consumption and flexible gain and channel configuration. It has no maximum voltage measurement as well. It does need extra components and is most susceptible to noise. The ADS1115 is more suitable for drone applications because it is more customizable per need.
 
+Specifications:
+Weight - 1.0 Grams
+Size - 2.0 x 1.5 x 0.4 mm
+Supply Voltage - 2.0 to 5.5 V
+I^2C Response - 4 Programmable Responses
+
+https://www.ti.com/lit/ds/symlink/ads1115.pdf?ts=1762102805769&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1115
+
+Image:
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/ad4212ac-f481-48c6-90b9-7e2723c9c3ca" />
 
 
 u-blox ZED-F9F:
 The ZED-F9F is a high precision dual-band, multi-constellation receiver designed for advanced GPS applications. It has four satellite connections leading to accurate location finding within one meter. It can output velocity and heaving with low latency, using up to 30 Hz update rates. It draws around 50-70 mA and also uses I^2C communication. It uses Real-Time Kinematic which is ideal for real time updates of drone location and while using this setting location can be found at approximately 1 cm.
 
+https://content.u-blox.com/sites/default/files/documents/ZED-F9P-05B_DataSheet_UBXDOC-963802114-12824.pdf
+
+Image:
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/6bf89791-e6d8-405f-8365-6995a302a746" />
 
 
