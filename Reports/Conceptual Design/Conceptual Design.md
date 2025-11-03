@@ -103,11 +103,17 @@ Raspberry Pi Zero 2 W:
 The updated Raspberry Pi Zero 2 W provides an updated performance over the original Zero while maintaining a very similar size and weight profile. It features a 1 GHz processor with a 512 MB RAM and built in Wi-Fi and Bluetooth capabilities. This provides onboard computations and wireless communication capabilities without external connection. The extra processing allows for reading voltage/current sensors and logging GPS data through a ground Wi-Fi station. It also has the ability to run lightweight image recognition. The former Zero was used in drone flight implementation, the new Zero 2 W has all of the former capabilities with extra additions. The connectivity is very important for Real Time Kinematics and live video feed.
 
 Specifications:
+
 Weight - 10 Grams
+
 Size - 2.6 x 1.2 x 0.2 Inches
+
 I/O Pins - 40
+
 Ports - microSD, CSI-2 Camera Connector, Mini HDMI
+
 Connectivity - Bluetooth 4.2, BLE, 2.4GHz Wireless LAN With Onboard Antenna.
+
 40% More Single Threaded Perfmormance / 5x More Multi-Threaded Performance (Than Zero)
 
 https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-product-brief.pdf
