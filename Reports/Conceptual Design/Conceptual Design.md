@@ -105,7 +105,7 @@ Image:
 ### Potential Solutions for Corona Detection and Camera Sensing
 
 Infrared/Thermal Imaging:
-A potential solution for detecting excess corona can be solved with an IR camera which generates localized heating to do ionization and current leaking. Infrared and thermal imaging can detect heat signatures to pinpoint areas of excess thermal signatures or arcing. IR detects emitted infrared radiation hotspots, which will allow for identification of stressed components. These cameras can also monitor overloaded connections and mechanical stress. These are affected by temperature and wind and will need extensive calibration strategies to distinguish excess corona from other thermal sources.
+A potential solution for detecting excess corona can be solved with an IR camera which generates localized heating to do ionization and current leaking. Infrared and thermal imaging can detect heat signatures to pinpoint areas of excess thermal signatures or arcing. IR detects emitted infrared radiation hotspots, which will allow for identification of stressed components. These cameras can also monitor overloaded connections and mechanical stress. These are affected by temperature and wind and will need extensive calibration strategies to distinguish excess corona from other thermal sources [11].
 
 Specifications:
 
@@ -119,15 +119,13 @@ Frame Rate - 9 Hz
 
 Supply Voltage - 3.3 to 5 V
 
-https://www.instrumentchoice.com.au/blogs/news/thermal-imaging-cameras-how-to-read-specifications?srsltid=AfmBOoq1PP0BLL00qFcHlvxpb1CZsP0d_80V9uzIpG_6zC6DXR_w4Xx6&utm
-
 Image:
 
 <img width="640" height="450" alt="image" src="https://github.com/user-attachments/assets/9ad48b28-69f4-4c4e-963e-8a4164f4c7ae" />
 
 
 Ultraviolet Imaging Sensors:
-Corona discharge emits energy mostly in the ultraviolet spectrum, making UV imaging one of the most reliable methods. These specialized cameras detect UV photons from ionized air near high-voltage conductors in daylight conditions. UV sensors capture short-wavelength emissions, invisible to the naked eye, to identify intensity and location of strongly correlated corona activity. They do need shielding from sunlight to prevent false positives and can be relatively expensive.
+Corona discharge emits energy mostly in the ultraviolet spectrum, making UV imaging one of the most reliable methods. These specialized cameras detect UV photons from ionized air near high-voltage conductors in daylight conditions. UV sensors capture short-wavelength emissions, invisible to the naked eye, to identify intensity and location of strongly correlated corona activity. They do need shielding from sunlight to prevent false positives and can be relatively expensive [12].
 
 Specifications:
 
@@ -151,7 +149,7 @@ Image:
 
 
 Optical/Visual Spectrum Cameras (RGB/Multispectral):
-High resolution RGB or multispectral cameras will be useful in providing confirmation of physical damage, arcing, and surface degradation. Image processing and machine learning algorithms can also detect characteristic color changes, carbon tracking, and visible arcing patterns to assist in areas where excess corona could occur. These are readily available at a low cost with very lightweight camera modules. It cannot directly see corona discharge and may be affected by glare.
+High resolution RGB or multispectral cameras will be useful in providing confirmation of physical damage, arcing, and surface degradation. Image processing and machine learning algorithms can also detect characteristic color changes, carbon tracking, and visible arcing patterns to assist in areas where excess corona could occur. These are readily available at a low cost with very lightweight camera modules. It cannot directly see corona discharge and may be affected by glare [13].
 
 Specifications:
 
@@ -165,15 +163,13 @@ Frame Rate - 30 FPS
 
 Supply Voltage - 3.3 to 5 V
 
-https://www.simtrum.com/WebShop/ProductInfo.aspx?id=19386&pid=1780&utm
-
 Image:
 
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/71d2aed4-33d3-44e9-ba98-37cd9978be9f" />
 
 
 Depth/Stereo Cameras:
-With many drones having their own attached camera, a stereo or structured light camera can compute depth by comparing two or more visual perspectives. These could provide depth maps for autonomous navigation and terrain avoidance which are beneficial for identifying tower geometry and wire positioning. These cameras can be potentially power straining and are sensitive to sunlight interference.
+With many drones having their own attached camera, a stereo or structured light camera can compute depth by comparing two or more visual perspectives. These could provide depth maps for autonomous navigation and terrain avoidance which are beneficial for identifying tower geometry and wire positioning. These cameras can be potentially power straining and are sensitive to sunlight interference [14].
 
 Specifications:
 
@@ -198,7 +194,7 @@ Image:
 ### Potential Solutions for Communication and Computing
 
 Raspberry Pi Zero:
-The original Raspberry Pi Zero is a very minimalist, single core computer designed for very low power embedded applications. It does require external Wi-Fi or Bluetooth dongles for communication. The power draw and weight are extremely low compared to other solutions but comparable to the Raspberry Pi Zero 2 W. It will be good for monitoring charging status and battery voltage and current and forwarding periodic GPS position data. It only operates with a single CPU core with 512 MB of RAM, so it cannot handle multitask heavy computations and extreme camera based processing. The Zero has been implemented already in completing drone flights with eight servo outputs, barometer and IMU sensors, and a power supply. This also has continued work, trying to implement depth cameras and Lidar on multiple drones along with the prior applications.
+The original Raspberry Pi Zero is a very minimalist, single core computer designed for very low power embedded applications. It does require external Wi-Fi or Bluetooth dongles for communication. The power draw and weight are extremely low compared to other solutions but comparable to the Raspberry Pi Zero 2 W. It will be good for monitoring charging status and battery voltage and current and forwarding periodic GPS position data. It only operates with a single CPU core with 512 MB of RAM, so it cannot handle multitask heavy computations and extreme camera based processing. The Zero has been implemented already in completing drone flights with eight servo outputs, barometer and IMU sensors, and a power supply. This also has continued work, trying to implement depth cameras and Lidar on multiple drones along with the prior applications [15].
 
 Specifications:
 
@@ -212,8 +208,6 @@ Ports - Micro USB, Mini HDMI
 
 Connectivity - None
 
-https://hackaday.com/2016/02/16/a-quadcopter-controlled-by-a-pi-zero/
-
 Image:
 
 <img width="3236" height="2589" alt="image" src="https://github.com/user-attachments/assets/223c0c61-dd6f-41c8-91f1-583c4b7360f7" />
@@ -221,7 +215,7 @@ Image:
 
 
 Raspberry Pi Zero 2 W:
-The updated Raspberry Pi Zero 2 W provides an updated performance over the original Zero while maintaining a very similar size and weight profile. It features a 1 GHz processor with a 512 MB RAM and built in Wi-Fi and Bluetooth capabilities. This provides onboard computations and wireless communication capabilities without external connection. The extra processing allows for reading voltage/current sensors and logging GPS data through a ground Wi-Fi station. It also has the ability to run lightweight image recognition. The former Zero was used in drone flight implementation, the new Zero 2 W has all of the former capabilities with extra additions. The connectivity is very important for Real Time Kinematics and live video feed.
+The updated Raspberry Pi Zero 2 W provides an updated performance over the original Zero while maintaining a very similar size and weight profile. It features a 1 GHz processor with a 512 MB RAM and built in Wi-Fi and Bluetooth capabilities. This provides onboard computations and wireless communication capabilities without external connection. The extra processing allows for reading voltage/current sensors and logging GPS data through a ground Wi-Fi station. It also has the ability to run lightweight image recognition. The former Zero was used in drone flight implementation, the new Zero 2 W has all of the former capabilities with extra additions. The connectivity is very important for Real Time Kinematics and live video feed [16].
 
 Specifications:
 
@@ -237,16 +231,13 @@ Connectivity - Bluetooth 4.2, BLE, 2.4GHz Wireless LAN With Onboard Antenna.
 
 40% More Single Threaded Perfmormance / 5x More Multi-Threaded Performance (Than Zero)
 
-https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-product-brief.pdf
-
-
 Image:
 
 <img width="413" height="309" alt="image" src="https://github.com/user-attachments/assets/2b07c36f-e271-442d-aebd-22a62e77e0f7" />
 
 
 Texas Instruments INA3221:
-The TI is a triple channel, high side current and bus voltage monitor made to measure voltage and current across up to three separate power rails. The design can be implemented to have Channel One monitor the battery, Channel 2 monitor the charging current, and Channel Three monitoring the payload. It communicates over the I^2C bus which allows easy communication with the Raspberry Pi for real time updates. The issue occurs with voltages over 26 V where it can no longer measure and requires very precise shunt resistors.
+The TI is a triple channel, high side current and bus voltage monitor made to measure voltage and current across up to three separate power rails. The design can be implemented to have Channel One monitor the battery, Channel 2 monitor the charging current, and Channel Three monitoring the payload. It communicates over the I^2C bus which allows easy communication with the Raspberry Pi for real time updates. The issue occurs with voltages over 26 V where it can no longer measure and requires very precise shunt resistors [17].
 
 Specifications:
 
@@ -262,15 +253,13 @@ I^2C Addressing - 3 Programmable Responses
 
 Gain Error - 0.25% Maximum
 
-https://www.ti.com/lit/ds/symlink/ina3221.pdf?ts=1762084112695
-
 Image:
 
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/8191f2a7-49ae-4f0b-b7e4-6d4bfa37a2db" />
 
 
 ADS1115 + Discrete Shunt Amplifiers:
-The ADS1115 is a 16-bit, low power analog to digital converter that communicates with I^2C and provides up to four input channels. Each channel can be connected across a shunt resistor placed in current paths and amplified which will then be fed to the Raspberry Pi. It has very low power consumption and flexible gain and channel configuration. It has no maximum voltage measurement as well. It does need extra components and is most susceptible to noise. The ADS1115 is more suitable for drone applications because it is more customizable per need.
+The ADS1115 is a 16-bit, low power analog to digital converter that communicates with I^2C and provides up to four input channels. Each channel can be connected across a shunt resistor placed in current paths and amplified which will then be fed to the Raspberry Pi. It has very low power consumption and flexible gain and channel configuration. It has no maximum voltage measurement as well. It does need extra components and is most susceptible to noise. The ADS1115 is more suitable for drone applications because it is more customizable per need [18].
 
 Specifications:
 
@@ -282,15 +271,13 @@ Supply Voltage - 2.0 to 5.5 V
 
 I^2C Response - 4 Programmable Responses
 
-https://www.ti.com/lit/ds/symlink/ads1115.pdf?ts=1762102805769&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS1115
-
 Image:
 
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/ad4212ac-f481-48c6-90b9-7e2723c9c3ca" />
 
 
 u-blox ZED-F9F:
-The ZED-F9F is a high precision dual-band, multi-constellation receiver designed for advanced GPS applications. It has four satellite connections leading to accurate location finding within one meter. It can output velocity and heaving with low latency, using up to 30 Hz update rates. It draws around 50-70 mA and also uses I^2C communication. It uses Real-Time Kinematic which is ideal for real time updates of drone location and while using this setting location can be found at approximately 1 cm.
+The ZED-F9F is a high precision dual-band, multi-constellation receiver designed for advanced GPS applications. It has four satellite connections leading to accurate location finding within one meter. It can output velocity and heaving with low latency, using up to 30 Hz update rates. It draws around 50-70 mA and also uses I^2C communication. It uses Real-Time Kinematic which is ideal for real time updates of drone location and while using this setting location can be found at approximately 1 cm [19].
 
 Specifications:
 
@@ -304,8 +291,6 @@ Horizontal and Vertical Accuracy - ~ 0.01 m
 
 Navigational Update Rate - 25 Hz (Maximum)
 
-https://content.u-blox.com/sites/default/files/documents/ZED-F9P-05B_DataSheet_UBXDOC-963802114-12824.pdf
-
 Image:
 
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/6bf89791-e6d8-405f-8365-6995a302a746" />
@@ -314,7 +299,7 @@ Image:
 ### Potential Solutions for Battery and BMS
 
 Lithium-Ion Battery Pack:
-The Lithium-Ion Battery Pack is the most common choice for drones and portable power. It has high energy density, lightweight construction and stable voltage characteristics. A Li-Ion pack configured as a 4S or 6S, which is 14.8V-22.2V nominal, provides a suitable balance of energy storage and weight. When integrated with proper current limiting and BMS protection, it offers long term service of around 500-1000 cycles. This has been implemented in a drone already by Oscar Liang to power the entire drone, we would only need it for camera and sensing capabilities.
+The Lithium-Ion Battery Pack is the most common choice for drones and portable power. It has high energy density, lightweight construction and stable voltage characteristics. A Li-Ion pack configured as a 4S or 6S, which is 14.8V-22.2V nominal, provides a suitable balance of energy storage and weight. When integrated with proper current limiting and BMS protection, it offers long term service of around 500-1000 cycles. This has been implemented in a drone already by Oscar Liang to power the entire drone, we would only need it for camera and sensing capabilities [20] [21].
 
 Specifications:
 
@@ -328,9 +313,6 @@ Nominal Voltage - 3.7 V
 
 Chemistry - Lithium-Ion Rechargable
 
-https://www.durnergy.com/lp552535-420mah-3-7v-rechargeable-lithium-polymer-battery-product/
-https://oscarliang.com/rekon-3/
-
 Image:
 
 <img width="300" height="300" alt="image" src="https://github.com/user-attachments/assets/bfdd6ae1-43d4-4f95-b0d4-7f0f2603a2ad" />
@@ -338,7 +320,7 @@ Image:
 
 
 Lithium-Polymer Battery Pack:
-The Lithium-Polymer Battery is a subtype of Li-Ion chemistry using a polymer electrolyte which offers higher discharging rates and very light packaging. These are often used in UAVs where high current draw and rapid power responses are required. An Li-Po configuration can deliver high current outage while remaining lightweight but must be paired with a robust BMS to avoid over discharge and contain a shorter lifespan of around 200-300 cycles. These have been used for GPS trackers and drones very often and are extremely common.
+The Lithium-Polymer Battery is a subtype of Li-Ion chemistry using a polymer electrolyte which offers higher discharging rates and very light packaging. These are often used in UAVs where high current draw and rapid power responses are required. An Li-Po configuration can deliver high current outage while remaining lightweight but must be paired with a robust BMS to avoid over discharge and contain a shorter lifespan of around 200-300 cycles. These have been used for GPS trackers and drones very often and are extremely common [20] [21]s.
 
 Specifications:
 
@@ -352,9 +334,6 @@ Nominal Voltage - 3.7 V
 
 Chemistry - Lithium-Ion Rechargable
 
-[https://www.durnergy.com/lp552535-420mah-3-7v-rechargeable-lithium-polymer-battery-product/
-](https://datasheet4u.com/datasheet/TENERGY/18650-1408721)
-
 Image:
 
 <img width="122" height="143" alt="image" src="https://github.com/user-attachments/assets/35744f8c-c9ed-43e4-a65f-ec8a660a5b01" />
@@ -362,7 +341,7 @@ Image:
 
 
 Texas Instruments BQ76930:
-For a Battery Management System (BMS) the formerly listed ADS1115 and INA3221 will do more than suffice but a third option could be BQ76930. It provides essential monitoring and protection features: cell voltage measurement, overcurrent protection and cell balancing. It also communicates with I^2C, making it compatible with the Raspberry Pi. It lacks digital configuration customization and is not built with Coulomb counting.
+For a Battery Management System (BMS) the formerly listed ADS1115 and INA3221 will do more than suffice but a third option could be BQ76930. It provides essential monitoring and protection features: cell voltage measurement, overcurrent protection and cell balancing. It also communicates with I^2C, making it compatible with the Raspberry Pi. It lacks digital configuration customization and is not built with Coulomb counting [22].
 
 Specifications:
 
@@ -376,8 +355,6 @@ Supply Voltage - 3.3 V
 
 I^2C Communication - 6 to 10 Series Cells
 
-https://www.ti.com/lit/ds/symlink/bq76930.pdf?ts=1762146710182
-
 Image: 
 
 <img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/71f6e4d0-9eba-457f-aa8c-add35bd3e7b7" />
@@ -386,7 +363,7 @@ Image:
 ### Potential Solutions for Mechanical and Structural Subsystems
 
 LW-PLA For 3D Printing:
-The LW-PLA filament is a foaming thermoplastic material that has a low-density internal structure without requiring a hollow infill. When heated to approximately 220-250 C, the polymer foams resulting in a weight reduction of 30-50% compared to standard PLA, this is crucial for low weight operations. It is easy to print on common FDM printers. It will be most commonly used on areas where high mechanical strength is not required and is sensitive to heat and UV exposure. PolyLite LW-PLA is suitable for the drone appications we need and has the near highest strength compared to other PLAs.
+The LW-PLA filament is a foaming thermoplastic material that has a low-density internal structure without requiring a hollow infill. When heated to approximately 220-250 C, the polymer foams resulting in a weight reduction of 30-50% compared to standard PLA, this is crucial for low weight operations. It is easy to print on common FDM printers. It will be most commonly used on areas where high mechanical strength is not required and is sensitive to heat and UV exposure. PolyLite LW-PLA is suitable for the drone appications we need and has the near highest strength compared to other PLAs [23].
 
 Specifications:
 
@@ -397,8 +374,6 @@ Bending Strength - 52.9 MPa (Megapascals)
 Impact Strength - 2.06 kJ / m^2
 
 Tensle Strength - 23.2 MPa
-
-https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf
 
 Image:
 
@@ -733,6 +708,32 @@ If the team follows the schedule outlined in the Gantt chart, the project will r
 [9] M. Kuffel et al., “The Ultraviolet Detection of Corona Discharge in Power Transmission Lines,” ResearchGate, May 2024. [Online]. Available: https://www.researchgate.net/publication/276494629_The_Ultraviolet_Detection_of_Corona_Discharge_in_Power_Transmission_Lines
 
 [10] F. Zhang et al., “Detection of Corona Discharge Using a Multi-Spectral UAV Sensor,” MDPI Sensors, vol. 20, no. 17, p. 4767, 2020.
+
+[11] Instrument Choice, “Thermal imaging cameras: How to read specifications,” Instrument Choice Blog, 2025. [Online]. Available: https://www.instrumentchoice.com.au/blogs/news/thermal-imaging-cameras-how-to-read-specifications.
+
+[12] Sonel, “Corona camera UV260,” Sonel.pl, 2025. [Online]. Available: https://sonel.pl/en/product/corona-camera-uv260.
+
+[13] Simtrum, “UV260 Corona Camera,” Simtrum WebShop, 2025. [Online]. Available: https://www.simtrum.com/WebShop/ProductInfo.aspx?id=19386&pid=1780.
+
+[14] Stereolabs, “Developers,” Stereolabs, 2025. [Online]. Available: https://www.stereolabs.com/developers\.
+
+[15] L. Royer, “A quadcopter controlled by a Pi Zero,” Hackaday, Feb. 16, 2016. [Online]. Available: https://hackaday.com/2016/02/16/a-quadcopter-controlled-by-a-pi-zero/.
+
+[16] Raspberry Pi Ltd., Raspberry Pi Zero 2 W Product Brief, 2021. [Online]. Available: https://datasheets.raspberrypi.com/rpizero2/raspberry-pi-zero-2-w-product-brief.pdf.
+
+[17] Texas Instruments, INA3221 Triple-Channel, High-Side Measurement Shunt and Bus Voltage Monitor Datasheet, 2023. [Online]. Available: https://www.ti.com/lit/ds/symlink/ina3221.pdf.
+
+[18] Texas Instruments, ADS1115 Ultra-Small, Low-Power, 16-Bit Analog-to-Digital Converter Datasheet, 2023. [Online]. Available: https://www.ti.com/lit/ds/symlink/ads1115.pdf.
+
+[19] u-blox AG, ZED-F9P High Precision GNSS Module Data Sheet, 2024. [Online]. Available: https://content.u-blox.com/sites/default/files/documents/ZED-F9P-05B_DataSheet_UBXDOC-963802114-12824.pdf.
+
+[20] Durnergy, “LP552535 420mAh 3.7V rechargeable lithium polymer battery,” Durnergy, 2025. [Online]. Available: https://www.durnergy.com/lp552535-420mah-3-7v-rechargeable-lithium-polymer-battery-product/.
+
+[21] O. Liang, “Rekon 3 review,” Oscar Liang Blog, 2025. [Online]. Available: https://oscarliang.com/rekon-3/.
+
+[22] Texas Instruments, BQ76930 Battery Monitor for 3–10 Cell Li-Ion and Li-Polymer Batteries Datasheet, 2024. [Online]. Available: https://www.ti.com/lit/ds/symlink/bq76930.pdf.
+
+[23] Polymaker, PolyLite LW-PLA Technical Data Sheet, 2025. [Online]. Available: https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf.
 
 ## Statement of Contributions
 
