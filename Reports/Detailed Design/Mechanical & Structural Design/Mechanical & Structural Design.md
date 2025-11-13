@@ -40,7 +40,7 @@ This system includes the following devices and material:
 ## Interface with Other Subsystems
 | Subsystems | Interfacing | Connection | Notes |
 |------------|-------------|------------|-------|
-| Battery and BMS |
+| Battery and BMS | Supply to ground connection for servo | Direct positive and ground connection | 4.8-6V needed for application |
 | Control and Communication |
 | Corona Detection and Camera Sensing |
 | Power Harvesting and Circuit Design |
@@ -52,6 +52,7 @@ This system includes the following devices and material:
 ## Anaysis
 ## References
 https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
+
 
 
 
