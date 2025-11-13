@@ -1,6 +1,6 @@
-## Mechanical and Structural Detailed Design
+# Mechanical and Structural Detailed Design
 
-# Function of the Subsystem
+## Function of the Subsystem
 The Mechanical and Structural subsystem design for the Arc Angel drone implementation includes 
 housing for all of the other subsystems including: Battery Safety and BMS Design, Control and 
 Communication Design, Corona Detection and Camera Sensing, and the Power Harvesting and Charging
@@ -23,15 +23,16 @@ Mechanical Design will communicate with the Control Design to raise and lower an
 drone housing system that will hook onto the power line. This hook, listed in Figures [LIST WHEN
 CREATED] will provide connection from the line to the Power Harvesting and Charging Subsystem.
 
-# Specification and Constraints
-# Overview of Proposed Solutions
-# Interface with Other Subsystems
+## Specification and Constraints
+## Overview of Proposed Solutions
+## Interface with Other Subsystems
 
-# 3D Models and Figures of Custom Mechanical and Structural Components
-# Buildable Schematic
-# Printed Circuit Board Layout
-# Flowchart
-# BOM
-# Anaysis
-# References
+## 3D Models and Figures of Custom Mechanical and Structural Components
+## Buildable Schematic
+## Printed Circuit Board Layout
+## Flowchart
+## BOM
+## Anaysis
+## References
+
 
