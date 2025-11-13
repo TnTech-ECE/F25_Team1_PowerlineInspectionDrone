@@ -48,10 +48,17 @@ This system includes the following devices and material:
 ## Buildable Schematic
 ## Printed Circuit Board Layout
 ## Flowchart
-## BOM
+## Bill of Materials (BOM)
+| Item | Quantity | Part Number / Model | Description | Price |
+|------|----------|---------------------|-------------|-------|
+| PolyLite LW-PLA | 1 | PA08001 | Lighweight PLA (0.6g/cubic cm) | ~ $33 USD |
+| MG90S Mini Gear Servo | 1 |
+| (WIRE MATERIAL FOR HOOK) | 1 |
+
 ## Anaysis
 ## References
 https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
+
 
 
 
