@@ -40,10 +40,10 @@ This system includes the following devices and material:
 ## Interface with Other Subsystems
 | Subsystems | Interfacing | Connection | Notes |
 |------------|-------------|------------|-------|
-| Battery and BMS | Supply to ground connection for servo | Direct positive and ground connection | 4.8-6V needed for application |
-| Control and Communication |
-| Corona Detection and Camera Sensing |
-| Power Harvesting and Circuit Design |
+| Battery and BMS | Supply to ground connection for servo. Housing for stability | Direct positive and ground wire connection. LW-PLA Housing. | 4.8-6V needed for servo application |
+| Control and Communication | I^2C Commmunication for 90 degree servo rotation. Housing for stability | Direct one wire connection for dual motion. LW-PLA Housing | Recieves positive or negative degree motion to raise and lower arm |
+| Corona Detection and Camera Sensing | External housing connection to undercarriage drone. | LW-PLA external housing | Provides camera and corona detection mounting and pathway to communication devices |
+| Power Harvesting and Circuit Design | Hook-to-line connection. Internal housing for stability | Provides single wire connection directly from power line to circuit system. | Allows power draw from power line to internal power harvesting system |
 ## 3D Models and Figures of Custom Mechanical and Structural Components
 ## Buildable Schematic
 ## Printed Circuit Board Layout
@@ -52,6 +52,7 @@ This system includes the following devices and material:
 ## Anaysis
 ## References
 https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
+
 
 
 
