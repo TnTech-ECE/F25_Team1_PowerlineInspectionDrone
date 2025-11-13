@@ -24,9 +24,22 @@ drone housing system that will hook onto the power line. This hook, listed in Fi
 CREATED] will provide connection from the line to the Power Harvesting and Charging Subsystem.
 
 ## Specification and Constraints
+- The Structural Design subsystem shall not affect drone flight or stability.
+- The Structural Design subsystem shall be stable and not be affected by weather.
+- The Structural and Mechanical design should interface with all other subsystems when needed.
+- The Mechanical Design subsystem shall be a stable connection to the power line.
+- The Mechanical Design subsystem shall operate around a linear axis scale and not affect drone flight.
 ## Overview of Proposed Solutions
+This system includes the following devices and material:
+- LW-PLA: Light weight, stable material for Structural and Mechanical subsystem.
+- MG90S Mini Gear Servo: Lightweight, low gear 180 degree servo motor for hook-to-line connection.
+- Dome Undercarriage Housing: Aerodynamic, larger space housing for all other subsystems.
+- Linear Axis Hook: Efficient and stable connection for line-to-harvesting connection.
+- Two Claw Hook: Provides stability from drone-to-line connection.
+- Housing to Drone Connection: Screw housing to drone leg connection to provide stability and simplicity for housing.
 ## Interface with Other Subsystems
-
+| Subsystems | Interfacing | Connection | Notes |
+|------------|-------------|------------|-------|
 ## 3D Models and Figures of Custom Mechanical and Structural Components
 ## Buildable Schematic
 ## Printed Circuit Board Layout
@@ -34,5 +47,6 @@ CREATED] will provide connection from the line to the Power Harvesting and Charg
 ## BOM
 ## Anaysis
 ## References
+https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
 
 
