@@ -45,6 +45,8 @@ This system includes the following devices and material:
 | Corona Detection and Camera Sensing | External housing connection to undercarriage drone. | LW-PLA external housing | Provides camera and corona detection mounting and pathway to communication devices |
 | Power Harvesting and Circuit Design | Hook-to-line connection. Internal housing for stability | Provides single wire connection directly from power line to circuit system. | Allows power draw from power line to internal power harvesting system |
 ## 3D Models and Figures of Custom Mechanical and Structural Components
+<img width="802" height="627" alt="image" src="https://github.com/user-attachments/assets/69c6d31e-b458-40c6-b3bc-a8fddaed869a" />
+
 ## Buildable Schematic
 ## Printed Circuit Board Layout
 ## Flowchart
@@ -52,12 +54,15 @@ This system includes the following devices and material:
 | Item | Quantity | Part Number / Model | Description | Price |
 |------|----------|---------------------|-------------|-------|
 | PolyLite LW-PLA | 1 | PA08001 | Lighweight PLA (0.6g/cubic cm) | ~ $33 USD |
-| MG90S Mini Gear Servo | 1 |
-| (WIRE MATERIAL FOR HOOK) | 1 |
+| MG90S Mini Gear Servo | 1 | SERVO-MG90S-2 | Mini 180 degree servo | ~ $5 USD |
+| (WIRE MATERIAL FOR HOOK) | 1 | 
 
 ## Anaysis
 ## References
 https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
+
+https://grabcad.com/library/mg90s-micro-servo-2
+
 
 
 
