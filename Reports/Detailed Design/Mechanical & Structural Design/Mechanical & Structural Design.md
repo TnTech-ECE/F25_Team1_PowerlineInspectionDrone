@@ -49,7 +49,10 @@ This system includes the following devices and material:
 
 ## Buildable Schematic
 ## Printed Circuit Board Layout
+
 ## Flowchart
+<img width="1920" height="1080" alt="Structual   Mechanical" src="https://github.com/user-attachments/assets/f243fabb-c983-4541-9552-0a78239d7463" />
+
 ## Bill of Materials (BOM)
 | Item | Quantity | Part Number / Model | Description | Price |
 |------|----------|---------------------|-------------|-------|
@@ -62,6 +65,7 @@ This system includes the following devices and material:
 https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
 
 https://grabcad.com/library/mg90s-micro-servo-2
+
 
 
 
