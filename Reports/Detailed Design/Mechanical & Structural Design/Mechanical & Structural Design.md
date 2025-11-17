@@ -46,9 +46,11 @@ This system includes the following devices and material:
 | Power Harvesting and Circuit Design | Hook-to-line connection. Internal housing for stability | Provides single wire connection directly from power line to circuit system. | Allows power draw from power line to internal power harvesting system |
 ## 3D Models and Figures of Custom Mechanical and Structural Components
 MG90s Micro Servo:
+
 <img width="802" height="627" alt="image" src="https://github.com/user-attachments/assets/69c6d31e-b458-40c6-b3bc-a8fddaed869a" />
 
 Housing Subsystem:
+
 <img width="1113" height="807" alt="image" src="https://github.com/user-attachments/assets/176e0940-9a26-4ebd-a275-8facb0581ee8" />
 
 ## Buildable Schematic
@@ -69,6 +71,7 @@ Housing Subsystem:
 https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
 
 https://grabcad.com/library/mg90s-micro-servo-2
+
 
 
 
