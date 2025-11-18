@@ -24,11 +24,17 @@ drone housing system that will hook onto the power line. This hook, listed in Fi
 CREATED] will provide connection from the line to the Power Harvesting and Charging Subsystem.
 
 ## Specification and Constraints
+Specifications:
 - The Structural Design subsystem shall not affect drone flight or stability.
 - The Structural Design subsystem shall be stable and not be affected by weather.
 - The Structural and Mechanical design should interface with all other subsystems when needed.
 - The Mechanical Design subsystem shall be a stable connection to the power line.
 - The Mechanical Design subsystem shall operate around a linear axis scale and not affect drone flight.
+
+Constraints:
+-The Structural Design shall keep total capacity under 200 g.
+-The Mechanical Design shall provide line-to-harvesting system connection.
+
 ## Overview of Proposed Solutions
 This system includes the following devices and material:
 - LW-PLA: Light weight, stable material for Structural and Mechanical subsystem.
@@ -71,6 +77,7 @@ Housing Subsystem:
 https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
 
 https://grabcad.com/library/mg90s-micro-servo-2
+
 
 
 
