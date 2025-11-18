@@ -6,3 +6,22 @@ The Power Harvesting & Charging subsystem serves as the electrical energy interf
 
 A secondary function of this subsystem is to provide electrical isolation and protection for all other onboard electronics. It ensures that any high-voltage surges, transients, or faults remain confined within the harvesting circuit, protecting the drone’s compute and sensing systems. Once the DC output is stable and within the required limits, control of charging operations and communication with the onboard computer are managed by the Battery and BMS subsystem.
 
+## Specifications and Constraints
+
+## Overview of Proposed Solution
+
+## Interface with Other Subsystems
+
+## 3D Model of Custom Mechanical Components
+
+## Buildable Schematic
+
+## Printed Circuit Board Layout
+
+## Flowchart
+
+## BOM
+
+## Analysis
+
+## References
