@@ -75,14 +75,17 @@ Housing Subsystem:
 ## Anaysis
 LW-PLA:
 - LW-PLA from PolyLite is a very lightweight and highly durable PLA used for many applications. The two biggest needs for drone operation are mainting low capacity goals and being stable during flight. LW-PLA has a density of 0.6g/cm^3, being extremely light for small applications. The hook for the drone, shown in Figure (LIST FIGURE WHEN NAMED), will need high tensile strength to maintain the coil's stability around the hook. The PolyLite LW-PLA has a tensile strength of 23.2 MPa, which is crucial for long life expectancy.
+  
 Under Drone Housing:
 - The Under Drone Housing will implement a dome as the main space to house all internal subsystems. The dome is cruicial to not affect drone flight or stability. By setting the dome placed directly on the center of mass, it keeps prior drone operation similar if not the same. The dome housing system will also maintain all internal housing systems by layering devices based on size and prioritizing centralizing mass.
+  
 MG90S Mini Servo:
 - The MG90S servo is a minilmal, lightweight, low gear micro servo used on RC applications. It has 180 degrees of rotation which will raise and lower the hook to connect the power line to the Power Harvesting Subsystem. 
 ## References
 https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
 
 https://grabcad.com/library/mg90s-micro-servo-2
+
 
 
 
