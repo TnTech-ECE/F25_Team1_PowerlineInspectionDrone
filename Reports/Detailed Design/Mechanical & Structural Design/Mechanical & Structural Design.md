@@ -55,9 +55,13 @@ MG90s Micro Servo:
 
 <img width="802" height="627" alt="image" src="https://github.com/user-attachments/assets/69c6d31e-b458-40c6-b3bc-a8fddaed869a" />
 
-Housing Subsystem:
+Structural Subsystem:
 
 <img width="1113" height="807" alt="image" src="https://github.com/user-attachments/assets/176e0940-9a26-4ebd-a275-8facb0581ee8" />
+
+Mechanical Subsystem:
+
+<img width="1031" height="717" alt="image" src="https://github.com/user-attachments/assets/e1ae0ac0-dbda-4284-8d83-ebe39d97a758" />
 
 ## Buildable Schematic
 ## Printed Circuit Board Layout
@@ -85,6 +89,7 @@ MG90S Mini Servo:
 https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
 
 https://grabcad.com/library/mg90s-micro-servo-2
+
 
 
 
