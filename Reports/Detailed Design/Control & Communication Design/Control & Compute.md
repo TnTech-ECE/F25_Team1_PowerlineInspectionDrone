@@ -133,6 +133,13 @@ Interfaces with the Raspberry Pi Zero 2 W and STM32F405
 - Protocol: RF (L1/L2 GNSS bands)
 - Data: Raw satellite signals
 
+# 3D Model of Custom Mechanical Components
+## Raspberry Pi Pico:
+<img width="1080" height="489" alt="raspberry pi pico" src="https://github.com/user-attachments/assets/90135816-0842-4c15-bbb2-ed15ba956d51" />
+<img width="988" height="568" alt="raspberry pi pico with contacts" src="https://github.com/user-attachments/assets/4df9746b-9b7d-4062-a95e-c45718e82da7" />
+## STM32F405 Feather:
+<img width="963" height="722" alt="STM32F405_TOP" src="https://github.com/user-attachments/assets/dabc6be2-8e0c-43e2-aef0-a137ff89c77b" />
+<img width="1918" height="936" alt="Adafruit Feather STM32F405 Express_TOP" src="https://github.com/user-attachments/assets/168f8e79-19b7-4c51-af58-2965d2030931" />
 
 
 
