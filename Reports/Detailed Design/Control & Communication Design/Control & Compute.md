@@ -12,15 +12,15 @@
   The U-blox ZED-F9P high-precision GNSS receiver provides < 1 m positional accuracy (stand-alone) and < 5 cm with RTK corrections.
 ### Communication Interfaces: 
 - UART: 
-  STM32 ↔ Pico
+  STM32 ↔ Pico,
   Pico 	↔ GNSS
 - SPI:
   Pico 	↔ SD card
 - PWM:
   STM32 → Servo
 - GPIO digital lines:
-  STM32 → MOSFET
-  Pico 	→ Event markers
+  STM32 → MOSFET,
+  Pico 	→ Event markers,
   Pico 	→ Timestamp triggers
 ### Power Consumption: 
 ≤ 5 W total under maximum computational load (≈1 W STM32 + ≈0.8 W Pico + ≈1 W GNSS ).
@@ -35,6 +35,7 @@ Pico logs GNSS-timestamped system events at a rate of ≤10 Hz to onboard microS
 ### Timing Precision: 
 PPS synchronisation accuracy ≤ 10 µs between STM32 and Pi.
 ## Constraint:
+
 
 
 
