@@ -126,12 +126,13 @@ Interfaces with the Raspberry Pi Zero 2 W and STM32F405
 - Direction: Input. GNSS → Pi 
 - Data: Rising-edge pulse providing sub-millisecond time reference
 ### Interfaces with the Mechanical & Structural subsystem
-####Antenna: u-blox ANN-MB-00
+#### Antenna: u-blox ANN-MB-00
 - Signal name: “GNSS_ANT”
 - Signal type: RF Coaxial
 - Direction: Antenna → GNSS Receiver
 - Protocol: RF (L1/L2 GNSS bands)
 - Data: Raw satellite signals
+
 
 
 
