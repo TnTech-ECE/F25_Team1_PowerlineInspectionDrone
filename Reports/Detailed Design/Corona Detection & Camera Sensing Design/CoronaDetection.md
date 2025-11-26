@@ -97,3 +97,9 @@ By combining a lightweight thermal camera with a compact DVR module, the subsyst
 
 
 ## References 
+
+[1] Axisflying, "High Res Mini Thermal FPV Camera Module, 256×192/384×288/640×512 Options, OEM Series w/ CVBS Analog Interface Low Power Consumption for Drones," Banggood USA. [Online]. Available: https://www.banggood.com/. [Accessed: Nov. 26, 2025].
+
+[2] Segrehy, "Mini FPV DVR Recorder, Video Capture Module with Built-in Battery & 32GB TF Card Support, NTSC PAL Switchable for FPV Drone RC Model Racing Car," Amazon.com. [Online]. Available: https://www.amazon.com/. [Accessed: Nov. 26, 2025].
+
+[3] "Ultraviolet, thermal cameras: high tech solutions for corona discharges," [Online]. Available: (insert publisher or source URL if known). [Accessed: Nov. 26, 2025].
