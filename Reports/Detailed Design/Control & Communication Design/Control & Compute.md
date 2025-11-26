@@ -60,7 +60,14 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 ### Interfaces with the Power Harvesting & BMS/Battery Subsystem (Indirect Control Role):
 The STM32F405 does not directly interface with the high-voltage power-harvesting circuitry. Instead, it functions as the system’s intermediary controller, regulating when energy stored in the load capacitor is permitted to transfer into the onboard Battery & BMS subsystem.
 #### Charge Transfer Control. From the power harvesting circuit to the on-board battery. Done using a [FILL IN]:
+- Signal Name: CAP_TO_BATT_EN
+- Signal Type: Digital (3.3 V GPIO)
+- Direction: STM32 →
+- Data:
+  HIGH → (connect capacitor to battery)
+  LOW → (disconnect capacitor from battery)
   
+
 
 
 
