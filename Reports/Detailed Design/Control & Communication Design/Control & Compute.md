@@ -55,6 +55,16 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 - The u-blox ZED-F9P GNSS module provides precise positioning data and a highly stable 1 Hz Pulse-Per-Second (PPS) signal that synchronizes the entire subsystem. This timing reference enables sub-millisecond alignment between mechanical actuation events, charging cycles, and analog video timestamps from the thermal camera’s DVR module. Although the camera’s CVBS video stream is not digitally processed onboard, its recorded time markers can be matched post-flight with GNSS-synchronized system logs, allowing accurate correlation of corona-related events.
 - Together, the STM32F405 Feather, Raspberry Pi Pico, and ZED-F9P GNSS module constitute a cohesive, efficient, and lightweight control and compute solution optimized for safety, clarity of function, and post-flight analysis. The architecture satisfies subsystem constraints related to power consumption, thermal limits, mass restrictions, EMC robustness, and functional safety, while providing a modular foundation for future enhancements. This proposed solution ensures reliable subsystem performance, high-integrity data capture, and seamless coordination with the broader drone-based inspection system.
 
+# Interfaces with other Subsystems
+## STM32F405 Feather:
+### Interfaces with the Power Harvesting & BMS/Battery Subsystem (Indirect Control Role):
+The STM32F405 does not directly interface with the high-voltage power-harvesting circuitry. Instead, it functions as the system’s intermediary controller, regulating when energy stored in the load capacitor is permitted to transfer into the onboard Battery & BMS subsystem.
+#### Charge Transfer Control. From the power harvesting circuit to the on-board battery. Done using a [FILL IN]:
+  
+
+
+
+
 
 
 
