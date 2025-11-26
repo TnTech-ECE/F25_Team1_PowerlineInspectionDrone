@@ -66,7 +66,33 @@ The STM32F405 does not directly interface with the high-voltage power-harvesting
 - Data:
   HIGH → (connect capacitor to battery)
   LOW → (disconnect capacitor from battery)
-  
+#### Interfaces with the Battery & BMS Subsystem:
+- Battery & BMS Logging
+[BMS]
+- Signal Name: “BMS_UART_TX/RX”
+- Signal Type: Digital. UART (3.3 V)
+- Direction: Bidirectional (STM32 ↔ BMS)
+- Data: pack voltage, SoC, SoH, temperature, fault flags
+#### Interfaces with the Mechanical & Structural Subsystem:
+MG90S Metal-gear Micro Servo (Linear Arm Actuation) Control:
+- Signal name: “SERVO_PWM”
+- Signal type: Standard 50 Hz PWM
+- Direction: STM32F405 → MG90S Servo
+- Data: Pulse width determines arm position
+#### Interfaces with the Raspberry Pi Pico:
+- Signal name: “PI_STM32”
+- Signal type: Digital (3.3 V TTL)
+- Direction: Bidirectional
+- Data 
+  - Line to circuit enabled/disabled.
+  - Load cap to on-board battery enabled/disabled.
+  - Arm deployed/retracted.
+
+
+
+
+
+
 
 
 
