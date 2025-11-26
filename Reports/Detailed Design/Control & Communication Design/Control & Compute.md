@@ -87,6 +87,58 @@ The STM32F405 does not directly interface with the high-voltage power-harvesting
   - Line to circuit enabled/disabled.
   - Load cap to on-board battery enabled/disabled.
   - Arm deployed/retracted.
+## Raspberry Pi Pico:
+### Interfaces with the Corona Detecting and Camera Sensing Subsystem:
+The Pi does not process the analog video directly; instead, it receives Event markers and DVR timestamps.
+#### Axisflying High-Res Mini Thermal FPV Camera Module
+- Signal name: “CAM_CVBS_IN”
+- Signal Type: Analog CVBS
+- Direction: Camera → DVR Recorder 
+- Protocol: Analog video Standard
+- Data: Composite Video is recorded using an onboard Mini FPV DVR Recorder. Pi receives only DVR timestamps and event markers.
+### Interfaces with Ground Station:
+Stores all mission data locally for post-flight retrieval and analysis.
+#### Logging Strategy
+- Data Storage: Raspberry Pi microSD card
+- Data Stored: 
+  - GNSS timestamped charging logs
+  - DVR timestamps
+  - Arm deployment timestamps
+  - Charging enable/disable timestamps
+  - BMS readings
+### Interfaces with the STM32F405 Feather:
+- Protocol: UART—Pi logs STM32 telemetry and sends operator commands
+- Time sync: Pi utilizes GNSS NMEA/UBX and relays commands; timestamp alignments via PPS.
+### U-blox F9 GNSS module (ZED_F9P):
+Interfaces with the Raspberry Pi Zero 2 W and STM32F405
+#### GNSS Data (Position / Time / Satellite Info)
+- Signal name: “GNSS_UART”
+- Signal type: Digital
+- Direction: Input. GNSS → Pi → STM32
+- Protocol: UBX/NMEA over UART
+- Data:
+  - Latitude/longitude
+  - Altitude
+  - Time of day
+#### High-Precision Timing (PPS)
+- Signal name: “GNSS_PPS”
+- Signal type: Digital Pulse (1 Hz)
+- Direction: Input. GNSS → Pi 
+- Data: Rising-edge pulse providing sub-millisecond time reference
+### Interfaces with the Mechanical & Structural subsystem
+####Antenna: u-blox ANN-MB-00
+- Signal name: “GNSS_ANT”
+- Signal type: RF Coaxial
+- Direction: Antenna → GNSS Receiver
+- Protocol: RF (L1/L2 GNSS bands)
+- Data: Raw satellite signals
+
+
+
+
+
+
+
 
 
 
