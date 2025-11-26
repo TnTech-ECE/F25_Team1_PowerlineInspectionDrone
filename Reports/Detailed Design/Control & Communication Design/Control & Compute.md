@@ -35,6 +35,18 @@ Pico logs GNSS-timestamped system events at a rate of ≤10 Hz to onboard microS
 ### Timing Precision: 
 PPS synchronisation accuracy ≤ 10 µs between STM32 and Pi.
 ## Constraint:
+### Power and thermal: 
+The subsystem must operate within a 5 W power budget due to the confined enclosure and limited passive cooling capabilities. This eliminates the use of high-power processors.
+### Weight and Form Factor: 
+The subsystem must be extremely lightweight (under 35 g) to prevent shifting the drone’s center of gravity and degrading flight stability. This restricts the use of heavy cooling systems, metal enclosures, or large connector boards.
+### EMI/High-Voltage Environment Constraint: 
+The computing electronics must maintain signal integrity in the vicinity of high-voltage transmission lines. Shielding and grounding requirements are imposed to meet IEC 61000-6-2/4 electromagnetic compatibility standards for industrial environments.
+### Safety and Reliability: 
+The STM32 microcontroller must execute deterministic control functions independently of the Raspberry Pi to ensure safe charging and fault shutdown, satisfying IEC 61508 functional safety principles at the subsystem level.
+### Economic:
+The total subsystem component cost must remain below $250 USD, aligning with student project budgetary limits and promoting economic feasibility for future prototype scaling.
+### Manufacturability and Maintainability: 
+Since the subsystem is permanently embedded, components must be soldered and secured for vibration resistance, meeting IPC-A-610 Class 2 workmanship standards for mechanical integrity 
 
 
 
