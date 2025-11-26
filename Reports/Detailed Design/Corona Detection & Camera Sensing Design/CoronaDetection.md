@@ -77,4 +77,23 @@ https://www.amazon.com/Module-Switchable-Built-Battery-Recorder/dp/B0DPJWVW8J
 
 ## Analysis
 
-The thermal camera will be able to detect anomalous heat signatures on power lines. The mini FPV DVR module will take the recordings from the camera and transfer it to a TF card that can later be reviewed. The thermal camera needs a 5 V input that can be obtained from the Arduino used on the drone. Both components are lightweight and meet the weight and operational limits. The purchased mini FPV DVR module comes with two 3.5 mm AV cables. This will satisfy what we need to connect the thermal camera to the Mini FPV DVR module.
+The proposed subsystem design effectively meets the requirements for detecting and recording thermal anomalies on transmission lines while adhering to the defined constraints.
+
+
+•	Functional Performance: The Axisflying thermal camera provides thermal imagery at 256×192 resolution and 25 fps, which is sufficient to identify abnormal heat signatures such as localized hotspots, resistive heating, or early signs of insulation breakdown. The Mini FPV DVR module captures this video stream and stores it on a TF card, ensuring that inspection data can be reviewed post‑flight for accurate fault localization. Together, these components fulfill the specification for thermal imaging capability and recording.
+
+•	Power and Electrical Constraints: The thermal camera requires a regulated 5 V input, which can be supplied from the drone’s onboard electronics via the Arduino interface. The combined power draw of the camera and DVR is approximately 2.5 W, well within the subsystem’s defined power budget. This ensures compatibility with the drone’s limited energy resources and avoids overloading the control electronics. The DVR’s integrated battery also provides resilience against voltage dips, protecting data integrity.
+
+•	Weight and Cost Compliance: Both modules are lightweight, and when combined with mounting hardware remain under the 150 g limit, preserving drone endurance and meeting FAA Part 107 requirements. The total subsystem cost, including camera and DVR, is below the $640 ceiling, satisfying affordability constraints for stakeholders.
+
+•	Connectivity and Integration: The DVR module includes two 3.5 mm AV cables, which provide straightforward connections between the thermal camera’s CVBS output and the DVR’s AV input. This reduces integration complexity and ensures reliable data transfer. The modular design also allows easy dismounting and replacement of components, supporting maintainability.
+
+•	Standards Compliance: The subsystem design incorporates EMI shielding, filtered power inputs, and shielded cabling to meet IEC 61000 electromagnetic compatibility requirements. This ensures immunity to disturbances such as electrostatic discharge and radiated RF fields, which are common near high‑voltage transmission lines. 
+
+
+#### Conclusion
+By combining a lightweight thermal camera with a compact DVR module, the subsystem achieves its intended function of detecting and recording thermal anomalies on transmission lines. It satisfies all defined constraints—weight, cost, power, voltage, and standards compliance—while providing a simple, modular architecture that is easy to integrate and operate. This analysis demonstrates that the design is both feasible and effective for safe, reliable power line inspection missions. 
+
+
+
+## References 
