@@ -55,7 +55,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 
 # Overview of Proposed Solution
 - The proposed solution integrates a dual-processor Control & Compute architecture designed to satisfy the subsystem’s requirement for deterministic safety control, precise timing synchronization, light-weight operation, and reliable mission-data logging. This subsystem integrates three primary components: an STM32F405 Feather microcontroller for real-time control, a Raspberry Pi Pico for GNSS-based timestamping and data logging, and a u-blox ZED-F9P GNSS module for high-accuracy timing and positioning. Together, these devices coordinate the power-harvesting mechanism, mechanical actuation, and system-wide event recording while adhering to all power, weight, thermal, and reliability constraints. 
-- The STM32F405 Feather serves as the subsystem’s deterministic control processor, executing microsecond-accurate logic required for safe charging and mechanical movements. It regulates the transfer of energy from the load capacitor into the onboard battery, ensuring that overvoltage, overcurrent, and BMS fault conditions prompt immediate protective action. The STM32 also drives the MG90S micro-servo responsible for deploying and retracting the mechanical linear arm, further reinforcing its role as the subsystem’s primary actuator controller. 
+- The STM32F405 Feather serves as the subsystem’s deterministic control processor, executing microsecond-accurate logic required for safe charging and mechanical movements. It regulates the transfer of energy from the load capacitor into the onboard battery, ensuring that overvoltage, overcurrent, and BMS fault conditions prompt immediate protective action. The STM32 also drives the MG90S micro-servo, which is responsible for deploying and retracting the mechanical linear arm, further reinforcing its role as the subsystem’s primary actuator controller. 
 - The Raspberry Pi Pico fulfills all non-deterministic compute tasks. It parses GNSS data streams from the ZED-F9P, aligns all subsystem events using the GNSS PPS timing signal, and performs structured mission logging to an onboard microSD card. By handling timestamping, storage, and system-level data organization, the Pico allows the STM32 to remain dedicated to safety-critical operations without the risk of delays caused by file I/O or background processing. This division of responsibilities ensures both operational safety and robust data integrity.
 - The u-blox ZED-F9P GNSS module provides precise positioning data and a highly stable 1 Hz Pulse-Per-Second (PPS) signal that synchronizes the entire subsystem. This timing reference enables sub-millisecond alignment between mechanical actuation events, charging cycles, and analog video timestamps from the thermal camera’s DVR module. Although the camera’s CVBS video stream is not digitally processed onboard, its recorded time markers can be matched post-flight with GNSS-synchronized system logs, allowing accurate correlation of corona-related events.
 - Together, the STM32F405 Feather, Raspberry Pi Pico, and ZED-F9P GNSS module constitute a cohesive, efficient, and lightweight control and compute solution optimized for safety, clarity of function, and post-flight analysis. The architecture satisfies subsystem constraints related to power consumption, thermal limits, mass restrictions, EMC robustness, and functional safety, while providing a modular foundation for future enhancements. This proposed solution ensures reliable subsystem performance, high-integrity data capture, and seamless coordination with the broader drone-based inspection system.
@@ -140,14 +140,20 @@ Interfaces with the Raspberry Pi Zero 2 W and STM32F405
 
 # 3D Model of Custom Mechanical Components
 ## Raspberry Pi Pico:
+### Front
 <img width="1080" height="489" alt="raspberry pi pico" src="https://github.com/user-attachments/assets/90135816-0842-4c15-bbb2-ed15ba956d51" />
 <img width="988" height="568" alt="raspberry pi pico with contacts" src="https://github.com/user-attachments/assets/4df9746b-9b7d-4062-a95e-c45718e82da7" />
+
+### Side: 
+<img width="1084" height="550" alt="Screenshot 2025-11-29 172330" src="https://github.com/user-attachments/assets/56626cd8-e067-4b76-8980-445ef0ccff93" />
+
+### Back
+<img width="1203" height="668" alt="Screenshot 2025-11-29 172432" src="https://github.com/user-attachments/assets/fd4cbc67-d46a-41b1-bc02-4278824ba93a" />
 
 
 ## STM32F405 Feather:
 ### Front:
 <img width="963" height="722" alt="STM32F405_TOP" src="https://github.com/user-attachments/assets/dabc6be2-8e0c-43e2-aef0-a137ff89c77b" />
-<img width="1918" height="936" alt="Adafruit Feather STM32F405 Express_TOP" src="https://github.com/user-attachments/assets/168f8e79-19b7-4c51-af58-2965d2030931" />
 
 ### Side: 
 <img width="874" height="472" alt="Screenshot 2025-11-29 171209" src="https://github.com/user-attachments/assets/e72f742e-0591-4d52-9282-93c28464ad28" />
@@ -169,6 +175,7 @@ Interfaces with the Raspberry Pi Zero 2 W and STM32F405
 
 
 ## GOKU GM10 Nano V3 GPS w/compass
+
 
 
 
