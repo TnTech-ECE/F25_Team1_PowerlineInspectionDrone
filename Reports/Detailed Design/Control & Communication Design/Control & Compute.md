@@ -1,7 +1,17 @@
 # Function of the Subsystem
-- The Control & Compute Subsystem functions as the centralised decision-making and data-coordination unit for the entire system. It ensures safe, synchronised, and autonomous operation by executing real-time control and recording mission data for later analysis. This subsystem bridges mechanical actuation, power flow, GNSS-based timing, and system-level logging, ensuring that all operations occur predictably and safely.
-- The subsystem is designed around a dual-processor division of labour that combines real-time control capabilities with high-level data processing. It consists of an STM32F405 Feather (Adafruit 4382) microcontroller, a Raspberry Pi Pico, and a u-blox F9 high-precision GNSS module. The STM32 performs all deterministic, real-time tasks. It controls the charge-input MOSFET and the charge-transfer MOSFET, drives the MG90S servo for the mechanical linear arm, and manages charging enable/disable sequences. In parallel, the Raspberry Pi Pico handles non-real-time computation and system logging. It parses GNSS (ZED-F9P) position and time data, handles PPS synchronisation, records system events to an onboard microSD card, and stores timestamped system logs for post-flight analysis retrieval. Finally, the u-blox F9 GNSS module provides precise global positioning and a highly accurate timing reference. Its PPS output enables the Pico to synchronise all recorded events with sub-millisecond accuracy, allowing later correlation of corona events by the thermal camera timestamps and charge sequences.
-- Together, the STM32, Raspberry Pi Pico, and ZED-F9P module form a cohesive computing architecture that maintains real-time safety, timing accuracy, and mission-logging reliability without requiring wireless communication or ground-station links. This subsystem ultimately serves as the “brain” of the entire device, ensuring coordinated operation og every other subsystem.
+  The Control & Compute Subsystem serves as the central decision-making, timing, and logging unit for the entire system. Its purpose is to coordinate all other subsystems and ensure safe, synchronized, and reliable operation in the field. It is responsible for executing safe, deterministic control actions, recording mission-critical data, and providing timing, GPS, compass, and telemetry logs for the entire mission.
+###The architecture is composed of:
+- STM32F405 Feather (Adafruit 4382) — the real-time controller.
+- Raspberry Pi Pico  — the data logging and processing controller.
+- DS3231 Precision RTC (Real-Time Clock)  — system-wide timestamp reference.
+- Flywoo Goku GM10 Nano V3 GPS + Compass  — lightweight geolocation and heading reference
+###Functional Role:
+- The STM32F405 executes all time-critical control functions, including regulating energy transfer from the power-harvesting capacitor to the battery between the Power Harvesting Subsystem and the Battery & BMS Subsystem, monitoring BMS signals in the Battery & BMS Subsystem, and actuating the MG90S micro servo in the Mechanical & Structural Subsystem.
+- The Raspberry Pi Pico manages event markers and DVR timestamps from the Corona Detection & Camera Sensing Subsystem, system logging, timestamp alignment, data collection, and any light computation needed for merging GPS/compass data with system events. It also collects telemetry from the STM32 and stores logs for post-flight analysis.
+- The DS3231 RTC maintains accurate timekeeping (within ±2 ppm), ensuring that all logged events — charging cycles, corona detection markers, servo movements, system faults — are chronologically aligned and traceable.
+- The Goku GM10 Nano V3 GPS + Compass provides lightweight positional data and heading information to complement the timestamped logs.
+By separating real-time control (STM32) from compute and logging tasks (Pico), the subsystem maintains reliability and operation clarity while reducing system mass and power draw.
+
 
 # Specifications and Constraints
 ## Specification: 
@@ -144,6 +154,7 @@ Interfaces with the Raspberry Pi Zero 2 W and STM32F405
 <img width="970" height="728" alt="image" src="https://github.com/user-attachments/assets/ea15b743-f80b-4f39-a181-8a94c9624a21" />
 
 ## u-blox ZED-F9P GNSS
+
 
 
 
