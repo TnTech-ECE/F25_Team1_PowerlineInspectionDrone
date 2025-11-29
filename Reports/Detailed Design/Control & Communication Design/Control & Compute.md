@@ -21,45 +21,29 @@ By separating real-time control (STM32) from compute and logging tasks (Pico), t
 ### Processor Architecture:
 - Raspberry Pi Pico (RP2040 dual-core microcontroller, ARM Cortex-M0+ processor, flexible clock running up to 133 MHz, and 264 kB on-chip SRAM) for high-level data processing and computation.
 - STM32F405 Feather (Cortex-M4F @ 165 MHz, 1 MB Flash) for real-time control.
-### GNSS Module: 
-  The U-blox ZED-F9P high-precision GNSS receiver provides < 1 m positional accuracy (stand-alone) and < 5 cm with RTK corrections.
-### Communication Interfaces: 
-- UART: 
-  STM32 ↔ Pico,
-  Pico 	↔ GNSS
-- SPI:
-  Pico 	↔ SD card
-- PWM:
-  STM32 → Servo
-- GPIO digital lines:
-  STM32 → MOSFET,
-  Pico 	→ Event markers,
-  Pico 	→ Timestamp triggers
-### Power Consumption: 
-≤ 5 W total under maximum computational load (≈1 W STM32 + ≈0.8 W Pico + ≈1 W GNSS ).
-### Operating Voltage: 
-3.3 V logic for both STM32 and Pico.
-### Weight Limit: 
-≤ 35 g combined for all compute and communication components (~6.2 g STM32 + ~9 g Raspberry Pi + 19.5 g GNSS).
-### Operational Environment:
-0°C – 50°C. Insulated housing; static air cooling.
-### Event Logging: 
-Pico logs GNSS-timestamped system events at a rate of ≤10 Hz to onboard microSD storage (with a capacity of > 32 GB).
-### Timing Precision: 
-PPS synchronisation accuracy ≤ 10 µs between STM32 and Pi.
+### Timing System: DS3231 RTC, ±2 ppm accuracy, I²C interface.
+### GPS / Compass: Goku GM10 Nano GPS UART + Compass; fast TTFF, 10 Hz update rate  I²C.
+### Power Consumption: ≤ 3.5 W total under maximum computational load (~1 W STM32 + ~0.8 W Pico + ~200 mW Goku GM10, DS3231 RTC negligible).
+### Operating Voltage: 3.3 V logic for STM32,  Pico, DS3231 RTC, and Goku GM10.
+### Weight Limit: ≤ 21 g combined for all compute and communication components (6.2 g STM32 + 9 g Raspberry Pi + 2.6 g Goku GM10 + 2.1 g DS3231 RTC).
+### Operational Environment: 0°C – 50°C. Insulated housing; static air cooling.
+### Data Logging: SD card logging via Pi Pico; minimum 8 GB storage
+### Timestamp Precision: ≤ 2 ms resolution, maintained by RTC
+
 ## Constraint:
 ### Power and thermal: 
 The subsystem must operate within a 5 W power budget due to the confined enclosure and limited passive cooling capabilities. This eliminates the use of high-power processors.
 ### Weight and Form Factor: 
-The subsystem must be extremely lightweight (under 35 g) to prevent shifting the drone’s center of gravity and degrading flight stability. This restricts the use of heavy cooling systems, metal enclosures, or large connector boards.
+The subsystem must be extremely lightweight (under 21 g) to prevent shifting the drone’s center of gravity and degrading flight stability. This restricts the use of heavy cooling systems, metal enclosures, or large connector boards.
 ### EMI/High-Voltage Environment Constraint: 
 The computing electronics must maintain signal integrity in the vicinity of high-voltage transmission lines. Shielding and grounding requirements are imposed to meet IEC 61000-6-2/4 electromagnetic compatibility standards for industrial environments.
 ### Safety and Reliability: 
 The STM32 microcontroller must execute deterministic control functions independently of the Raspberry Pi to ensure safe charging and fault shutdown, satisfying IEC 61508 functional safety principles at the subsystem level.
 ### Economic:
-The total subsystem component cost must remain below $250 USD, aligning with student project budgetary limits and promoting economic feasibility for future prototype scaling.
+The total subsystem component cost must remain below $150 USD, aligning with student project budgetary limits and promoting economic feasibility for future prototype scaling.
 ### Manufacturability and Maintainability: 
-Since the subsystem is permanently embedded, components must be soldered and secured for vibration resistance, meeting IPC-A-610 Class 2 workmanship standards for mechanical integrity 
+Since the subsystem is permanently embedded, components must be soldered and secured for vibration resistance, all boards must be mounted, and must allow easy SD card removal after flight, meeting IPC-A-610 Class 2 workmanship standards for mechanical integrity 
+
 
 # Overview of Proposed Solution
 - The proposed solution integrates a dual-processor Control & Compute architecture designed to satisfy the subsystem’s requirement for deterministic safety control, precise timing synchronization, light-weight operation, and reliable mission-data logging. This subsystem integrates three primary components: an STM32F405 Feather microcontroller for real-time control, a Raspberry Pi Pico for GNSS-based timestamping and data logging, and a u-blox ZED-F9P GNSS module for high-accuracy timing and positioning. Together, these devices coordinate the power-harvesting mechanism, mechanical actuation, and system-wide event recording while adhering to all power, weight, thermal, and reliability constraints. 
@@ -157,6 +141,7 @@ Interfaces with the Raspberry Pi Zero 2 W and STM32F405
 <img width="970" height="728" alt="image" src="https://github.com/user-attachments/assets/ea15b743-f80b-4f39-a181-8a94c9624a21" />
 
 ## u-blox ZED-F9P GNSS
+
 
 
 
