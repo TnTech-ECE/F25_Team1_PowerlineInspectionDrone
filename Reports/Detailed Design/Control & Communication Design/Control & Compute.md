@@ -6,7 +6,7 @@
 - Raspberry Pi Pico  — the data logging and processing controller.
 - DS3231 Precision RTC (Real-Time Clock)  — system-wide timestamp reference.
 - Flywoo Goku GM10 Nano V3 GPS + Compass  — lightweight geolocation and heading reference
-- 
+-  
 ### Functional Role:
 - The STM32F405 executes all time-critical control functions, including regulating energy transfer from the power-harvesting capacitor to the battery between the Power Harvesting Subsystem and the Battery & BMS Subsystem, monitoring BMS signals in the Battery & BMS Subsystem, and actuating the MG90S micro servo in the Mechanical & Structural Subsystem.
 - The Raspberry Pi Pico manages event markers and DVR timestamps from the Corona Detection & Camera Sensing Subsystem, system logging, timestamp alignment, data collection, and any light computation needed for merging GPS/compass data with system events. It also collects telemetry from the STM32 and stores logs for post-flight analysis.
@@ -157,6 +157,7 @@ Interfaces with the Raspberry Pi Zero 2 W and STM32F405
 <img width="970" height="728" alt="image" src="https://github.com/user-attachments/assets/ea15b743-f80b-4f39-a181-8a94c9624a21" />
 
 ## u-blox ZED-F9P GNSS
+
 
 
 
