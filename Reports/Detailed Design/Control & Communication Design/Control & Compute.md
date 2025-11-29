@@ -21,14 +21,22 @@ By separating real-time control (STM32) from compute and logging tasks (Pico), t
 ### Processor Architecture:
 - Raspberry Pi Pico (RP2040 dual-core microcontroller, ARM Cortex-M0+ processor, flexible clock running up to 133 MHz, and 264 kB on-chip SRAM) for high-level data processing and computation.
 - STM32F405 Feather (Cortex-M4F @ 165 MHz, 1 MB Flash) for real-time control.
-### Timing System: DS3231 RTC, ±2 ppm accuracy, I²C interface.
-### GPS / Compass: Goku GM10 Nano GPS UART + Compass; fast TTFF, 10 Hz update rate  I²C.
-### Power Consumption: ≤ 3.5 W total under maximum computational load (~1 W STM32 + ~0.8 W Pico + ~200 mW Goku GM10, DS3231 RTC negligible).
-### Operating Voltage: 3.3 V logic for STM32,  Pico, DS3231 RTC, and Goku GM10.
-### Weight Limit: ≤ 21 g combined for all compute and communication components (6.2 g STM32 + 9 g Raspberry Pi + 2.6 g Goku GM10 + 2.1 g DS3231 RTC).
-### Operational Environment: 0°C – 50°C. Insulated housing; static air cooling.
-### Data Logging: SD card logging via Pi Pico; minimum 8 GB storage
-### Timestamp Precision: ≤ 2 ms resolution, maintained by RTC
+### Timing System: 
+DS3231 RTC, ±2 ppm accuracy, I²C interface.
+### GPS / Compass: 
+Goku GM10 Nano GPS UART + Compass: fast TTFF, 10 Hz I²C update rate.
+### Power Consumption: 
+≤ 3.5 W total under maximum computational load (~1 W STM32 + ~0.8 W Pico + ~200 mW Goku GM10, DS3231 RTC negligible).
+### Operating Voltage:
+3.3 V logic for STM32,  Pico, DS3231 RTC, and Goku GM10.
+### Weight Limit: 
+≤ 21 g combined for all compute and communication components (6.2 g STM32 + 9 g Raspberry Pi + 2.6 g Goku GM10 + 2.1 g DS3231 RTC).
+### Operational Environment:
+0°C – 50°C. Insulated housing; static air cooling.
+### Data Logging:
+SD card logging via Pi Pico; minimum 8 GB storage
+### Timestamp Precision: 
+≤ 2 ms resolution, maintained by RTC
 
 ## Constraint:
 ### Power and thermal: 
@@ -141,6 +149,7 @@ Interfaces with the Raspberry Pi Zero 2 W and STM32F405
 <img width="970" height="728" alt="image" src="https://github.com/user-attachments/assets/ea15b743-f80b-4f39-a181-8a94c9624a21" />
 
 ## u-blox ZED-F9P GNSS
+
 
 
 
