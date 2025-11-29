@@ -143,25 +143,33 @@ Interfaces with the Raspberry Pi Zero 2 W and STM32F405
 <img width="1080" height="489" alt="raspberry pi pico" src="https://github.com/user-attachments/assets/90135816-0842-4c15-bbb2-ed15ba956d51" />
 <img width="988" height="568" alt="raspberry pi pico with contacts" src="https://github.com/user-attachments/assets/4df9746b-9b7d-4062-a95e-c45718e82da7" />
 
+
 ## STM32F405 Feather:
 ### Front:
 <img width="963" height="722" alt="STM32F405_TOP" src="https://github.com/user-attachments/assets/dabc6be2-8e0c-43e2-aef0-a137ff89c77b" />
 <img width="1918" height="936" alt="Adafruit Feather STM32F405 Express_TOP" src="https://github.com/user-attachments/assets/168f8e79-19b7-4c51-af58-2965d2030931" />
+
 ### Side: 
 <img width="874" height="472" alt="Screenshot 2025-11-29 171209" src="https://github.com/user-attachments/assets/e72f742e-0591-4d52-9282-93c28464ad28" />
+
 ### Back: 
-![STM32F405_BOT](https://github.com/user-attachments/assets/8bab8beb-58a6-49ed-a78f-2bb0ac089776)
+![STM32F405_BOT](https://github.com/user-attachments/assets/6716f8a8-3ed1-4785-ad58-e5a77e8ad344)
+
 
 ## DS3231 Precision RTC
 ### Front:
 ![5188 DS3231 RTC](https://github.com/user-attachments/assets/c1eb639e-d772-4da4-8bad-9bf00d3c726e)
 <img width="1175" height="795" alt="Screenshot 2025-11-29 165257" src="https://github.com/user-attachments/assets/78663d91-8804-4ec0-8eac-416bdd6de174" />
+
 ### Side:
 <img width="1221" height="634" alt="Screenshot 2025-11-29 165550" src="https://github.com/user-attachments/assets/6981f262-3458-4c75-af70-99d223468115" />
+
 ### Back:
 <img width="1118" height="804" alt="Screenshot 2025-11-29 165426" src="https://github.com/user-attachments/assets/bfffabab-d046-4998-9d19-6b7b073c6a80" />
 
+
 ## GOKU GM10 Nano V3 GPS w/compass
+
 
 
 
