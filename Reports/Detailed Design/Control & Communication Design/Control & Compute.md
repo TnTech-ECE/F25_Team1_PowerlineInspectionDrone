@@ -148,7 +148,9 @@ Interfaces with the Raspberry Pi Zero 2 W and STM32F405
 <img width="1918" height="936" alt="Adafruit Feather STM32F405 Express_TOP" src="https://github.com/user-attachments/assets/168f8e79-19b7-4c51-af58-2965d2030931" />
 <img width="970" height="728" alt="image" src="https://github.com/user-attachments/assets/ea15b743-f80b-4f39-a181-8a94c9624a21" />
 
-## u-blox ZED-F9P GNSS
+## DS3231 Precision RTC
+## GOKU GM10 Nano V3 GPS w/compass
+
 
 
 
