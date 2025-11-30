@@ -74,7 +74,7 @@ Mechanical Subsystem:
 |------|----------|---------------------|-------------|-------|
 | PolyLite LW-PLA | 1 | PA08001 | Lighweight PLA (0.6g/cubic cm) | ~ $33 USD |
 | MG90S Mini Gear Servo | 1 | SERVO-MG90S-2 | Mini 180 degree servo | ~ $5 USD |
-| (WIRE MATERIAL FOR HOOK) | 1 | 
+| Copper Wire | 15 ft. | 205703265 | Conductive Wire for Hook | ~ $19 USD |
 
 ## Anaysis
 LW-PLA:
@@ -89,6 +89,7 @@ MG90S Mini Servo:
 https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
 
 https://grabcad.com/library/mg90s-micro-servo-2
+
 
 
 
