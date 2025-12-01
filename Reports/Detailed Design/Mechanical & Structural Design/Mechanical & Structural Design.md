@@ -52,7 +52,7 @@ This system includes the following devices and material:
 | Power Harvesting and Circuit Design | Hook-to-line connection. Internal housing for stability | Provides single wire connection directly from power line to circuit system. | Allows power draw from power line to internal power harvesting system |
 
 
-## 3D Models and Figures of Custom Mechanical and Structural Components
+## 3D Models and Buildabe Schematic of Custom Mechanical and Structural Components
 MG90s Micro Servo:
 
 <img width="802" height="627" alt="image" src="https://github.com/user-attachments/assets/69c6d31e-b458-40c6-b3bc-a8fddaed869a" />
@@ -65,7 +65,6 @@ Mechanical Subsystem:
 
 <img width="1031" height="717" alt="image" src="https://github.com/user-attachments/assets/e1ae0ac0-dbda-4284-8d83-ebe39d97a758" />
 
-## Buildable Schematic
 ## Printed Circuit Board Layout
 
 ## Flowchart
@@ -102,6 +101,7 @@ https://grabcad.com/library/mg90s-micro-servo-2
 https://content.ndtsupply.com/media/Conductivity_Al%20Reference%20Chart.pdf
 
 http://homedepot.com/p/OOK-1-1-4-in-x-50-ft-10-lb-18-Gauge-Aluminum-Wire-534694/301977350?source=shoppingads&locale=en-US&srsltid=AfmBOop1IXpyk19yQGG_HrR95LBN4prLwpjBVN4I3ryCrGxJPmbosMdDcgA
+
 
 
 
