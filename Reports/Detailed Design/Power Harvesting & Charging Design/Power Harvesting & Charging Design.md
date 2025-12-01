@@ -30,13 +30,13 @@ A secondary function of this subsystem is to provide electrical isolation and pr
 
 The proposed solution for the Power Harvesting and Charging Subsystem is a lightweight, high-voltage-tolerant energy-harvesting module that safely converts the transmission line’s AC signal into a regulated DC power source for the drone’s battery system. The design integrates four primary elements: a high-voltage full-wave diode rectifier, an energy-storage load capacitor, a charge enabling Mosfet acting as a switch, and a capacitive plate that completes the return path to earth. Working together, these components enable reliable power extraction while meeting all subsystem specifications and adhering to weight, safety, environmental, and regulatory constraints defined in the project requirements. All together, these components create this circuit: 
 
-INPUT COMPLETE CIRCUIT HERE
+![Complete Circuit Diagram](./CompleteCircuitDiagram.png)
 
 ### Full-Wave Rectifier
 
 The rectifier receives the high-voltage AC signal from the transmission line and converts it into a rectified waveform that charges the load capacitor. The rectifier is implemented using two diode arrays arranged in a full-wave configuration, with each array consisting of three high-voltage Diotec HV5 diodes connected in series. Each HV5 diode is rated for 5 kV and 200 mA, and placing three in series provides the necessary voltage withstand capability for safe operation under the expected transmission-line conditions. The resulting configuration creates a robust, buildable high-voltage rectifier suitable for this subsystem [2] [3] [4].
 
-INSERT RECTIFER PHOTO HERE
+![Rectifier Design](./RectifierDesign.png)
 
 ### Load Capacitor
 
@@ -44,7 +44,7 @@ The load capacitor stores the rectified energy coming from the full-wave rectifi
 
 A high-value resistor network is placed in parallel with the capacitor bank to provide a defined DC load and a safe discharge path for the stored charge when the drone disconnects from the line. The initial design uses a total bleed resistance on the order of 10–20 MΩ, implemented either as a single resistor or as a series chain, so that the discharge current remains in the microamp range while still discharging the bank on the order of seconds. For optional experiments that use series-connected capacitors to increase voltage rating, each series element will have its own large-value equalization resistor (≈100 MΩ) connected in parallel to ensure that the voltage divides evenly across the stack [5] [6] [7].
 
-INSERT LOADCAP BANK PHOTO / SCHEMATIC HERE
+![Example Capacitor Bank](./ExampleCapBank.png)
  
 ### Capacitive Plate
 
@@ -165,6 +165,7 @@ The analysis confirms that the output voltage and current behavior of the harves
 [7] U. Waseem, “Capacitors in series: Theory, design considerations and practical implementations,” Wevolver, Aug. 21, 2025.
 
 [8] M. T. Nguyen et al., “Electromagnetic field based wireless power transfer technologies for UAVs,” Electronics, vol. 9, no. 3, 2020.
+
 
 
 
