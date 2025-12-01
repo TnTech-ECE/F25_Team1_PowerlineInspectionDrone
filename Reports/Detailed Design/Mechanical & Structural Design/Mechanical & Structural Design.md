@@ -70,6 +70,11 @@ Figure 3: Mechanical Subsystem:
 
 ## Printed Circuit Board Layout
 
+Figure 4: Servo Operating Circuit:
+
+<img width="1277" height="783" alt="image" src="https://github.com/user-attachments/assets/04709e4e-614a-4b00-ba0e-427e6611e8f8" />
+
+
 ## Flowchart
 <img width="1920" height="1080" alt="Structual   Mechanical" src="https://github.com/user-attachments/assets/f243fabb-c983-4541-9552-0a78239d7463" />
 
@@ -104,6 +109,7 @@ https://grabcad.com/library/mg90s-micro-servo-2
 https://content.ndtsupply.com/media/Conductivity_Al%20Reference%20Chart.pdf
 
 http://homedepot.com/p/OOK-1-1-4-in-x-50-ft-10-lb-18-Gauge-Aluminum-Wire-534694/301977350?source=shoppingads&locale=en-US&srsltid=AfmBOop1IXpyk19yQGG_HrR95LBN4prLwpjBVN4I3ryCrGxJPmbosMdDcgA
+
 
 
 
