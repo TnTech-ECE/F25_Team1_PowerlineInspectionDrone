@@ -128,6 +128,17 @@ The Power Harvesting & Charging Subsystem delivers the rectified and buffered en
 
 ## BOM
 
+| Component Name | Manufacturer | Part Number | Distributor | Distributor Part Number | Qty | Unit Price | Subtotal | Schematic Ref | URL |
+|----------------|--------------|-------------|-------------|--------------------------|-----|------------|----------|----------------|-----|
+| **High-Voltage First-Contact Series Resistors** | KOA Speer / Generic | Various | Newegg | 2CS-0027-010A7 | 6 (3 used + 3 test) | $10.49 (pack) | $31.49 | R1–R3 | https://www.newegg.com/p/2CS-0027-010A7 |
+| **Load Capacitors (1 µF, 500–630 V MLCC)** | Murata | RDER72H105MUB1H03B | Mouser | 81-RDER72H105MUB1H03B | 15 (10 used + 5 spare) | $1.64 | $24.60 | C1–C10 | https://www.mouser.com/ProductDetail/Murata-Electronics/RDER72H105MUB1H03B?qs=Ey7%2FXF42M3dDfjvR%2FGKh9A%3D%3D&mgh=1&srsltid=AfmBOooetxp8_xnVzCBBAzbvuYRo7kHxbjLXFTJQ7BTG4YHZ376Tcb_ygbw |
+| **Film Capacitors (0.1 µF, 630 V, Vishay MKP backup option)** | Vishay | MKP1839410634HQ | Newark | 69AH1104 | 4 (testing/backup) | $1.48 | $5.92 | Ctest1–Ctest4 | https://www.newark.com/vishay/mkp1839410634hq |
+| **Capacitor Bank Balancing Resistors (100 MΩ, 0.5 W, HV Equalization)** | Stackpole | HVA05FA100M | Mouser | 71-HVA05FA100M | 12 (10 used + 2 spare) | $1.09 | $13.08 | R4–R13 | https://www.newark.com/vishay/mkp1839410634hq/cap-film-pp-0-1uf-630v-axial/dp/69AH1104 |
+| **Alternate Balancing / Snubber Resistors (10 MΩ, Vishay VR68 Series)** | Vishay | VR680000010MJA100 | Mouser | 594-VR680000010MJA100 | 5 (testing/optional) | $0.78 | $3.90 | Rtest1–Rtest5 | https://www.mouser.com/c/passive-components/resistors/film-resistors/metal-film-resistors-through-hole/?m=Vishay&resistance=10%20MOhms&series=VR68 |
+| **General-Purpose 1 MΩ, ¼-W Testing Resistors** | BOJACK | 1MΩ | Amazon | N/A | 50-pack | $5.49 | $5.49 | Lab/Test Use | https://www.amazon.com/Resistor-Tolerance-Resistors-Limiting-Certificated/dp/B08QRR5539/ref=sr_1_1?dib=eyJ2IjoiMSJ9.RQA2pJ3Eg3RkdiFYTmOB99ZT57RvkqdxYaretDiYRrLfy8McENCMktazfibj8h6_apRN9M4ryy_dBq5OBds-_GlRB7KhGBtYTDgJD0lrO0EnwFDJC-jLXUqqPN_wpaDvG9VPDc92v3apwO3XfMnX987gTXkGtWGWcJ-tgnm6fZm6HwCV0CyOjMdba_YFmuSgn3JvEN9p4EWIR6YIWwpKjerbykMWqguCW8SZMehaTiw.fAfjuD7EKiNhPJXoWPHZ2TgPL8T8TU1KLUK4rGKb4-k&dib_tag=se&keywords=1%2Bm%CF%89%2C%2B1%2F4-w%2Bmetal-film%2Bresistors&qid=1764438072&sr=8-1&th=1 |
+| **Capacitive Plate Material (Aluminum Mesh, 12\" x 12\")** | OnlineMetals | 3003-H14 Expanded Mesh | OnlineMetals | 22570_12_12 | 1 | $14.75 | $14.75 | Plate-1 | https://www.onlinemetals.com/en/buy/aluminum/0-5-hole-x-12-ga-aluminum-expanded-3003-standard/pid/22570?variant=22570_12_12&srsltid=AfmBOooRNhg65Fxk4UYfENBKN2-ZJr98xzf8cMTVPr7NAtDqJxLtxHk6kYk |
+| **High-Voltage Rectifier Diodes (5 kV, 200 mA)** | Diotec | HV5 Series | Mouser | Various | 20 | $0.59 | $11.82 | D1–D6 | https://www.mouser.com/ProductDetail/Diotec-Semiconductor/HV5?qs=OlC7AqGiEDkjt%2F%252BtEumNKQ%3D%3D |
+
 ## Analysis
 
 The Power Harvesting & Charging Subsystem has been analyzed from electrical, mechanical, and safety perspectives to demonstrate that the proposed design can reliably extract energy from a 13 kV distribution line and deliver it to the drone’s Battery Management System (BMS). The following analysis shows that the subsystem meets performance constraints, adheres to safety requirements, and is theoretically capable of supplying usable charging power given realistic coupling conditions.
@@ -165,6 +176,7 @@ The analysis confirms that the output voltage and current behavior of the harves
 [7] U. Waseem, “Capacitors in series: Theory, design considerations and practical implementations,” Wevolver, Aug. 21, 2025.
 
 [8] M. T. Nguyen et al., “Electromagnetic field based wireless power transfer technologies for UAVs,” Electronics, vol. 9, no. 3, 2020.
+
 
 
 
