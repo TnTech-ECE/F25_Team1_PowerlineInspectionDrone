@@ -56,7 +56,7 @@ Because the drone floats electrically near the line potential during harvesting,
 
 To ensure structural integrity during flight, the capacitive plate is constructed from lightweight aluminum expanded-metal sheet or aluminum perforated plate [8].
 
-INSERT PHOTO OF MESH HERE
+![Aluminium Perforated Sheet](./AluminiumPerforatedSheet.jpg)
 
 As an alternative to a discrete capacitive plate, the team is also considering the use of a conductive metallic spray coating applied directly to the underside of the drone’s housing. This approach could substantially simplify the mechanical integration of the capacitive plate by eliminating the need for a separate mesh or perforated sheet, reducing weight, and avoiding additional mounting hardware. A sprayed-on conductive layer would effectively create a conformal ground-plane surface with comparable capacitive coupling characteristics, depending on coating thickness, uniformity, and surface area.
 
@@ -165,6 +165,7 @@ The analysis confirms that the output voltage and current behavior of the harves
 [7] U. Waseem, “Capacitors in series: Theory, design considerations and practical implementations,” Wevolver, Aug. 21, 2025.
 
 [8] M. T. Nguyen et al., “Electromagnetic field based wireless power transfer technologies for UAVs,” Electronics, vol. 9, no. 3, 2020.
+
 
 
 
