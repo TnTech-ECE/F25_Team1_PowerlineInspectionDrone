@@ -8,7 +8,7 @@ Design.
 
 The Structural Design function will need to effectively house all of the components internally.
 This will be achieved by having casings to give structural support to all the subsystems in the
-housing undercarriage shown in Figures [LIST WHEN CREATED] below. A major confrontation to the
+housing undercarriage shown in Figure 2 below. A major confrontation to the
 Structural Design is the weight distribution and mass of the housing. It will ensure that
 the subsystems housed will not have any displacement from original placement realitive to the 
 housing design. The Structural Design shall also not severely effect drone flight, the system
@@ -20,8 +20,7 @@ The Mechanical Design lies mostly in the connection from the Housing and Harvest
 to the power lines that the entire system will be designed around. It ensures safety and opperational
 ease in attachment and deattachment from power lines. Once set in a need of charge state, the 
 Mechanical Design will communicate with the Control Design to raise and lower an arm on the above
-drone housing system that will hook onto the power line. This hook, listed in Figures [LIST WHEN
-CREATED] will provide connection from the line to the Power Harvesting and Charging Subsystem.
+drone housing system that will hook onto the power line. This hook, listed in Figure 3, will provide connection from the line to the Power Harvesting and Charging Subsystem.
 
 
 ## Specification and Constraints
@@ -57,15 +56,15 @@ This system includes the following devices and material:
 
 
 ## 3D Models and Buildabe Schematic of Custom Mechanical and Structural Components
-MG90s Micro Servo:
+Figure 1: MG90s Micro Servo:
 
 <img width="802" height="627" alt="image" src="https://github.com/user-attachments/assets/69c6d31e-b458-40c6-b3bc-a8fddaed869a" />
 
-Structural Subsystem:
+Figure 2: Structural Subsystem:
 
 <img width="1113" height="807" alt="image" src="https://github.com/user-attachments/assets/176e0940-9a26-4ebd-a275-8facb0581ee8" />
 
-Mechanical Subsystem:
+Figure 3: Mechanical Subsystem:
 
 <img width="1031" height="717" alt="image" src="https://github.com/user-attachments/assets/e1ae0ac0-dbda-4284-8d83-ebe39d97a758" />
 
@@ -83,7 +82,7 @@ Mechanical Subsystem:
 
 ## Anaysis
 LW-PLA:
-- LW-PLA from PolyLite is a very lightweight and highly durable PLA used for many applications. The two biggest needs for drone operation are mainting low capacity goals and being stable during flight. LW-PLA has a density of 0.6g/cm^3, being extremely light for small applications. The hook for the drone, shown in Figure (LIST FIGURE WHEN NAMED), will need high tensile strength to maintain the coil's stability around the hook. The PolyLite LW-PLA has a tensile strength of 23.2 MPa, which is crucial for long life expectancy.
+- LW-PLA from PolyLite is a very lightweight and highly durable PLA used for many applications. The two biggest needs for drone operation are mainting low capacity goals and being stable during flight. LW-PLA has a density of 0.6g/cm^3, being extremely light for small applications. The hook for the drone, shown in Figure 3, will need high tensile strength to maintain the coil's stability around the hook. The PolyLite LW-PLA has a tensile strength of 23.2 MPa, which is crucial for long life expectancy.
   
 Under Drone Housing:
 - The Under Drone Housing will implement a dome as the main space to house all internal subsystems. The dome is cruicial to not affect drone flight or stability. By setting the dome placed directly on the center of mass, it keeps prior drone operation similar if not the same. The dome housing system will also maintain all internal housing systems by layering devices based on size and prioritizing centralizing mass.
@@ -105,6 +104,7 @@ https://grabcad.com/library/mg90s-micro-servo-2
 https://content.ndtsupply.com/media/Conductivity_Al%20Reference%20Chart.pdf
 
 http://homedepot.com/p/OOK-1-1-4-in-x-50-ft-10-lb-18-Gauge-Aluminum-Wire-534694/301977350?source=shoppingads&locale=en-US&srsltid=AfmBOop1IXpyk19yQGG_HrR95LBN4prLwpjBVN4I3ryCrGxJPmbosMdDcgA
+
 
 
 
