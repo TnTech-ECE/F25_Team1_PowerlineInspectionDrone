@@ -89,7 +89,7 @@ MG90S Mini Servo:
 - The MG90S servo is a minilmal, lightweight, low gear micro servo used on RC applications. It has 180 degrees of rotation which will raise and lower the hook to connect the power line to the Power Harvesting Subsystem. The low gear system is cruicial for slow, methodical movement to allow the user time to operate line connection effectively.
 
 Hook Connection:
-- A hook design has been implemented to allow easy access to the power line with stable connection. The hook allows for line connection stability with gravity forced connection after the drone has been connected in place and keeps contect with the line.
+- A hook design has been implemented to allow easy access to the power line with stable connection. The hook allows for line connection stability with gravity forced connection after the drone has been connected in place and keeps contect with the line. A coil around the trunk of the hook will provide stability and small flexibility to the line while decreasing weight gain on the top of the drone. This is very important to not affect drone flight operation. 
 
 18 Gauge Aluminum:
 - 18 Gauge Aluminum is the best choice for line to power harvesting system connection due to the light weight and highly conductive material. 18 Gauge Aluminum, or 6061-T4 Aluminum, has conductivity of 2.534 e7 (Siemens/m) and a resistivity of 3.914 e-8 (Ohm-m). This is cruicial to allow high energy flow from the power line to the power harvesting system. The hooking system will provide stability to this wire, which is fairly bendable.
@@ -102,6 +102,7 @@ https://grabcad.com/library/mg90s-micro-servo-2
 https://content.ndtsupply.com/media/Conductivity_Al%20Reference%20Chart.pdf
 
 http://homedepot.com/p/OOK-1-1-4-in-x-50-ft-10-lb-18-Gauge-Aluminum-Wire-534694/301977350?source=shoppingads&locale=en-US&srsltid=AfmBOop1IXpyk19yQGG_HrR95LBN4prLwpjBVN4I3ryCrGxJPmbosMdDcgA
+
 
 
 
