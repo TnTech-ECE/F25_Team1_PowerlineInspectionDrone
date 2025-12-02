@@ -185,14 +185,6 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 # Buildable Schematic
 <img width="3000" height="2861" alt="circuit_image" src="https://github.com/user-attachments/assets/40d80e0a-f3f7-40c3-b7af-ad37a7f8d878" />
 
-## Flow chart and Code outline
-FreeRTOS will be used for multitasking and multithreading.
-### Controlling the Servo Motor
-<img width="1920" height="1080" alt="Data Flow Diagram Whiteboard in Dark Yellow Light Yellow Black Monochromatic Style" src="https://github.com/user-attachments/assets/1585c6b2-db31-448d-99a3-557608ea6fd1" />
-
-
-
-
 
 
 # BOM
@@ -270,6 +262,7 @@ https://www.adafruit.com/product/254
 [9] Adafruit Industries, “8 GB Class 4 microSDHC Card,” Adafruit. [Online]. Available:
 https://www.adafruit.com/product/1294
 (accessed Dec. 2, 2025).
+
 
 
 
