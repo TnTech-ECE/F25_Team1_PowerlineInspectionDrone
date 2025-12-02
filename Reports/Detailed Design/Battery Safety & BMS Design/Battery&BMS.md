@@ -49,6 +49,7 @@ All components must come from the approved vendor list and be lightweight to avo
 ## Overview of Proposed Solution
 
 The subsystem uses a two-stage approach to safely deliver power from the harvested line energy to the drone’s USB-C charging port.
+
 3.1 Stage 1 – High-Voltage Isolation and Step-Down
 Chosen Part:
 RECOM R05-100B or Traco TMR 6-4811WI (approved vendors: Digi-Key, Mouser, Arrow)
@@ -78,15 +79,91 @@ For testing and redundancy, an additional drone battery is included in the BOM.
 
 ## Interface with Other Subsystems
 
-Power Harvesting Subsystem → Battery & BMS Subsystem
-Signal: High-voltage DC (≈45 V)
-Connection: 2-pin locking connector
-Function: Supplies harvested energy
+This section describes all electrical and physical interfaces between the Battery & BMS Subsystem, the Power Harvesting Subsystem, and the Parrot ANAFI USA drone. The goal is to clearly specify what signals flow where, their expected ranges, and the nature of any “communication” between blocks.
 
-Battery & BMS Subsystem → Drone
-Signal: 5 V USB-C Source
-Connection: USB-C receptacle and cable
-Function: Charges drone through factory USB-C port
+4.1 Interface: Power Harvesting Subsystem → Battery & BMS Subsystem
+Purpose:
+This interface delivers the harvested transmission-line energy, in the form of high-voltage, low-current DC, from the Power Harvesting Subsystem into the Battery & BMS Subsystem where it is converted into a safe USB-C power source.
+
+Connection point:
+The Battery & BMS Subsystem taps across the load capacitor of the Power Harvesting Subsystem (i.e., across the rectified, filtered DC node).
+This is implemented as a two-wire connection (positive and return) from that capacitor node to the input terminals of the DC-DC converter stage on the Battery & BMS PCB.
+
+Signal characteristics:
+
+Signal type: Unregulated DC power
+
+Nominal voltage: Approximately 45 V DC under typical operating conditions (based on experimental results using a 10 MΩ load across the harvester output).
+
+Voltage range: Expected to vary with transmission-line coupling and loading; the DC-DC converter is selected such that its input voltage range comfortably covers the anticipated minimum and maximum voltages.
+
+Current level: Very low in early prototypes, consistent with a proof-of-concept energy harvester; the design nonetheless assumes a realistic operating range so that the same architecture can scale to higher current in future iterations.
+
+Method of communication / data:
+No digital or logical data is exchanged over this interface.
+The only “information” transmitted is implicitly encoded in the voltage and available current from the Power Harvesting Subsystem.
+The Battery & BMS Subsystem “interprets” this analog information simply by checking whether the input voltage is within the allowed range for its DC-DC converter. If the input is too low or too high, the design will not enable the USB-C output in the final implementation.
+
+Physical implementation:
+Two high-voltage-rated conductors or a 2-pin connector rated for at least the maximum expected harvester voltage plus margin.
+Clearance and creepage on the PCB and wiring are chosen to handle the measured ~45 V DC and any anticipated transients.
+
+4.2 Interface: Battery & BMS Subsystem → Drone (USB-C Power Interface)
+Purpose:
+This is the primary, user-visible interface of the subsystem. It delivers regulated low-voltage DC power from the Battery & BMS Subsystem into the Parrot ANAFI USA drone via its existing USB-C charging port, allowing the drone’s internal battery management and charging circuitry to handle the 11.55 V, 6800 mAh pack.
+
+Connection point:
+The Battery & BMS Subsystem has a PCB-mounted USB-C receptacle.
+A standard USB-C cable connects this receptacle to the drone’s USB-C charging port, exactly as if the drone were connected to a wall charger.
+
+Signal characteristics:
+
+VBUS (power line):
+Regulated DC output from the chosen DC-DC converter module.
+
+Nominal design target: 5.0 V DC (±5%) at the USB-C VBUS pin.
+The converter is chosen to provide sufficient power within the drone’s charger rating, while remaining well below the pack’s maximum charging capability.
+
+GND (return):
+Common reference for power between the Battery & BMS Subsystem and the drone.
+Connected directly from the DC-DC converter output ground to the USB-C receptacle ground pins.
+
+CC1 / CC2 (Configuration Channel):
+Implemented using fixed pull-up resistors (Rp) on the Battery & BMS Subsystem side to indicate that it is a USB-C Source.
+This enables the drone to correctly detect a power source and draw current according to standard USB-C behavior.
+No active USB Power Delivery (PD) negotiation is used in this initial implementation; the system operates in standard 5 V Source mode.
+
+Other pins (SBU, high-speed pairs):
+Not used in this design.
+Left unconnected or routed according to connector manufacturer’s recommendations for a power-only implementation.
+
+Method of communication / data:
+The only “protocol” on this interface is the USB-C Source detection mechanism via CC1/CC2 resistors.
+The Battery & BMS Subsystem does not exchange digital data (e.g., USB PD messages, serial data, or telemetry) with the drone.
+
+All battery management, pack voltage sensing, and charge-profile control occur entirely inside the drone, through its internal electronics. The Battery & BMS Subsystem merely provides a stable and compliant power source at the USB-C port and does not interface directly with the pack or its BMS.
+
+Physical implementation:
+One USB-C receptacle on the Battery & BMS PCB.
+One USB-C to USB-C cable between the subsystem and the drone.
+Mechanical mounting of the subsystem within or near the drone frame so that the cable can be routed safely and strain-relieved.
+
+4.3 Interface: Battery & BMS Subsystem → Compute Subsystem
+In the current design, the Battery & BMS Subsystem operates electrically independent of the system’s Compute Subsystem. It has no microcontroller of its own and does not send or receive real-time data related to power flow.
+
+Signal characteristics:
+
+Power/data lines: None.
+No dedicated power lines are fed from this subsystem to compute; the drone’s existing power distribution remains unchanged.
+No serial buses (I²C, UART, SPI, etc.) are used between the Battery & BMS Subsystem and the Compute Subsystem.
+
+Method of communication / data:
+There is no electronic communication between this subsystem and the Compute Subsystem in this version of the design.
+Any information about the subsystem (for example, measured USB-C input power or harvested energy) would be gathered during testing using external lab equipment and not via in-system communication.
+
+Physical relationship:
+The only relationship is mechanical/co-location within the drone system and the fact that both subsystems ultimately affect overall mission time (longer or shorter available flight time based on how much charge is recovered).
+This separation keeps the Battery & BMS Subsystem focused solely on safe power conversion and USB-C delivery, while the drone’s internal electronics and existing BMS continue managing the pack and flight systems.
 
 ## Buildable Schematic 
 
