@@ -17,6 +17,7 @@ The Corona Detection and Camera Sensing Subsystem must meet defined specificatio
   - **Resolution:** 256×192
   - **Frame rate:** 25 fps
   - **Interface:** Composite Video Blanking and Sync (CVBS) analog output for integration with FPV systems
+  - **Power:** 5 V input and <0.8 W consumed
 - **Recording Module:**
   - **Onboard storage:** First person view (FPV) digital video recorder (DVR) module capable of recording video streams onboard storage
   - **Modes:** Switchable modes for live transmission and recording
@@ -103,4 +104,5 @@ By combining a lightweight thermal camera with a compact DVR module, the subsyst
 [2] Segrehy, "Mini FPV DVR Recorder, Video Capture Module with Built-in Battery & 32GB TF Card Support, NTSC PAL Switchable for FPV Drone RC Model Racing Car," Amazon.com. [Online]. Available: https://www.amazon.com/. [Accessed: Nov. 26, 2025].
 
 [3] "Ultraviolet, thermal cameras: high tech solutions for corona discharges," [Online]. Available: (insert publisher or source URL if known). [Accessed: Nov. 26, 2025].
+
 
