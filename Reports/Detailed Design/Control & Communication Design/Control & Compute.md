@@ -21,8 +21,6 @@ MicroSD card breakout board with an SD/MicroSD Memory Card 8 GB (SDHC).
 ≤ 20 g combined for all compute and communication components (3.43g MicroSD module + 9 g Raspberry Pi + 2.6 g Goku GM10 + 2.1 g DS3231 RTC).
 ### Operational Environment:
 0°C – 50°C. Insulated housing; static air cooling.
-### Data Logging:
-SD card logging via Pi Pico; minimum 8 GB storage
 ### Timestamp Precision: 
 ≤ 2 ms resolution, maintained by RTC
 
@@ -176,6 +174,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 
 ### Back:
 ![microSD 2](https://github.com/user-attachments/assets/feaba5bd-0aae-4cd6-bfa3-b84e5028f668)
+
 
 
 
