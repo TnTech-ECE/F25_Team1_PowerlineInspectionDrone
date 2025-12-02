@@ -58,12 +58,21 @@ Deliver a full and relevant analysis of the design demonstrating that it should 
 ## References
 
 [1] USB Implementers Forum, USB Type-C Cable and Connector Specification, Release 2.2, Aug. 2022.
+
 [2] Digi-Key Electronics, “Murata MGJ2 Series Dual-Output Isolated DC-DC Converters – Datasheet and Specifications,” 2024. [Online].
+
 [3] Texas Instruments, “TPS54531 5-A, 28-V Input Step-Down DC-DC Converter,” Datasheet, 2023.
+
 [4] Texas Instruments, “TPS25940 eFuse and Over-Voltage Protection Switch,” Datasheet, 2022.
+
 [5] TE Connectivity, “USB Type-C Receptacle Connector 12401610E001A – Product Specification,” 2023.
+
 [6] Vishay Dale, “High-Voltage Thick-Film Resistors VR37 Series (VR37000001005FR500),” Datasheet, 2024.
+
 [7] Parrot Drones SAS, Anafi USA / Anafi Series – Battery Specifications and Safety Guidelines, 2023.
+
 [8] M. Petkovšek, J. Persolja, and M. Avgustin, “Design Considerations for Energy Harvesting from High-Voltage Transmission Lines,” IEEE Transactions on Power Delivery, vol. 35, no. 6, pp. 2801–2810, Dec. 2020.
+
 [9] A. K. Shukla and S. Sampath, “Li-ion Batteries: Principles, Materials, and Applications,” Annual Review of Materials Research, vol. 50, pp. 493–529, 2020.
+
 [10] H. Zhang, X. Wang, and P. Li, “Design of Safe Charging Systems for Lithium-Ion Packs Using USB-C Power Delivery,” IEEE Transactions on Power Electronics, vol. 37, no. 4, pp. 4211–4224, Apr. 2022.
