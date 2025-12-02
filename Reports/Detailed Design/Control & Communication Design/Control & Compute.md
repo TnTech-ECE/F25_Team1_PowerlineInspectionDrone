@@ -110,6 +110,11 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 - Data Stored:  Serial
 - Direction: Pico → MicroSD (can be bidirectional if needed)
 - Protocol: SPI
+- Connection:
+  - GPIO 10 / Pin 14: SPI1 SCL
+  - GPIO 11 / Pin 15: SPI1 TX
+  - GPIO 12 / Pin 16: SPI1 RX
+  - GPIO 13 / Pin 17: SPI1 CSn
 - Data
   - Arm deployment with time-stamps
   - Positioning and Direction
@@ -171,6 +176,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 
 ### Back:
 ![microSD 2](https://github.com/user-attachments/assets/feaba5bd-0aae-4cd6-bfa3-b84e5028f668)
+
 
 
 
