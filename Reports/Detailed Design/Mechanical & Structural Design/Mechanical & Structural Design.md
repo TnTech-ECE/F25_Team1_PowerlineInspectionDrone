@@ -104,6 +104,17 @@ Under Drone Housing:
 MG90S Mini Servo:
 - The MG90S servo is a minilmal, lightweight, low gear micro servo used on RC applications. It has 180 degrees of rotation which will raise and lower the hook to connect the power line to the Power Harvesting Subsystem. The low gear system is cruicial for slow, methodical movement to allow the user time to operate line connection effectively.
 
+- Specifications List:
+    Weight: 13 g
+
+    Dimensions: 22.5 x 12 x 35.5 mm approx.
+
+    Small Torque: 1.8 kgf * cm (4.8V)
+
+    Operating Speed: 0.1s / 60 degrees
+
+    Dead Band Width: 5 micro seconds
+
 Hook Connection:
 - A hook design has been implemented to allow easy access to the power line with stable connection. The hook allows for line connection stability with gravity forced connection after the drone has been connected in place and keeps contect with the line. A coil around the trunk of the hook will provide stability and small flexibility to the line while decreasing weight gain on the top of the drone. This is very important to not affect drone flight operation. 
 
@@ -120,6 +131,7 @@ https://content.ndtsupply.com/media/Conductivity_Al%20Reference%20Chart.pdf
 http://homedepot.com/p/OOK-1-1-4-in-x-50-ft-10-lb-18-Gauge-Aluminum-Wire-534694/301977350?source=shoppingads&locale=en-US&srsltid=AfmBOop1IXpyk19yQGG_HrR95LBN4prLwpjBVN4I3ryCrGxJPmbosMdDcgA
 
 https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf
+
 
 
 
