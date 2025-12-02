@@ -72,7 +72,7 @@ Figure 3: Mechanical Subsystem:
 
 Figure 4: Servo Operating Circuit:
 
-<img width="1277" height="783" alt="image" src="https://github.com/user-attachments/assets/04709e4e-614a-4b00-ba0e-427e6611e8f8" />
+<img width="1248" height="711" alt="image" src="https://github.com/user-attachments/assets/b58b1800-fea9-43c1-93e5-0978f344746d" />
 
 
 ## Flowchart
@@ -143,6 +143,7 @@ https://content.ndtsupply.com/media/Conductivity_Al%20Reference%20Chart.pdf
 http://homedepot.com/p/OOK-1-1-4-in-x-50-ft-10-lb-18-Gauge-Aluminum-Wire-534694/301977350?source=shoppingads&locale=en-US&srsltid=AfmBOop1IXpyk19yQGG_HrR95LBN4prLwpjBVN4I3ryCrGxJPmbosMdDcgA
 
 https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf
+
 
 
 
