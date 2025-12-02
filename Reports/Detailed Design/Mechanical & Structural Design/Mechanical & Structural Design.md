@@ -88,6 +88,15 @@ Figure 4: Servo Operating Circuit:
 ## Anaysis
 LW-PLA:
 - LW-PLA from PolyLite is a very lightweight and highly durable PLA used for many applications. The two biggest needs for drone operation are mainting low capacity goals and being stable during flight. LW-PLA has a density of 0.6g/cm^3, being extremely light for small applications. The hook for the drone, shown in Figure 3, will need high tensile strength to maintain the coil's stability around the hook. The PolyLite LW-PLA has a tensile strength of 23.2 MPa, which is crucial for long life expectancy.
+
+- Specification List:
+  
+Density: 0.8 g/cm^3
+
+Tensile Strength: 23.2 MPa
+
+Bending Strength: 52.9 MPa
+
   
 Under Drone Housing:
 - The Under Drone Housing will implement a dome as the main space to house all internal subsystems. The dome is cruicial to not affect drone flight or stability. By setting the dome placed directly on the center of mass, it keeps prior drone operation similar if not the same. The dome housing system will also maintain all internal housing systems by layering devices based on size and prioritizing centralizing mass.
@@ -109,6 +118,8 @@ https://grabcad.com/library/mg90s-micro-servo-2
 https://content.ndtsupply.com/media/Conductivity_Al%20Reference%20Chart.pdf
 
 http://homedepot.com/p/OOK-1-1-4-in-x-50-ft-10-lb-18-Gauge-Aluminum-Wire-534694/301977350?source=shoppingads&locale=en-US&srsltid=AfmBOop1IXpyk19yQGG_HrR95LBN4prLwpjBVN4I3ryCrGxJPmbosMdDcgA
+
+https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf
 
 
 
