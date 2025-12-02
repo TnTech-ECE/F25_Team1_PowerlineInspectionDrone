@@ -177,6 +177,13 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 
 
 
+# Buildable Schematic
+<img width="3000" height="2861" alt="circuit_image" src="https://github.com/user-attachments/assets/40d80e0a-f3f7-40c3-b7af-ad37a7f8d878" />
+
+
+
+
+
 
 
 
