@@ -55,17 +55,25 @@ Since the subsystem is permanently embedded, components must be soldered and sec
   
 
 
-# Interfaces with other Subsystems
-## Raspberry Pi Pico:
-### Interfaces with the Mechanical & Structural Subsystem:
+# Interfaces 
+## Interfaces with other subsystems
+### Mechanical & Structural Subsystem:
 #### MG90S Metal-gear Micro Servo (Linear Arm Actuation) Control:
 - Signal name: “SERVO_PWM.”
 - Signal type: Standard 50 Hz PWM
 - Direction: Pi Pico → MG90S Servo
 - Connection: GPIO 22/ Pin 29
 - Data: Pulse width determines arm position
+#### Housing
+- The Pi Pico, DS3231 Precision RTC, MicroSD card breakout board, and MicroSD memory card will be in the housing dome of the drone
+- The GOKU GM10 Nano V3 will be outside the housing dome for a clear sky view.
 
-### Interfaces with DS3231 RTC Module
+### Battery & BMS Subsystem
+- The Pi Pico, DS3231 Precision RTC, MicroSD card breakout board, and GOKU GM10 Nano V3 will be powered by the subsystem's regulated  DC 5V bus.
+
+
+## Interfaces within itself
+### Pi Pico with DS3231 RTC Module
 #### RTC Timing
 - Signal Name: RTC_I2C_SCL / RTC_I2C_SDA
 - Signal Type: Serial, Half Duplex
@@ -79,7 +87,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
   - Date (MM/DD/YYYY) / Time (HH:MM:SS)
   - Temperature  (for compensation)
 
-### Interfaces with Goku GM10 Nano V3
+### Pi Pico with Goku GM10 Nano V3
 #### GPS Positioning
 - Signal Name: “GPS_RX/TX”
 - Signal Type: Digital UART. Serial
@@ -102,9 +110,9 @@ Since the subsystem is permanently embedded, components must be soldered and sec
   - GPIO 15 / Pin 20: I²C1 SCL
 - Data: Magnetic heading
 
-### Interfaces with Ground Station:
+### Pi Pico with MicroSD card breakout board
 #### Logging: MicroSD Card
-- Signal name: "SD_SPI"
+- Signal name: "SD_SPI."
 - Data Stored:  Serial
 - Direction: Pico → MicroSD (can be bidirectional if needed)
 - Protocol: SPI
@@ -117,9 +125,6 @@ Since the subsystem is permanently embedded, components must be soldered and sec
   - Arm deployment with time-stamps
   - Positioning and Direction
   - Data and Time
-
-### Interfaces with Battery & BMS
-- The Pi Pico is powered by the subsystem's regulated 3.3V rail.
   
 
 
@@ -257,6 +262,7 @@ https://www.adafruit.com/product/254
 [9] Adafruit Industries, “8 GB Class 4 microSDHC Card,” Adafruit. [Online]. Available:
 https://www.adafruit.com/product/1294
 (accessed Dec. 2, 2025).
+
 
 
 
