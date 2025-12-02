@@ -186,7 +186,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 | Ref | Component Name | Manufacturer | Part Number | Distributor | Distributor Part Number | Qty | Unit Price (USD) | Total Price (USD) | URL |
 |-----|----------------|--------------|--------------|-------------|--------------------------|-----|------------------|-------------------|-----|
 | U1  | Raspberry Pi Pico (with headers un-soldered) | Raspberry Pi Foundation | RPI PICO | Adafruit | 5525 | 1 | $4.00 | $5.00 | https://www.adafruit.com/product/4883 |
-| U2  | STEMMA QT Real-Time Clock (DS3231) and Cable | Adafruit | 5188 | Adafruit | 5188 | 1 | $13.95 | $14.90 | https://www.adafruit.com/product/5188 and https://www.adafruit.com/product/3299 |
+| U2  | STEMMA QT Real-Time Clock (DS3231) and Cable | Adafruit | 5188 | Adafruit | 5188 | 1 | $13.95 | $14.90 | https://www.adafruit.com/product/5188 and https://www.adafruit.com/product/4209 |
 | BT1 | CR1220 Battery for DS3231 | Adafruit | 3801 | Adafruit | 3801 | 1 | $0.95 | $0.95 | https://www.adafruit.com/product/3801 |
 | U3  | microSD Card Breakout Board+ | Adafruit | 254 | Adafruit | 254 | 1 | $7.50 | $7.50 | https://www.adafruit.com/product/254 |
 | SD1 | microSDHC Memory Card (8GB) | Adafruit | 1294 | Adafruit | 1294 | 1 | $9.95 | $9.95 | https://www.adafruit.com/product/1294 |
@@ -198,10 +198,65 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 
 
 # Analysis
+### Raspberry Pi Pico
+- The Pico is a low-power, lightweight microcontroller (RP2040) well suited to embedded logging and control tasks. At $4 and ~3–5 g, it keeps the subsystem mass and cost down while offering:
+  - Dual-core RP2040 CPU for simple multitasking (or running FreeRTOS/Multi-threaded tasks).
+  - SPI and I²C peripherals for microSD and RTC interfaces, respectively.
+  - Built-in ADCs for simple analog monitoring (if needed).
+- This meets the constraints: low weight, low power, and ease of software development, given your embedded background. It can timestamp, log events, control a servo motor, and write files to the microSD breakout (via SPI).
+
+### DS3231 Precision RTC
+- The DS3231 is a temperature-compensated RTC with excellent short-term stability and an I²C interface. The STEMMA QT breakout simplifies wiring to the Pico (plug-and-play).
+- Functionally, this provides the wall-clock timestamps. The precision of DS3231 (ppm-level stability) is suitable for event logging.
+- Low weight (≈2.5 g), low power, and easy interfacing (I²C). The coin-cell backup ensures the RTC keeps time during power cycles — important for post-flight analysis.
+  
+### GOKU GM10 Nano V3 GPS w/compass
+- The GOKU GM10 is a tiny, lightweight GPS/compass module (≈2–3 g).
+- provides lightweight positional data and heading information to complement the timestamped logs.
+  
+### MicroSD card breakoutboard + MicroSD memory card
+- The Adafruit MicroSD Card Breakout+ provides level shifting, a 3.3V regulator, and a push-push card socket; it’s designed for microcontroller SPI usage and is robust for field logging.
+- With the selected 8GB/16GB/64GB card (recommend 32–64GB for headroom), the Pico can log timestamped events. SPI bandwidth is adequate for periodic logging.
+- The breakout + an 8GB card is more than sufficient and meets weight/economic constraints.
 
 
 
 # Reference 
+[1] Raspberry Pi Ltd., “Raspberry Pi Pico,” Raspberry Pi. [Online]. Available:
+https://www.raspberrypi.com/products/raspberry-pi-pico/
+(accessed Dec. 2, 2025).
+
+[2] Adafruit Industries, “Raspberry Pi Pico – Adafruit,” Adafruit. [Online]. Available:
+https://www.adafruit.com/pico?src=raspberrypi
+(accessed Dec. 2, 2025).
+
+[3] Raspberry Pi Ltd., “Pico Series Microcontrollers Documentation,” Raspberry Pi Documentation. [Online]. Available:
+https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html
+(accessed Dec. 2, 2025).
+
+[4] Adafruit Industries, “Adafruit DS3231 Precision RTC Breakout,” Adafruit. [Online]. Available:
+https://www.adafruit.com/product/5188
+(accessed Dec. 2, 2025).
+
+[5] Adafruit Industries, “DS3231 Precision RTC – Pinouts,” Adafruit Learn. [Online]. Available:
+https://learn.adafruit.com/adafruit-ds3231-precision-rtc-breakout/pinouts
+(accessed Dec. 2, 2025).
+
+[6] Adafruit Industries, “Adafruit CR1220 Lithium Coin Cell,” Adafruit. [Online]. Available:
+https://www.adafruit.com/product/380
+(accessed Dec. 2, 2025).
+
+[7] Flywoo, “GOKU GM10 Nano V3 GPS w/ Compass,” Flywoo Official Store. [Online]. Available:
+https://flywoo.net/products/goku-gm10-nano-v3-gps-w-compass
+(accessed Dec. 2, 2025).
+
+[8] Adafruit Industries, “MicroSD Card Breakout Board+,” Adafruit. [Online]. Available:
+https://www.adafruit.com/product/254
+(accessed Dec. 2, 2025).
+
+[9] Adafruit Industries, “8 GB Class 4 microSDHC Card,” Adafruit. [Online]. Available:
+https://www.adafruit.com/product/1294
+(accessed Dec. 2, 2025).
 
 
 
