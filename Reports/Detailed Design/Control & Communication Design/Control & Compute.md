@@ -1,6 +1,7 @@
 # Function of the Subsystem
   The Control & Compute Subsystem serves as the central decision-making, timing, and logging unit for the entire system. Its purpose is to coordinate the Mechanical & Structural subsystem and ensure safe, synchronized, and reliable field operation. It is responsible for executing safe, deterministic control actions, recording mission-critical data, and providing timing, GPS, compass, and telemetry logs for the entire mission.
   
+
   
 # Specifications and Constraints
 ## Specification: 
@@ -38,6 +39,7 @@ The total subsystem component cost must remain below $150 USD, aligning with stu
 Since the subsystem is permanently embedded, components must be soldered and secured for vibration resistance, all boards must be mounted, and must allow easy SD card removal after flight, meeting IPC-A-610 Class 2 workmanship standards for mechanical integrity 
 
 
+
 # Overview of Proposed Solution
 - The proposed solution integrates a single microcontroller Control & Compute architecture designed to satisfy the subsystem’s requirement for deterministic control, precise timing synchronization, light-weight operation, and reliable mission-data logging. This subsystem integrates one primary component and two supporting components: a Raspberry Pi Pico Feather microcontroller for real-time control, synchronization, and data logging. A DS3231 RTC module for precise and high-accuracy timing, and a Goku GM10 Nano V3 for positioning.
 
@@ -53,6 +55,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 - The Goku GM10 Nano V3 GPS + Compass provides lightweight positional data and heading information to complement the timestamped logs.
 - The MicroSD card breakout board acts as the system's black box. All logged data is recorded and accessible.
   
+
 
 # Interfaces with other Subsystems
 ## Raspberry Pi Pico:
@@ -114,6 +117,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 
 ### Interfaces with Battery & BMS
 - The Pi Pico is powered by the subsystem's regulated 3.3V rail.
+  
 
 
 # 3D Model of Custom Mechanical Components
@@ -140,8 +144,11 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 
 
 ## GOKU GM10 Nano V3 GPS w/compass
-### Front
-<img width="504" height="482" alt="Screenshot 2025-12-01 6 55 45 PM" src="https://github.com/user-attachments/assets/a82f8495-472f-4582-8dd8-ee11f325a215" />
+### Front:
+<img width="505" height="482" alt="Screenshot 2025-12-01 6 58 19 PM" src="https://github.com/user-attachments/assets/5548933c-f7a7-4b41-9b2a-b4886798a1c5" />
+
+### Back:
+<img width="466" height="629" alt="Screenshot 2025-12-01 6 58 57 PM" src="https://github.com/user-attachments/assets/fbccb341-5172-4b48-9d76-36b1ecbb19de" />
 
 
 ## MicroSD Card Breakout board
@@ -164,6 +171,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 
 ### Back:
 ![microSD 2](https://github.com/user-attachments/assets/feaba5bd-0aae-4cd6-bfa3-b84e5028f668)
+
 
 
 
