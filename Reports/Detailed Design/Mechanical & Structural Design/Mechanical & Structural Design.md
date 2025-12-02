@@ -134,15 +134,15 @@ Hook Connection:
   
 
 ## References
-https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd
+[1] “Conductivity Al Reference Chart,” NDT Supply. [Online]. Available: https://content.ndtsupply.com/media/Conductivity_Al%20Reference%20Chart.pdf (accessed Dec. 1, 2025).
 
-https://grabcad.com/library/mg90s-micro-servo-2
+[2] “OOK 1-1/4 in. × 50 ft. 10 lb. 18-Gauge Aluminum Wire,” The Home Depot. [Online]. Available: https://www.homedepot.com/p/OOK-1-1-4-in-x-50-ft-10-lb-18-Gauge-Aluminum-Wire-534694/301977350 (accessed Dec. 1, 2025).
 
-https://content.ndtsupply.com/media/Conductivity_Al%20Reference%20Chart.pdf
+[3] “PolyLite LW-PLA — Product Data Sheet,” Polymaker. [Online]. Available: https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf (accessed Dec. 1, 2025).
 
-http://homedepot.com/p/OOK-1-1-4-in-x-50-ft-10-lb-18-Gauge-Aluminum-Wire-534694/301977350?source=shoppingads&locale=en-US&srsltid=AfmBOop1IXpyk19yQGG_HrR95LBN4prLwpjBVN4I3ryCrGxJPmbosMdDcgA
+[4] TowerPro, “MG90S servo, Metal gear with one bearing,” Data sheet, TowerPro, 2017. [Online]. Available: https://www.electronicoscaldas.com/datasheet/MG90S_Tower-Pro.pdf?srsltid=AfmBOor2NFDJKFQzSEaFWy265cbKKH7PoAjnbNWc5FnZWOXvCtP_IUMd (accessed Dec. 1, 2025).
 
-https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf
+[5] “TowerPro MG90S Micro Servo,” GrabCAD, Sep. 25, 2017. [Online]. Available: https://grabcad.com/library/mg90s-micro-servo-2 (accessed Dec. 1, 2025).
 
 
 
