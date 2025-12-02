@@ -112,7 +112,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
   - Positioning and Direction
   - Data and Time
 
-### Interfaces with Battery $ BMS
+### Interfaces with Battery & BMS
 - The Pi Pico is powered by the subsystem's regulated 3.3V rail.
 
 
@@ -140,6 +140,8 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 
 
 ## GOKU GM10 Nano V3 GPS w/compass
+### Front
+<img width="504" height="482" alt="Screenshot 2025-12-01 6 55 45 PM" src="https://github.com/user-attachments/assets/a82f8495-472f-4582-8dd8-ee11f325a215" />
 
 
 ## MicroSD Card Breakout board
@@ -162,6 +164,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 
 ### Back:
 ![microSD 2](https://github.com/user-attachments/assets/feaba5bd-0aae-4cd6-bfa3-b84e5028f668)
+
 
 
 
