@@ -91,12 +91,12 @@ LW-PLA:
 
 - Specification List:
   
-Density: 0.8 g/cm^3
+    Density: 0.8 g/cm^3
 
-Tensile Strength: 23.2 MPa
+    Tensile Strength: 23.2 MPa
 
-Bending Strength: 52.9 MPa
-
+    Bending Strength: 52.9 MPa
+  
   
 Under Drone Housing:
 - The Under Drone Housing will implement a dome as the main space to house all internal subsystems. The dome is cruicial to not affect drone flight or stability. By setting the dome placed directly on the center of mass, it keeps prior drone operation similar if not the same. The dome housing system will also maintain all internal housing systems by layering devices based on size and prioritizing centralizing mass.
@@ -120,6 +120,7 @@ https://content.ndtsupply.com/media/Conductivity_Al%20Reference%20Chart.pdf
 http://homedepot.com/p/OOK-1-1-4-in-x-50-ft-10-lb-18-Gauge-Aluminum-Wire-534694/301977350?source=shoppingads&locale=en-US&srsltid=AfmBOop1IXpyk19yQGG_HrR95LBN4prLwpjBVN4I3ryCrGxJPmbosMdDcgA
 
 https://polymaker.com/wp-content/tech-docs/PolyLite_LW_PLA_PIS_EN.pdf
+
 
 
 
