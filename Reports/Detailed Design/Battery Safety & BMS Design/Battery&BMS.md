@@ -191,7 +191,7 @@ Include a manufacturable printed circuit board layout.
 | 10   | Standard USB-C Cable (USB-IF certified)                   | Anker A8888             | Amazon  | 1   | $7.99        |
 | 11   | USB-C CC Resistor (Rp for CC1 — 5.1 kΩ, 1%)               | RC0603FR-075K1L          | Mouser  | 1   | $0.10        |
 | 12   | USB-C CC Resistor (Rp for CC2 — 5.1 kΩ, 1%)               | RC0603FR-075K1L          | Mouser  | 1   | $0.10        |
-Total Cost: $63.94
+Total Cost: $64.14
 
 
 ## Analysis
