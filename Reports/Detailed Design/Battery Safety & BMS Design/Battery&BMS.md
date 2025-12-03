@@ -167,6 +167,9 @@ This separation keeps the Battery & BMS Subsystem focused solely on safe power c
 
 ## Buildable Schematic 
 
+<img width="881" height="455" alt="image" src="https://github.com/user-attachments/assets/a5037433-d96a-4604-af63-cd226180aaea" />
+
+
 The final schematic implements the Power/USB-C output subsystem by conditioning an external DC input and providing a stable regulated 5-volt USB supply for downstream electronics. The input from J2 (Vin + GND) is protected through a series fuse and reverse-polarity diode before entering the RPMH5.0-1.5 DC-DC converter, which generates a clean +5 V rail. That regulated output is routed directly to the VBUS pin of the USB-C receptacle (J1), with the USB-GND net tied to system ground. The CC1 and CC2 pins are each biased through 5.1 kΩ pull-up resistors (R1/R2) to advertise a 5 V source per USB-C specification, ensuring correct cable orientation and role as a Dedicated Charging Port. No data functionality is implemented, so the D+/D– pins remain unconnected. Together, this subsystem safely accepts unregulated input power and outputs a standards-compliant USB-C 5 V supply for charging and powering downstream devices.
 
 ## Printed Circuit Board Layout
