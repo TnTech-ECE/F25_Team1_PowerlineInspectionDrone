@@ -177,19 +177,20 @@ The schematic should be relevant to the design and provide ample details necessa
 Include a manufacturable printed circuit board layout.
 
 # Battery & BMS Subsystem – Bill of Materials (BOM)
-
-| Item | Component Description | Part Number | Vendor | Qty | Price (USD) |
-|------|------------------------|-------------|--------|-----|-------------|
-| 1 | High-Voltage 10 MΩ Resistor (0.5 W, 3.5 kV) | VR37000001005FR500 | Mouser | 3 | $2.28 ea |
-| 2 | High-Voltage 4.7 MΩ Resistor (0.5 W, 3.5 kV) | VR37000004704FR500 | Mouser | 3 | $2.10 ea |
-| 3 | High-Voltage 2.2 MΩ Resistor (0.5 W, 3.5 kV) | VR37000002204FR500 | Mouser | 3 | $1.98 ea |
-| 4 | Isolated DC–DC Converter (48 V → 12 V, 2–3 W) | TDK-Lambda CC3-4812DF-E | Mouser | 1 | $24.00 |
-| 5 | Buck Regulator Module (12 V → 5 V) | Murata OKI-78SR-5/1.5-W36H-C | Digi-Key | 1 | $8.75 |
-| 6 | USB-C Power Source Controller (5 V only) | Microchip UPD301C | Mouser | 1 | $1.90 |
-| 7 | USB-C Receptacle (Mid-Mount TH) | GCT USB4085-GF-A | Digi-Key | 1 | $1.15 |
-| 8 | Resettable PTC Fuse (Input Protection) | Bourns MF-R050 | Digi-Key | 1 | $0.42 |
-| 9 | TVS Diode (Surge Protection) | SMBJ58A | Digi-Key | 1 | $0.65 |
-| 10 | Standard USB-C Cable (USB-IF certified) | Anker A8888 | Amazon | 1 | $7.99 |
+| Item | Component Description                                   | Part Number            | Vendor  | Qty | Price (USD) |
+|------|-----------------------------------------------------------|-------------------------|---------|-----|--------------|
+| 1    | High-Voltage 10 MΩ Resistor (0.5 W, 3.5 kV)               | VR37000001005FR500      | Mouser  | 3   | $2.28 ea     |
+| 2    | High-Voltage 4.7 MΩ Resistor (0.5 W, 3.5 kV)              | VR37000004704FR500      | Mouser  | 3   | $2.10 ea     |
+| 3    | High-Voltage 2.2 MΩ Resistor (0.5 W, 3.5 kV)              | VR37000002204FR500      | Mouser  | 3   | $1.98 ea     |
+| 4    | Isolated DC–DC Converter (48 V → 12 V, 2–3 W)             | TDK-Lambda CC3-4812DF-E | Mouser  | 1   | $24.00       |
+| 5    | Buck Regulator Module (12 V → 5 V)                        | Murata OKI-78SR-5/1.5-W36H-C | Digi-Key | 1 | $8.75 |
+| 6    | USB-C Power Source Controller (5 V only)                  | Microchip UPD301C       | Mouser  | 1   | $1.90        |
+| 7    | USB-C Receptacle (Mid-Mount TH)                           | GCT USB4085-GF-A        | Digi-Key| 1   | $1.15        |
+| 8    | Resettable PTC Fuse (Input Protection)                    | Bourns MF-R050          | Digi-Key| 1   | $0.42        |
+| 9    | TVS Diode (Surge Protection)                              | SMBJ58A                 | Digi-Key| 1   | $0.65        |
+| 10   | Standard USB-C Cable (USB-IF certified)                   | Anker A8888             | Amazon  | 1   | $7.99        |
+| 11   | USB-C CC Resistor (Rp for CC1 — 5.1 kΩ, 1%)               | RC0603FR-075K1L          | Mouser  | 1   | $0.10        |
+| 12   | USB-C CC Resistor (Rp for CC2 — 5.1 kΩ, 1%)               | RC0603FR-075K1L          | Mouser  | 1   | $0.10        |
 Total Cost: $63.94
 
 
