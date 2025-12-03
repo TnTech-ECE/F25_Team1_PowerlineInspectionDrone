@@ -167,10 +167,7 @@ This separation keeps the Battery & BMS Subsystem focused solely on safe power c
 
 ## Buildable Schematic 
 
-Integrate a buildable electrical schematic directly into the document. If the diagram is unreadable or improperly scaled, the supervisor will deny approval. Divide the diagram into sections if the text and components seem too small.
-
-The schematic should be relevant to the design and provide ample details necessary for constructing the model. It must be comprehensive so that someone, with no prior knowledge of the design, can easily understand it. Each related component's value and measurement should be clearly mentioned.
-
+The final schematic implements the Power/USB-C output subsystem by conditioning an external DC input and providing a stable regulated 5-volt USB supply for downstream electronics. The input from J2 (Vin + GND) is protected through a series fuse and reverse-polarity diode before entering the RPMH5.0-1.5 DC-DC converter, which generates a clean +5 V rail. That regulated output is routed directly to the VBUS pin of the USB-C receptacle (J1), with the USB-GND net tied to system ground. The CC1 and CC2 pins are each biased through 5.1 kΩ pull-up resistors (R1/R2) to advertise a 5 V source per USB-C specification, ensuring correct cable orientation and role as a Dedicated Charging Port. No data functionality is implemented, so the D+/D– pins remain unconnected. Together, this subsystem safely accepts unregulated input power and outputs a standards-compliant USB-C 5 V supply for charging and powering downstream devices.
 
 ## Printed Circuit Board Layout
 
@@ -189,8 +186,7 @@ Include a manufacturable printed circuit board layout.
 | 8    | Resettable PTC Fuse (Input Protection)                    | Bourns MF-R050          | Digi-Key| 1   | $0.42        |
 | 9    | TVS Diode (Surge Protection)                              | SMBJ58A                 | Digi-Key| 1   | $0.65        |
 | 10   | Standard USB-C Cable (USB-IF certified)                   | Anker A8888             | Amazon  | 1   | $7.99        |
-| 11   | USB-C CC Resistor (Rp for CC1 — 5.1 kΩ, 1%)               | RC0603FR-075K1L          | Mouser  | 1   | $0.10        |
-| 12   | USB-C CC Resistor (Rp for CC2 — 5.1 kΩ, 1%)               | RC0603FR-075K1L          | Mouser  | 1   | $0.10        |
+| 11   | USB-C CC Resistor (Rp for CC1 — 5.1 kΩ, 1%)               | RC0603FR-075K1L          | Mouser  | 2   | $0.10 ea       |
 Total Cost: $64.14
 
 
