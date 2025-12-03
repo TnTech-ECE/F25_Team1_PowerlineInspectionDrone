@@ -174,7 +174,11 @@ The final schematic implements the Power/USB-C output subsystem by conditioning 
 
 ## Printed Circuit Board Layout
 
-Include a manufacturable printed circuit board layout.
+<img width="479" height="919" alt="image" src="https://github.com/user-attachments/assets/658cabd0-a0cc-4976-941e-72fc8d0a3f19" />
+
+<img width="1430" height="747" alt="image" src="https://github.com/user-attachments/assets/41c4a9b3-2302-48ec-8f2d-0102dee91842" />
+
+
 
 # Battery & BMS Subsystem – Bill of Materials (BOM)
 | Item | Component Description                                   | Part Number            | Vendor  | Qty | Price (USD) |
