@@ -49,7 +49,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
   
 ### Roles:
 - The Raspberry Pi Pico actuates the MG90S micro servo in the Mechanical & Structural Subsystem. does system logging, timestamp alignment, data collection, and any light computation needed for merging GPS/compass data with system events, and stores logs for post-flight analysis.
-- The DS3231 RTC maintains accurate timekeeping (within ±2 ppm), ensuring that all logged events — charging cycles, corona detection markers, servo movements, system faults — are chronologically aligned and traceable.
+- The DS3231 RTC maintains accurate timekeeping (within ±2 ppm), ensuring that all logged events — charging cycles, servo movements, system faults — are chronologically aligned and traceable.
 - The Goku GM10 Nano V3 GPS + Compass provides lightweight positional data and heading information to complement the timestamped logs.
 - The MicroSD card breakout board acts as the system's black box. All logged data is recorded and accessible.
   
@@ -262,6 +262,7 @@ https://www.adafruit.com/product/254
 [9] Adafruit Industries, “8 GB Class 4 microSDHC Card,” Adafruit. [Online]. Available:
 https://www.adafruit.com/product/1294
 (accessed Dec. 2, 2025).
+
 
 
 
