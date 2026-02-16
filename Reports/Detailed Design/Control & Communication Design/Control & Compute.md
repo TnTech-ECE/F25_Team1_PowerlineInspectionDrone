@@ -192,7 +192,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
 |-----|----------------|--------------|--------------|-------------|--------------------------|-----|------------------|-------------------|-----|
 | U1  | Raspberry Pi Pico (with headers un-soldered) | Raspberry Pi Foundation | RPI PICO | Adafruit | 5525 | 1 | $4.00 | $5.00 | https://www.adafruit.com/product/4883 |
 | U2  | STEMMA QT Real-Time Clock (DS3231) and Cable | Adafruit | 5188 | Adafruit | 5188 | 1 | $13.95 | $14.90 | https://www.adafruit.com/product/5188 and https://www.adafruit.com/product/4209 |
-| BT1 | CR1220 Battery for DS3231 | Adafruit | 3801 | Adafruit | 3801 | 1 | $0.95 | $0.95 | https://www.adafruit.com/product/3801 |
+| BT1 | CR1220 Battery for DS3231 | Adafruit | 380 | Adafruit | 380 | 1 | $0.95 | $0.95 | https://www.adafruit.com/product/380 |
 | U3  | microSD Card Breakout Board+ | Adafruit | 254 | Adafruit | 254 | 1 | $7.50 | $7.50 | https://www.adafruit.com/product/254 |
 | SD1 | microSDHC Memory Card (8GB) | Adafruit | 1294 | Adafruit | 1294 | 1 | $9.95 | $9.95 | https://www.adafruit.com/product/1294 |
 | U4  | Goku GM10 Nano V3 GPS + Compass Module | Flywoo | GM10 Nano V3 | Flywoo | GM10-NANO-V3 | 1 | $20.99 | $20.99 | https://flywoo.net/products/goku-gm10-nano-v3-gps-w-compass |
@@ -262,6 +262,7 @@ https://www.adafruit.com/product/254
 [9] Adafruit Industries, “8 GB Class 4 microSDHC Card,” Adafruit. [Online]. Available:
 https://www.adafruit.com/product/1294
 (accessed Dec. 2, 2025).
+
 
 
 
