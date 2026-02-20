@@ -208,7 +208,7 @@ Since the subsystem is permanently embedded, components must be soldered and sec
   - Dual-core RP2040 CPU for simple multitasking (or running FreeRTOS/Multi-threaded tasks).
   - SPI and I²C peripherals for microSD and RTC interfaces, respectively.
   - Built-in ADCs for simple analog monitoring (if needed).
-- This meets the constraints: low weight, low power, and ease of software development, given your embedded background. It can timestamp, log events, control a servo motor, and write files to the microSD breakout (via SPI).
+- This meets the constraints: low weight, low power, and ease of software development. It can timestamp, log events, control a servo motor, and write files to the microSD breakout (via SPI).
 
 ### DS3231 Precision RTC
 - The DS3231 is a temperature-compensated RTC with excellent short-term stability and an I²C interface. The STEMMA QT breakout simplifies wiring to the Pico (plug-and-play).
@@ -262,6 +262,7 @@ https://www.adafruit.com/product/254
 [9] Adafruit Industries, “8 GB Class 4 microSDHC Card,” Adafruit. [Online]. Available:
 https://www.adafruit.com/product/1294
 (accessed Dec. 2, 2025).
+
 
 
 
