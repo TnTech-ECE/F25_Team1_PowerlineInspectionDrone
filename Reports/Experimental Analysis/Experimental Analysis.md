@@ -110,10 +110,11 @@ In conclusion, the battery charging subsystem meets design expectations, while t
 
 
 ### 1. Power Harvesting and Battery Charging Success Criteria
-#### Success Criterion: Demonstrate the ability to harvest energy from an external source and safely convert it into a regulated 5 V output suitable for battery charging.
+#### Success Criterion: 
+Demonstrate the ability to harvest energy from an external source and safely convert it into a regulated 5 V output suitable for battery charging.
 
-#### **Result**
-**Partially Met**
+#### **Result:**
+Partially Met
 
 #### Evidence
 - Measurable voltage (~3–4 V) was observed across the load capacitor with a 20 Vpp input, confirming energy harvesting.
