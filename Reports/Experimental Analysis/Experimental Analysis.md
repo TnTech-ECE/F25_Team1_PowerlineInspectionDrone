@@ -80,14 +80,19 @@ The following steps describe the infrared camera sensing experimental procedure:
 3. Test the system by exposing the camera to varying temperature conditions and verifying the accuracy of the readings.
 
 ### Expected Results:
-
-
-
+The MLX90640 infrared camera will successfully initialize and establish communication with the Raspberry Pi Pico. The system will output temperature data in a readable format, such as through a serial monitor or display, representing either a 2D thermal map or individual pixel temperature values. Temperature readings will vary consistently with environmental conditions, increasing when exposed to heat sources and decreasing in cooler environments. 
 
 ### Actual Results:
+The MLX90640 infrared camera successfully initialized and established communication with the Raspberry Pi Pico. The system output temperature data in a simplified format, displaying only the maximum, minimum, and center temperatures. The recorded temperature readings varied in response to the thermal conditions to which the sensor was exposed.
 
 ### Interpretation and Conclusion:
+The results indicate that the MLX90640 infrared camera successfully interfaced with the Raspberry Pi Pico and was able to reliably measure temperature variations. The system’s ability to output maximum, minimum, and center temperatures provided a simplified yet effective representation of the thermal environment. Although the full 2D thermal map was not utilized, the selected data points were sufficient to observe changes in temperature and identify general trends.
 
+The variation in temperature readings in response to different thermal conditions confirms that the sensor is functioning as expected. The system demonstrated sensitivity to heat sources, as indicated by increases in recorded temperatures, and responsiveness to cooler conditions through decreasing values. This behavior validates the camera’s capability to detect temperature differences.
+
+However, the limited output format may restrict the system’s ability to precisely locate and analyze small or distributed hot spots. A full thermal image would provide more detailed spatial resolution, which is beneficial for accurately identifying fault locations on a transmission line.
+
+In conclusion, the experiment successfully validated that the MLX90640 infrared camera can detect temperature changes and communicate this data through the Raspberry Pi Pico. The system shows potential for fault detection applications based on elevated temperatures. 
 
 
 ## 3. 
@@ -126,18 +131,28 @@ The power harvesting subsystem produced a higher-than-expected voltage at low in
 - Add protection (such as voltage limiting or clamping) to prevent excessive voltage from reaching the converter and damaging components.
 - Re-test the fully integrated system after modifications to confirm safe operation within the converter’s allowable voltage range.
 
-### 2. 
+### 2. Camera Sensing and Control & Communication Subsystem Success Criteria 
 
 #### **Success Criterion**
+The experiment is considered successful if the MLX90640 infrared camera reliably communicates with the Raspberry Pi Pico, outputs accurate temperature readings in a readable format, and demonstrates consistent variation in measured temperatures in response to changing thermal conditions.
 
 #### **Result**
-
+Partially Met
 
 #### **Evidence**
+- The MLX90640 infrared camera successfully initialized and communicated with the Raspberry Pi Pico without errors.
+- Temperature data (maximum, minimum, and center values) was consistently displayed in a readable format.
+- Temperature readings increased when the sensor was exposed to heat sources and decreased in cooler conditions.
+- The system produced stable and repeatable readings across multiple tests.
+- Distinct temperature differences were observed when targeting different objects or regions.
 
 #### **Reason for Incomplete Success**
+- The system did not display the full 2D thermal image.
+- Output was limited to only maximum, minimum, and center temperatures.
+- Data visualization was limited, making analysis less detailed.
 
 #### **Future Improvements**
+Future improvements to the system include implementing full 2D thermal imaging output rather than limiting the data to maximum, minimum, and center temperature values. Additionally, enhancing data visualization through a graphical display or heatmap would enable more detailed analysis and improve the ability to accurately identify and locate hot spots.
 
 ---
 
@@ -169,19 +184,21 @@ ArcAngel Drone did **not fully meet** the original project success criteria, but
 
 #### **Successfully Demonstrated**
 - Low-voltage energy harvesting and a fully functional battery charging converter (when supplied within its operating range)
+- Successful temperature readings from the MLX90640 infrared camera, reliable communication between the camera and the Raspberry Pi Pico, and output of data in a readable format.
 
 #### **Not Demonstrated**
 - End-to-end operation where harvested energy is successfully converted and used to charge the battery
-
+- Full 2D thermal imaging output was not demonstrated by the system.
 
 #### **Primary Cause of Performance Gaps**
 - Improper voltage scaling due to capacitive coupling and lack of a true ground reference, resulting in out-of-range input to the converter
-
+- The primary cause of the performance gaps was the lack of implementation of full 2D thermal mapping and visualization, limiting the system to basic temperature outputs without spatial representation.
 
 ---
 
 ## **Recommended Next Steps**
-- Redesign the power harvesting subsystem to include a proper ground/reference path and controlled voltage scaling to ensure safe, converter-compatible output when interfacing with high-voltage transmission lines. 
+- Redesign the power harvesting subsystem to include a proper ground/reference path and controlled voltage scaling to ensure safe, converter-compatible output when interfacing with high-voltage transmission lines.
+- Implementing full 2D thermal image processing to capture and display all pixel data from the MLX90640, along with adding a graphical interface or heatmap for improved visualization. 
 
 
 
@@ -226,5 +243,5 @@ ArcAngel Drone did **not fully meet** the original project success criteria, but
 - Matthew Henderson - Power Harvesting and Battery Charging Subsystem Experiment, Overall Conclusion, Inventory Table
 - Brady Goodman - Power Harvesting and Battery Charging Subsystem Experiment, Inventory Table
 - Daniel Attih - 
-- Lawson Striklin -
+- Lawson Striklin - Camera Sensing and Control & Communication Subsystem Experiment, Inventory Table
 - Grant Christy - 
