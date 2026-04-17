@@ -198,7 +198,7 @@ ArcAngel Drone did **not fully meet** the original project success criteria, but
 | 7     | Printed Circuit Boards                                       |  5  | Mouser          |  Lab Station      | 3/1/2026      | New       | In use. |
 | 8     | Stainless Steel Mesh (Capacitive Plate)                      |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | Not in use. |
 | 9     | USB-C Cable                                                  |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | |
-| 10    | Raspberry Pi Pico (RP2040 Microcontroller)                   |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
+| 10    | Raspberry Pi Pico (RP2040 Microcontroller)                   |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In use. |
 | 11    | Real-Time Clock Module (DS3231)                              |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
 | 12    | JST SH 4-Pin Cable                                           |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
 | 13    | Coin Cell Battery (CR1220)                                   |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
