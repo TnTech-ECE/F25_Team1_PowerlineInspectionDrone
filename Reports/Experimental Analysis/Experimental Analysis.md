@@ -67,21 +67,17 @@ Overall, the experiment confirms that the system is capable of harvesting and tr
 In conclusion, the battery charging subsystem meets design expectations, while the power harvesting subsystem requires further refinement before safe and effective high-voltage operation can be achieved.
 
 
-## 2. 
-
-
+## 2. Camera Sensing and Control & Communication Subsystem 
 
 ### Purpose and Justification:
+The purpose of this experiment is to validate the ability of the MLX90640 infrared camera to detect temperature variations and display the data in a readable format. This subsystem consists of two primary components: the Raspberry Pi Pico and the MLX90640 IR camera. Its intended application is the detection of faults on a transmission line through the identification of abnormally high temperatures.
 
 ### Detailed Procedure:
+The following steps describe the infrared camera sensing experimental procedure:
 
-
-
-
-
-
-
-  
+1. Configure and solder the MLX90640 infrared camera to the Raspberry Pi Pico.
+2. Develop and implement code to supply power to the camera and output the measured temperature data in a readable format.
+3. Test the system by exposing the camera to varying temperature conditions and verifying the accuracy of the readings.
 
 ### Expected Results:
 
