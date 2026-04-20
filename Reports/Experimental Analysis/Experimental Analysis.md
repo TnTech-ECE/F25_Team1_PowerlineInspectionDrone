@@ -70,29 +70,55 @@ In conclusion, the battery charging subsystem meets design expectations, while t
 ## 2. Camera Sensing and Control & Communication Subsystem 
 
 ### Purpose and Justification:
-The purpose of this experiment is to validate the ability of the MLX90640 infrared camera to detect temperature variations and display the data in a readable format. This subsystem consists of two primary components: the Raspberry Pi Pico and the MLX90640 IR camera. Its intended application is the detection of faults on a transmission line through the identification of abnormally high temperatures.
+The purpose of this experiment is to validate the complete integration of all subsystem components and ensure reliable, synchronized operation under real-world conditions. This includes confirming communication between all modules, verifying coordinated data acquisition, and ensuring proper system response to environmental inputs. The integrated system combines sensing, control, communication, and data logging functionalities to support the detection of thermal faults along transmission lines. By integrating the Raspberry Pi Pico, MLX90640 infrared camera, DS3231 RTC, GPS module, TF card adapter, and servo motor, the system is designed to identify abnormal temperature conditions, associate them with time and location data, actuate a mechanical response, and store all relevant information for analysis.
 
 ### Detailed Procedure:
-The following steps describe the infrared camera sensing experimental procedure:
-
-1. Configure and solder the MLX90640 infrared camera to the Raspberry Pi Pico.
-2. Develop and implement code to supply power to the camera and output the measured temperature data in a readable format.
-3. Test the system by exposing the camera to varying temperature conditions and verifying the accuracy of the readings.
+#### The following steps describe the full system integration experimental procedure:
+1. Assemble the complete system by connecting all modules to the Raspberry Pi Pico, ensuring correct wiring and stable power distribution.
+2. Develop and integrate code modules for each component into a single unified program, ensuring compatibility across all communication protocols (I²C, UART, SPI, and PWM).
+3. Initialize all components sequentially and verify successful communication with:
+   - MLX90640 infrared camera
+   - DS3231 RTC
+   - GPS module
+   - TF card adapter
+   - Servo motor
+4. Implement synchronized data acquisition by:
+   - Capturing temperature data from the MLX90640 or sending a PWM signal to actuate servo movement
+   - Retrieving timestamps from the RTC
+   - Obtaining GPS coordinates
+5. Format and combine collected data into structured output for both real-time display (serial monitor) and file storage.
+6. Configure the TF card adapter to log integrated data, including temperature values, timestamps, and GPS location, into a file.
+7. Conduct testing under controlled conditions by:
+   - Introducing heat sources to simulate thermal faults
+   - Observing system response, including detection, logging, and actuation
+8. Verify system performance by:
+   - Ensuring continuous operation without communication errors
+   - Confirming accurate synchronization of sensor data
 
 ### Expected Results:
-The MLX90640 infrared camera will successfully initialize and establish communication with the Raspberry Pi Pico. The system will output temperature data in a readable format, such as through a serial monitor or display, representing either a 2D thermal map or individual pixel temperature values. Temperature readings will vary consistently with environmental conditions, increasing when exposed to heat sources and decreasing in cooler environments. 
+- All system components will successfully initialize and operate simultaneously without communication conflicts.
+- The MLX90640 will continuously provide accurate temperature data reflecting environmental conditions.
+- The RTC will provide consistent timestamps synchronized with sensor readings.
+- The GPS module will output accurate location data that updates with movement.
+- The TF card adapter will log all system data in a structured and readable format.
+- The Raspberry Pi Pico will send a proper PWM signal to the servo motor.
 
 ### Actual Results:
-The MLX90640 infrared camera successfully initialized and established communication with the Raspberry Pi Pico. The system output temperature data in a simplified format, displaying only the maximum, minimum, and center temperatures. The recorded temperature readings varied in response to the thermal conditions to which the sensor was exposed.
+- All components successfully initialized and operated simultaneously without communication issues.
+- The MLX90640 continuously outputs accurate temperature data reflecting environmental conditions.
+- The DS3231 RTC consistently provided accurate timestamps in 12-hour format.
+- The GPS module reliably outputs latitude and longitude in decimal degrees, with readings varying appropriately based on location.
+- The TF card adapter successfully logged synchronized data, including temperature, time, and location, into files.
+- The servo motor actuated correctly between 0° and 90° when triggered by a PWM signal from the Raspberry Pi Pico.
 
 ### Interpretation and Conclusion:
-The results indicate that the MLX90640 infrared camera successfully interfaced with the Raspberry Pi Pico and was able to reliably measure temperature variations. The system’s ability to output maximum, minimum, and center temperatures provided a simplified yet effective representation of the thermal environment. Although the full 2D thermal map was not utilized, the selected data points were sufficient to observe changes in temperature and identify general trends.
+The results of this experiment confirm the successful integration and coordinated operation of all subsystem components. Each module not only functioned correctly on its own but also contributed effectively to the overall system without causing communication conflicts or performance degradation.
 
-The variation in temperature readings in response to different thermal conditions confirms that the sensor is functioning as expected. The system demonstrated sensitivity to heat sources, as indicated by increases in recorded temperatures, and responsiveness to cooler conditions through decreasing values. This behavior validates the camera’s capability to detect temperature differences.
+The system demonstrated the ability to simultaneously collect temperature, time, and location data while maintaining synchronization across all inputs. The MLX90640 accurately detected thermal variations, and this data was successfully paired with timestamps from the RTC and positional data from the GPS module. The TF card adapter reliably stored this combined dataset, validating the system’s real-time data logging capability.
 
-However, the limited output format may restrict the system’s ability to precisely locate and analyze small or distributed hot spots. A full thermal image would provide more detailed spatial resolution, which is beneficial for accurately identifying fault locations on a transmission line.
+Additionally, the servo motor responded appropriately to the PWM signals, confirming that the system can execute mechanical actions. This demonstrates a complete sensing-to-response workflow, which is critical for real-world applications.
 
-In conclusion, the experiment successfully validated that the MLX90640 infrared camera can detect temperature changes and communicate this data through the Raspberry Pi Pico. The system shows potential for fault detection applications based on elevated temperatures. 
+Overall, the integrated system meets its design objectives and is capable of performing transmission line inspection tasks by detecting abnormal temperature conditions, recording critical data, and initiating mechanical responses. The successful operation of all components in a unified system indicates strong potential for deployment in practical environments. Future improvements may include optimizing processing efficiency, enhancing automation logic, and improving robustness for extended field use.
 
 
 ## 3. 
@@ -134,25 +160,26 @@ The power harvesting subsystem produced a higher-than-expected voltage at low in
 ### 2. Camera Sensing and Control & Communication Subsystem Success Criteria 
 
 #### **Success Criterion**
-The experiment is considered successful if the MLX90640 infrared camera reliably communicates with the Raspberry Pi Pico, outputs accurate temperature readings in a readable format, and demonstrates consistent variation in measured temperatures in response to changing thermal conditions.
+The experiment is considered successful if all subsystem components reliably communicate with the Raspberry Pi Pico and operate together as an integrated system, producing accurate temperature, time, and GPS data in a readable format. Additionally, the system must successfully log synchronized data to the TF card and actuate the servo motor in response to the PWM signals without errors.
 
 #### **Result**
-Partially Met
+Fully Met
 
 #### **Evidence**
-- The MLX90640 infrared camera successfully initialized and communicated with the Raspberry Pi Pico without errors.
-- Temperature data (maximum, minimum, and center values) was consistently displayed in a readable format.
-- Temperature readings increased when the sensor was exposed to heat sources and decreased in cooler conditions.
-- The system produced stable and repeatable readings across multiple tests.
-- Distinct temperature differences were observed when targeting different objects or regions.
+- All subsystem components successfully initialized and established communication with the Raspberry Pi Pico without errors.
+- The MLX90640 infrared camera consistently outputs temperature data in a clear and readable format.
+- Temperature readings varied appropriately, increasing when exposed to heat sources and decreasing in cooler conditions.
+- The DS3231 RTC provided stable and accurate timestamps in a 12-hour format.
+- The GPS module outputs valid latitude and longitude in decimal degrees, with readings changing appropriately based on location.
+- The TF card adapter successfully created files and reliably logged synchronized temperature, time, and GPS data.
+- The servo motor responded correctly to PWM signals, consistently actuating between 0° and 90° positions.
+- The system produced stable, repeatable results across multiple tests, demonstrating reliable integrated operation.
 
 #### **Reason for Incomplete Success**
-- The system did not display the full 2D thermal image.
-- Output was limited to only maximum, minimum, and center temperatures.
-- Data visualization was limited, making analysis less detailed.
+N/A
 
 #### **Future Improvements**
-Future improvements to the system include implementing full 2D thermal imaging output rather than limiting the data to maximum, minimum, and center temperature values. Additionally, enhancing data visualization through a graphical display or heatmap would enable more detailed analysis and improve the ability to accurately identify and locate hot spots.
+Future improvements to the system include enhancing the thermal camera processing logic to improve robustness and reliability in real-world field conditions. Additional improvements may involve optimizing data logging efficiency, refining threshold-based actuation for the servo motor, and improving overall system integration for faster and more stable performance.
 
 ---
 
@@ -184,21 +211,21 @@ ArcAngel Drone did **not fully meet** the original project success criteria, but
 
 #### **Successfully Demonstrated**
 - Low-voltage energy harvesting and a fully functional battery charging converter (when supplied within its operating range)
-- Successful temperature readings from the MLX90640 infrared camera, reliable communication between the camera and the Raspberry Pi Pico, and output of data in a readable format.
+- Successful integration of the Raspberry Pi Pico subsystem, including reliable temperature sensing from the MLX90640 infrared camera, accurate time and GPS data acquisition, synchronized data logging to the TF card, and proper servo motor actuation with readable system outputs
 
 #### **Not Demonstrated**
 - End-to-end operation where harvested energy is successfully converted and used to charge the battery
-- Full 2D thermal imaging output was not demonstrated by the system.
+
 
 #### **Primary Cause of Performance Gaps**
 - Improper voltage scaling due to capacitive coupling and lack of a true ground reference, resulting in out-of-range input to the converter
-- The primary cause of the performance gaps was the lack of implementation of full 2D thermal mapping and visualization, limiting the system to basic temperature outputs without spatial representation.
+
 
 ---
 
 ## **Recommended Next Steps**
 - Redesign the power harvesting subsystem to include a proper ground/reference path and controlled voltage scaling to ensure safe, converter-compatible output when interfacing with high-voltage transmission lines.
-- Implementing full 2D thermal image processing to capture and display all pixel data from the MLX90640, along with adding a graphical interface or heatmap for improved visualization. 
+ 
 
 
 
@@ -216,12 +243,12 @@ ArcAngel Drone did **not fully meet** the original project success criteria, but
 | 8     | Stainless Steel Mesh (Capacitive Plate)                      |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | Not in use. |
 | 9     | USB-C Cable                                                  |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | |
 | 10    | Raspberry Pi Pico (RP2040 Microcontroller)                   |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In use. |
-| 11    | Real-Time Clock Module (DS3231)                              |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
-| 12    | JST SH 4-Pin Cable                                           |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
-| 13    | Coin Cell Battery (CR1220)                                   |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
+| 11    | Real-Time Clock Module (DS3231)                              |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In use. |
+| 12    | JST SH 4-Pin Cable                                           |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | Not in use. |
+| 13    | Coin Cell Battery (CR1220)                                   |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In Use.|
 | 14    | Voltage Regulator Module                                     |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
 | 15    | DC-DC Converter Module                                       |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
-| 16    | GPS Breakout Board                                           |  1  | SparkFun        |  Lab Station      | 3/1/2026      | New       | |
+| 16    | GPS Breakout Board                                           |  1  | SparkFun        |  Lab Station      | 3/1/2026      | New       | Not in Use. |
 | 17    | Additional Power Regulation Components                       |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
 | 18    | USB Interface / Power Module                                 |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
 | 19    | PLA Filament (3D Printing)                                   |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | |
@@ -238,10 +265,11 @@ ArcAngel Drone did **not fully meet** the original project success criteria, but
 | 30    | Resettable Fuse (PTC)                                        |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | |
 | 31    | TVS Diode (Overvoltage Protection)                           |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | |
 | 32    | MLX90640 IR Thremal Camera                                   |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In use. |
+| 33    | MicroSD card breakout board+                                 |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | Not in Use. |
 
 ## Statment of Contributions:
 - Matthew Henderson - Power Harvesting and Battery Charging Subsystem Experiment, Overall Conclusion, Inventory Table
 - Brady Goodman - Power Harvesting and Battery Charging Subsystem Experiment, Inventory Table
-- Daniel Attih - 
+- Daniel Attih - Camera Sensing and Control & Communication Subsystem Experiment, Inventory Table
 - Lawson Striklin - Camera Sensing and Control & Communication Subsystem Experiment, Inventory Table
 - Grant Christy - 
