@@ -121,19 +121,57 @@ Additionally, the servo motor responded appropriately to the PWM signals, confir
 Overall, the integrated system meets its design objectives and is capable of performing transmission line inspection tasks by detecting abnormal temperature conditions, recording critical data, and initiating mechanical responses. The successful operation of all components in a unified system indicates strong potential for deployment in practical environments. Future improvements may include optimizing processing efficiency, enhancing automation logic, and improving robustness for extended field use.
 
 
-## 3. 
+## 3. Mechanical and Structural Experimental Analysis
 
 ### Purpose and Justification:
-
+The purpose of this expirement is to validate that we can have our entire subsystem be limited to roughly 200 g to maintain proper weight for most universal drones. The system is divided into three main structural parts: the above drone hooking subsystem that houses the GPS and additional in-house battery if needed, the below drone housing that holds the Charging and BMS Subsystem and the Control and Camera susbsytem, and finally the in-dome structural supports to have easy access to all subsystems to allow for easy manipulations and repairs.
 
 ### Detailed Procedure:
+1. Weigh each subsystem separately to see how they would weigh based on their original designs.
+2. Develop and connect each subsystem to their designated locations and mount them to the housing to get a more accurate estimate as to what the full design will become.
+3. Design and correct each location:
+Above Drone Housing:
+- GPS Module
+- Servo Mount
+- Hook-to-Line
+- In-House Additional Battery
+- Voltage Amplifier
+Below Drone Housing:
+Dome Connection:
+- Camera
+1st Layer:
+- Raspberry Pi Pico
+- SD Card Storage Module
+2nd Layer:
+- Power Harvesting Subsystem
+- Charging and BMS Subsystem
+4. Make sure eash subsystem is easily accesible and can all function properly based on location.
+5. Hooking subsystem has to be able to support the weight of the drone without compromising integrity.
+6. Weigh the Above and Below designs separately to obtain final weight of the design.
 
 
 ### Expected Results:
+- The hook will be able to support the entire weight of the drone with easy to manage connection to the power harvesting subsystem
+- The hook will raise and lower without additional external help
+- The entire subsystem will weigh around or less than 200 g
+- All systems have a mounted location and work properly in their designed location
+- The subsystems do not interact or could damage one another unless they are meant to interact
 
 ### Actual Results:
+- The hook is able to support the entire weight of the drone and easilhy connects to the power harvesting subsystem
+- The hook raises and lowers without external help
+- The entire subsystem DOES NOT weigh less or equal to 200 g
+- All systems have a mounted location and work properly
+- The subsystems do not interact or could damage one another unless they are meant to interact
 
 ### Interpretation and Conclusion:
+The results of this experiment comfirm that the subsystem is working and maintaining properly but will need some additional compliance to get under 200 grams. Currently the entire design weighs 220 g, which can be reduced by decreasing wire length and redesigning lighter housing systems. All the subsystems have proper locations and avoid interaction with one another unless it is called for.
+
+The system has demonstrated it's ability to operate properly and avoid catestropic failures due to misconnections. The hook properly supports the entire weight of the heaviest drone it could be tested on. 
+
+Additionally, all subsystems have easy to detach and repair subsystems to allow easy maitenance on all modules and components to keep easy operation applicable to all customers. 
+
+Overall, the design has met most all stipulations besides the weight factor which will be adjusted more in do time to be approximately 200 g or less.
 
 
 ### 1. Power Harvesting and Battery Charging Success Criteria
@@ -272,4 +310,4 @@ ArcAngel Drone did **not fully meet** the original project success criteria, but
 - Brady Goodman - Power Harvesting and Battery Charging Subsystem Experiment, Inventory Table
 - Daniel Attih - Camera Sensing and Control & Communication Subsystem Experiment, Inventory Table
 - Lawson Striklin - Camera Sensing and Control & Communication Subsystem Experiment, Inventory Table
-- Grant Christy - 
+- Grant Christy - Mechanical and Structural Experimental Analysis
