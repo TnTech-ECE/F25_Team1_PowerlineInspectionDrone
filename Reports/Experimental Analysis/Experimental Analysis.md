@@ -174,7 +174,7 @@ Weight Before Connection Table:
 | Charging & BMS | 47 g | 44 g | | |
 | Control & Camera | 59 g | 56 g | 223 g | 205 g |
 
-Weight After Connection Table (Simplfied)
+Weight After Connection Table (Simplified)
 | Object | Actual Weight | Desired Weight | Total(Actual) | Total(Desired) |
 |--------|---------------|----------------|---------------|----------------|
 | Above Drone Housing | 89 g | 80 g | | |
