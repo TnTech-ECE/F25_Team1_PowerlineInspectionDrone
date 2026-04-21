@@ -164,14 +164,25 @@ Dome Connection:
 - All systems have a mounted location and work properly
 - The subsystems do not interact or could damage one another unless they are meant to interact
 
+Weight Before Connection Table:
+| Object | Actual Weight | Desired Weight | Total(Actual) | Total(Desired) |
+|--------|---------------|----------------|---------------|----------------|
+| Dome | 38 g | 31 g | | |
+| Inner Support | 23 g | 20 g | | |
+| Servo Mount | 37 g | 34 g | | |
+| Hook Subsystem | 19 g | 16 g | | |
+| Charging & BMS | 47 g | 44 g | | |
+| Control & Camera | 59 g | 56 g | 223 g | 205 g |
+
+
 ### Interpretation and Conclusion:
-The results of this experiment comfirm that the subsystem is working and maintaining properly but will need some additional compliance to get under 200 grams. Currently the entire design weighs 220 g, which can be reduced by decreasing wire length and redesigning lighter housing systems. All the subsystems have proper locations and avoid interaction with one another unless it is called for.
+The results demonstrate that the system is structurally sound and functions as intended; however, it does not yet meet the target mass requirement. The current total mass is approximately 220 g. This excess weight can likely be reduced through optimization measures such as minimizing wire lengths and redesigning the housing with lighter materials.
 
-The system has demonstrated it's ability to operate properly and avoid catestropic failures due to misconnections. The hook properly supports the entire weight of the heaviest drone it could be tested on. 
+All subsystems are properly integrated, with effective spatial separation that prevents unintended interaction while maintaining required connectivity. The design also supports ease of maintenance, as components are accessible and can be detached for repair or replacement.
 
-Additionally, all subsystems have easy to detach and repair subsystems to allow easy maitenance on all modules and components to keep easy operation applicable to all customers. 
+The hooking subsystem has proven capable of supporting the maximum tested drone weight without structural failure, confirming its reliability.
 
-Overall, the design has met most all stipulations besides the weight factor which will be adjusted more in do time to be approximately 200 g or less.
+Overall, the design meets all major functional requirements except for the weight constraint. With further refinement, the system is expected to achieve the target mass of 200 g or less.
 
 
 ### 1. Power Harvesting and Battery Charging Success Criteria
