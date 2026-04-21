@@ -174,6 +174,12 @@ Weight Before Connection Table:
 | Charging & BMS | 47 g | 44 g | | |
 | Control & Camera | 59 g | 56 g | 223 g | 205 g |
 
+Weight After Connection Table (Simplfied)
+| Object | Actual Weight | Desired Weight | Total(Actual) | Total(Desired) |
+|--------|---------------|----------------|---------------|----------------|
+| Above Drone Housing | 89 g | 80 g | | |
+| Below Drone Housing | 127 g | 120 g | 216 g | 200 g |
+
 
 ### Interpretation and Conclusion:
 The results demonstrate that the system is structurally sound and functions as intended; however, it does not yet meet the target mass requirement. The current total mass is approximately 220 g. This excess weight can likely be reduced through optimization measures such as minimizing wire lengths and redesigning the housing with lighter materials.
