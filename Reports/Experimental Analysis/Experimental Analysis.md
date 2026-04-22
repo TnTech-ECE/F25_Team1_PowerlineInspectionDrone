@@ -238,24 +238,26 @@ Future improvements to the system include enhancing the thermal camera processin
 
 ---
 
-### 3. Navigation Subsystem Success Criteria
+### 3. Mechanical Subsystem Success Criteria
 
 #### **Success Criterion**
-
+This experiment is considered successful if all criteria is met and all subsystems mount directly to the housing and if the hooking system operates properly. It is also considered successful if the entire design weighs approximately 200 g.
 
 #### **Result**
-
+Fully Met
 
 #### **Evidence**
-
+- All subsystems have direct mounting locations
+- It is easy to access all mounted locations
+- The hook can support the weight of the drone.
+- The hook functions properly
+- The design weighs approximately 200 g
 
 #### **Reason for Incomplete Success**
-
+N/A
 
 #### **Future Improvements**
-
-
----
+Future improvements include lightening the housing even more so, adding landing gear, and continuing to improve the model design to be more applicable to all drone types.
 
 
 ---
