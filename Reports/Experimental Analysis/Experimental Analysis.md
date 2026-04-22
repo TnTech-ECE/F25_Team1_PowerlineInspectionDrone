@@ -296,29 +296,29 @@ ArcAngel Drone did **not fully meet** the original project success criteria, but
 | 6     | High Voltage Diodes (5kV)                                    | 20  | Mouser          |  Lab Station      | 3/1/2026      | New       | In use. |
 | 7     | Printed Circuit Boards                                       |  5  | Mouser          |  Lab Station      | 3/1/2026      | New       | In use. |
 | 8     | Stainless Steel Mesh (Capacitive Plate)                      |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | Not in use. |
-| 9     | USB-C Cable                                                  |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | |
+| 9     | USB-C Cable                                                  |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | Not in use. |
 | 10    | Raspberry Pi Pico (RP2040 Microcontroller)                   |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In use. |
 | 11    | Real-Time Clock Module (DS3231)                              |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In use. |
 | 12    | JST SH 4-Pin Cable                                           |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | Not in use. |
-| 13    | Coin Cell Battery (CR1220)                                   |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In Use.|
-| 14    | Voltage Regulator Module                                     |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
-| 15    | DC-DC Converter Module                                       |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
-| 16    | GPS Breakout Board                                           |  1  | SparkFun        |  Lab Station      | 3/1/2026      | New       | Not in Use. |
-| 17    | Additional Power Regulation Components                       |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
-| 18    | USB Interface / Power Module                                 |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | |
-| 19    | PLA Filament (3D Printing)                                   |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | |
-| 20    | Liquid Electrical Insulation (Flex Seal)                     |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | |
-| 21    | Aluminum Sheet Material                                      |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | |
-| 22    | Epoxy / PCB Coating Material                                 |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | |
-| 23    | Power Regulation IC                                          |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | |
-| 24    | Precision Resistors (Vishay Series)                          |  3  | Mouser          |  Lab Station      | 3/1/2026      | New       | |
-| 25    | DC-DC Converter (TDK Lambda)                                 |  1  | Mouser          |  Lab Station      | 3/1/2026      | New       | |
-| 26    | Power Management IC                                          |  1  | Mouser          |  Lab Station      | 3/1/2026      | New       | |
-| 27    | Surface Mount Resistors                                      |  1  | Mouser          |  Lab Station      | 3/1/2026      | New       | |
-| 28    | Switching Regulator Module                                   |  1  | Mouser          |  Lab Station      | 3/1/2026      | New       | |
-| 29    | USB Connector (Type-C / Interface)                           |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | |
-| 30    | Resettable Fuse (PTC)                                        |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | |
-| 31    | TVS Diode (Overvoltage Protection)                           |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | |
+| 13    | Coin Cell Battery (CR1220)                                   |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In use.|
+| 14    | Voltage Regulator Module                                     |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In use. |
+| 15    | DC-DC Converter Module                                       |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In use. |
+| 16    | GPS Breakout Board                                           |  1  | SparkFun        |  Lab Station      | 3/1/2026      | New       | Not in use. |
+| 17    | Additional Power Regulation Components                       |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In use. |
+| 18    | USB Interface / Power Module                                 |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | Not in use. |
+| 19    | PLA Filament (3D Printing)                                   |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | In use. |
+| 20    | Liquid Electrical Insulation (Flex Seal)                     |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | In use. |
+| 21    | Aluminum Sheet Material                                      |  1  | Amazon          |  Lab Station      | 3/1/2026      | New       | Not in use. |
+| 22    | Epoxy / PCB Coating Material                                 |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | In use. |
+| 23    | Power Regulation IC                                          |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | In use. |
+| 24    | Precision Resistors (Vishay Series)                          |  3  | Mouser          |  Lab Station      | 3/1/2026      | New       | In use. |
+| 25    | DC-DC Converter (TDK Lambda)                                 |  1  | Mouser          |  Lab Station      | 3/1/2026      | New       | In use. |
+| 26    | Power Management IC                                          |  1  | Mouser          |  Lab Station      | 3/1/2026      | New       | Not in use. |
+| 27    | Surface Mount Resistors                                      |  1  | Mouser          |  Lab Station      | 3/1/2026      | New       | In use. |
+| 28    | Switching Regulator Module                                   |  1  | Mouser          |  Lab Station      | 3/1/2026      | New       | In use. |
+| 29    | USB Connector (Type-C / Interface)                           |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | Not in use. |
+| 30    | Resettable Fuse (PTC)                                        |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | In use. |
+| 31    | TVS Diode (Overvoltage Protection)                           |  1  | DigiKey         |  Lab Station      | 3/1/2026      | New       | In use. |
 | 32    | MLX90640 IR Thremal Camera                                   |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | In use. |
 | 33    | MicroSD card breakout board+                                 |  1  | Adafruit        |  Lab Station      | 3/1/2026      | New       | Not in Use. |
 
