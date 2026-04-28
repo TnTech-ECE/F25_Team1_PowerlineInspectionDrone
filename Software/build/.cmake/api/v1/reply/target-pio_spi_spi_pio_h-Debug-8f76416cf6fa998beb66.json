@@ -1,0 +1,81 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"pico_generate_pio_header"
+		],
+		"files" : 
+		[
+			"/home/dark/.pico-sdk/sdk/2.2.0/tools/CMakeLists.txt",
+			"lib/pico_fatfs/pio/spi/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 252,
+				"parent" : 1
+			}
+		]
+	},
+	"id" : "pio_spi_spi_pio_h::@51cdb1e00510afc015e1",
+	"name" : "pio_spi_spi_pio_h",
+	"paths" : 
+	{
+		"build" : "lib/pico_fatfs/pio_spi",
+		"source" : "lib/pico_fatfs/pio/spi"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"isGenerated" : true,
+			"path" : "build/lib/pico_fatfs/pio_spi/CMakeFiles/pio_spi_spi_pio_h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/pico_fatfs/pio_spi/CMakeFiles/pio_spi_spi_pio_h.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/lib/pico_fatfs/pio_spi/spi.pio.h.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}
